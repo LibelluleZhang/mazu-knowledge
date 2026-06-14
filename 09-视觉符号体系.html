@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>09 · 视觉符号体系 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link active">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷二 · 文化土壤
+  </div>
+  <div class="article-summary">一句话摘要：妈祖文化的视觉体系以**凤冠霞帔、如意/令牌、红灯、红金蓝三色**为核心识别元素，庙宇建筑的燕尾脊、龙柱、藻井构成独特的空间符号；这套视觉体系是AI短剧美术设计的最直接依据。</div>
+  <article class="article">
+<h1 id="09-视觉符号体系">09 · 视觉符号体系</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖文化的视觉体系以<strong>凤冠霞帔、如意/令牌、红灯、红金蓝三色</strong>为核心识别元素，庙宇建筑的燕尾脊、龙柱、藻井构成独特的空间符号；这套视觉体系是AI短剧美术设计的最直接依据。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一妈祖形象核心视觉特征">一、妈祖形象核心视觉特征</h2>
+
+<h3 id="11-标准像元素拆解">1.1 标准像元素拆解</h3>
+
+<table>
+<tr><th>元素</th><th>描述</th><th>象征意义</th><th>AI美术提示词关键词</th></tr>
+<tr><td>**凤冠**</td><td>九旒冕冠或七旒凤冠，饰以凤凰、云纹、珠宝</td><td>天后身份的"皇家"认证（清代封"天后"后礼制升级）</td><td>phoenix crown, nine-tasseled ceremonial headdress</td></tr>
+<tr><td>**霞帔**</td><td>红色或金色绣凤凰云纹的长披肩，垂至膝下</td><td>命妇礼服，寓意"如霞光护体"</td><td>embroidered silk cape, cloud pattern</td></tr>
+<tr><td>**面容**</td><td>圆润慈祥，肤色偏深（长期海边生活所致），眉目温和平视</td><td>平民化的神——亲切而非威严</td><td>kind face, warm gaze</td></tr>
+<tr><td>**双手**</td><td>持**玉如意**（最常见）或**令牌**/笏板</td><td>如意：吉祥福泽；令牌：驱邪护法</td><td>holding jade ruyi scepter</td></tr>
+<tr><td>**肤色**</td><td>传统为"黑面妈祖"（香火长期熏黑）或"粉面妈祖"</td><td>"黑面"香火鼎盛的庙宇主流，"粉面"为近代新塑</td><td>dark-faced / pink-faced Mazu statue</td></tr>
+<tr><td>**坐姿**</td><td>端坐于龙椅或宝座之上</td><td>天后身份</td><td>seated on dragon throne</td></tr>
+</table>
+
+<h3 id="12-妈祖形象的地域变体">1.2 妈祖形象的地域变体</h3>
+
+<p>妈祖的视觉形象并非完全统一，不同地区/不同功能的妈祖像存在明显差异：</p>
+
+<table>
+<tr><th>类型</th><th>特征</th><th>分布地区</th></tr>
+<tr><td>**黑面妈祖**</td><td>面色黝黑/深棕（香火长期烟熏所致），被认为灵力最强</td><td>台湾为主，湄洲祖庙正殿</td></tr>
+<tr><td>**粉面妈祖**</td><td>肤色白皙红润，面容更接近真人</td><td>近代新塑神像、部分分灵庙</td></tr>
+<tr><td>**金面妈祖**</td><td>面部贴金，象征神圣庄严</td><td>部分高规格庙宇</td></tr>
+<tr><td>**红面妈祖**</td><td>面色赤红，较少见</td><td>个别庙宇</td></tr>
+</table>
+
+<blockquote>
+<p>创作提示："黑面妈祖"从视觉上更具辨识度和力量感。如果你在短剧中追求"古朴、深沉"的调性，黑面妈祖是更好的选择。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二庙宇建筑符号">二、庙宇建筑符号</h2>
+
+<h3 id="21-建筑元素">2.1 建筑元素</h3>
+
+<table>
+<tr><th>元素</th><th>描述</th><th>视觉逻辑</th></tr>
+<tr><td>**燕尾脊**</td><td>屋顶两端翘起如燕尾，闽南建筑标志性特征</td><td>天空线——最容易被AI和观众识别的建筑轮廓</td></tr>
+<tr><td>**龙柱**</td><td>庙前盘龙石柱，龙身缠绕柱体</td><td>力量与神圣的空间守卫</td></tr>
+<tr><td>**藻井**</td><td>庙内天顶的螺旋/斗拱结构，层层向上收拢</td><td>"向上的通道"——人与天之间的视觉连接</td></tr>
+<tr><td>**三川门**</td><td>三开间的大门结构，中门最高</td><td>仪式通道——绕境时神轿的中门进出</td></tr>
+</table>
+
+<h3 id="22-空间布局以湄洲祖庙为例">2.2 空间布局（以湄洲祖庙为例）</h3>
+
+<pre><code>
+山门 → 仪门 → 拜亭 → 正殿（寝殿）→ 后殿
+              ↓
+          钟楼 + 鼓楼（左右对称）
+</code></pre>
+
+<li><strong>正殿（寝殿）</strong>：供奉妈祖金身，光线较暗，香火浓密——"与神独处"的空间</li>
+<li><strong>拜亭</strong>：信众跪拜区，光线开放——"人与神对话"的空间</li>
+<li><strong>朝天阁/升天楼</strong>：纪念妈祖升天的建筑，通常建于高处</li>
+
+<hr>
+
+<h2 id="三色彩体系">三、色彩体系</h2>
+
+<h3 id="31-核心三色">3.1 核心三色</h3>
+
+<table>
+<tr><th>颜色</th><th>色值参考</th><th>象征</th><th>使用场景</th></tr>
+<tr><td>**红**</td><td>#C41E3A 左右（朱红/正红）</td><td>喜庆、生命力、驱邪</td><td>庙宇外立面、妈祖霞帔、灯笼、供品</td></tr>
+<tr><td>**金**</td><td>#D4A017 左右（赤金）</td><td>神性、皇家规格</td><td>神像金身、匾额文字、法器装饰</td></tr>
+<tr><td>**蓝**</td><td>#1B4F72 左右（深海蓝）</td><td>海洋、天后身份</td><td>庙内装饰色、旗帜、神像袍服蓝色部分</td></tr>
+</table>
+
+<h3 id="32-辅助色">3.2 辅助色</h3>
+
+<table>
+<tr><th>颜色</th><th>使用场景</th></tr>
+<tr><td>**黑**</td><td>黑面妈祖肤色、香灰、部分神像袍服底色</td></tr>
+<tr><td>**白**</td><td>灯笼（部分）、孝服（丧事场景）、浪花</td></tr>
+<tr><td>**绿**</td><td>庙宇斗拱彩绘、祭祀用的植物（榕树枝等）</td></tr>
+<tr><td>**黄**</td><td>符纸、金纸、供品</td></tr>
+</table>
+
+<h3 id="33-短剧美术调色建议">3.3 短剧美术调色建议</h3>
+
+<li><strong>红+金</strong>：妈祖诞辰/喜庆场景的基础色调——温暖、热烈、神圣</li>
+<li><strong>蓝+黑</strong>：海上救援/风暴场景的基调——冷峻、危险</li>
+<li><strong>红+蓝</strong>：矛盾色——"火的救赎"与"水的危险"——可以作为妈祖角色的个人色彩叙事</li>
+
+<hr>
+
+<h2 id="四常见法器与随身物品">四、常见法器与随身物品</h2>
+
+<table>
+<tr><th>法器</th><th>形态</th><th>功能</th><th>视觉特征</th></tr>
+<tr><td>**如意**</td><td>玉质/木质，云头曲柄</td><td>吉祥、福泽</td><td>妈祖手中最常见的持物</td></tr>
+<tr><td>**令牌**</td><td>木质长方形，上书"令"字</td><td>驱邪、发号施令</td><td>降妖除魔场景中出现</td></tr>
+<tr><td>**红灯/灯笼**</td><td>红色纸/绢灯笼</td><td>妈祖的标志——海上指引方向</td><td>最具妈祖辨识度的视觉符号</td></tr>
+<tr><td>**铜符**</td><td>铜制符牌，刻有符咒</td><td>默娘16岁所得，通灵法器</td><td>可在"默娘得道"场景中作为关键道具</td></tr>
+<tr><td>**筊杯**</td><td>一对月牙形木块</td><td>掷地问神，详见 [[05-仪式与习俗]]</td><td>仪式场景中的核心道具</td></tr>
+<tr><td>**香炉**</td><td>铜制/石制三足炉</td><td>信众上香</td><td>烟雾效果——AI中极具氛围感的视觉元素</td></tr>
+</table>
+
+<hr>
+
+<h2 id="五ai短剧美术设计速查">五、AI短剧美术设计速查</h2>
+
+<h3 id="51-场景设定关键词中英对照供ai生图使用">5.1 场景设定关键词（中英对照，供AI生图使用）</h3>
+
+<li><strong>妈祖庙内部</strong>：Chinese Mazu temple interior, incense smoke, red lanterns, golden statue, dragon pillars, carved wood ceiling (zaojing), dim warm light, sacred atmosphere</li>
+<li><strong>湄洲岛海岸</strong>：Meizhou Island coastline, Fujian, rocky shore, traditional fishing village, sunrise over Taiwan Strait, Pacific Ocean waves</li>
+<li><strong>妈祖绕境</strong>：Mazu pilgrimage procession, sedan chair carried by bearers, crowd kneeling, fireworks, night scene with torches, Taiwanese street</li>
+<li><strong>海上救援</strong>：Stormy sea at night, traditional Chinese junk boat in distress, divine red light in the distance, dramatic waves</li>
+
+<h3 id="52-角色设计关键词">5.2 角色设计关键词</h3>
+
+<li><strong>林默娘（少女时期）</strong>：young Chinese woman, 16-25 years old, Song Dynasty, simple clothes, standing on coastal cliff looking at sea, wind in hair, determined expression, natural beauty</li>
+<li><strong>妈祖（成神后）</strong>：Mazu goddess, phoenix crown, embroidered red robe, holding jade ruyi, golden aura, compassionate face, floating above waves</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/视觉资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AA%BD%E7%A5%96#%E7%A5%9E%E5%83%8F" target="_blank" class="ext-link">妈祖 - 维基百科（神像章节）</a> — 黑面/粉面/金面妈祖的分布与象征意义</li>
+<li><a href="https://baike.baidu.com/item/%E7%87%95%E5%B0%BE%E8%84%8A" target="_blank" class="ext-link">闽南建筑 - 百度百科/燕尾脊</a> — 闽南传统建筑燕尾脊的形制和文化含义</li>
+<li><a href="https://baike.baidu.com/item/%E6%B9%84%E6%B4%B2%E5%A6%88%E7%A5%96%E7%A5%96%E5%BA%99" target="_blank" class="ext-link">湄洲妈祖祖庙建筑群 - 百度百科</a> — 含建筑布局图、各殿功能说明</li>
+
+<p><strong>学术著作</strong></p>
+<li>曹春平《闽南传统建筑》（厦门大学出版社，2006年）— 厦门大学建筑系教授，闽南庙宇建筑的权威著作，含燕尾脊、藻井、龙柱的结构图纸</li>
+<li>林从华《闽台传统建筑文化比较》（福建人民出版社，2008年）— 两岸妈祖庙建筑形制对比</li>
+
+<p><strong>在线图库/影像资源</strong></p>
+<li>湄洲妈祖祖庙官方网站图片库: http://www.mz-mazu.org.cn/ — 高清建筑摄影、妈祖金身近景</li>
+<li>台湾大甲镇澜宫、北港朝天宫Facebook专页 — 神像特写、庙内壁画、法器细节的高清照片</li>
+<li>Pinterest / Wikimedia Commons 搜索"Mazu statue" — 全球妈祖神像的多样性图集</li>
+
+<p><strong>AI美术参考</strong></p>
+<li>Midjourney / Stable Diffusion 社区中关于"Chinese goddess""Mazu""Chinese temple interior"的prompt和成品——可在Civitai、PromptHero搜索参考</li>
+<li>概念艺术家Biyao Huang（黄必耀）的《山海经》人物设计系列——可作为传统神话角色现代化的美术风格参考</li>
+
+<p><strong>数据出处</strong></p>
+<li>妈祖石雕像高14.35米据湄洲妈祖祖庙官网建筑介绍</li>
+<li>色彩色值参考据庙宇建筑实地测绘资料及标准中国色色谱（《中国传统色》郭浩、李健明著）</li>
+
+<p><strong>纪录片/影像</strong></p>
+<li>福建电视台《闽南古厝》系列纪录片（B站可查）— 闽南庙宇建筑的影像记录，含空间结构解说</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

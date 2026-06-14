@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01 · 历史起源 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link active">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷一 · 妈祖本身
+  </div>
+  <div class="article-summary">一句话摘要：妈祖林默娘，北宋建隆元年（960年）生于福建莆田湄洲岛，雍熙四年（987年）因救海难升天，年仅28岁；宋元明清四朝共获36次朝廷褒封，封号从"夫人"累升至"天后"，完成了从民间女子到国家级海神的转变。</div>
+  <article class="article">
+<h1 id="01-历史起源">01 · 历史起源</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖林默娘，北宋建隆元年（960年）生于福建莆田湄洲岛，雍熙四年（987年）因救海难升天，年仅28岁；宋元明清四朝共获36次朝廷褒封，封号从"夫人"累升至"天后"，完成了从民间女子到国家级海神的转变。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一林默娘生平960987">一、林默娘生平（960—987）</h2>
+
+<p><strong>林默娘</strong>，又称林默、默娘，北宋建隆元年（960年）农历三月廿三日出生于福建路兴化军莆田县湄洲屿（今福建省莆田市湄洲岛）。父林愿（一说林惟悫），曾任都巡检，母王氏。</p>
+
+<li><strong>"默"名的由来</strong>：据《天妃显圣录》记载，默娘出生至弥月不闻啼声，故取名"默"。</li>
+<li><strong>幼年异禀</strong>：8岁从塾师读书，过目成诵；13岁得道士玄通授以"玄微秘法"；16岁得神人赐铜符，自此通灵变化，能驱邪救厄。</li>
+<li><strong>终身不嫁</strong>：默娘立誓不嫁，以救助海难为终身志业。逝时年仅28岁，民间传为"白日飞升"。</li>
+<li><strong>地理背景</strong>：湄洲岛位于福建沿海，地处台湾海峡西岸，自古为海上交通要冲，风浪险恶，海难频发。默娘生前常立于崖顶，望海引航，救助遇险船只。</li>
+
+<blockquote>
+<p>创作提示：28岁女性、终身未嫁、生活在宋代渔村——这本身就极具戏剧张力。默娘的"沉默"与大海的"咆哮"形成对照，可以从声音设计上做文章。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二历史背景宋代的莆田与湄洲">二、历史背景：宋代的莆田与湄洲</h2>
+
+<li><strong>宋代莆田</strong>为福建文化重镇，科第鼎盛，有"海滨邹鲁"之称。同时，湄洲湾是天然深水良港。</li>
+<li><strong>海上贸易兴起</strong>：北宋时期，泉州港（距莆田约100公里）已成为重要贸易港口，海上丝绸之路进入繁荣期。湄洲岛地处泉州港外海必经水道，航海活动密集。</li>
+<li><strong>民间信仰土壤</strong>：福建沿海自古巫风盛行，盛行鬼神崇拜。默娘的巫觋背景（通灵、驱邪）与宋代福建民间信仰高度契合，为其神化提供了文化土壤。</li>
+
+<hr>
+
+<h2 id="三朝廷褒封36次从人到神">三、朝廷褒封：36次从人到神</h2>
+
+<p>妈祖是中国历史上获得朝廷褒封次数最多的民间神祇之一。据《天后志》等文献统计，宋元明清四朝累计褒封<strong>36次</strong>：</p>
+
+<table>
+<tr><th>朝代</th><th>关键封号</th><th>时间</th><th>意义</th></tr>
+<tr><td>北宋</td><td>顺济夫人</td><td>宣和五年（1123）</td><td>首次获得朝廷封号，起因是给事中路允迪出使高丽途中遇风暴，得妈祖显灵救助</td></tr>
+<tr><td>南宋</td><td>灵惠妃</td><td>绍熙元年（1190）</td><td>封号从"夫人"升为"妃"，神格跃升</td></tr>
+<tr><td>元</td><td>护国明著天妃</td><td>至元十八年（1281）</td><td>元朝为护漕运海道，封为"天妃"，成为国家航海保护神</td></tr>
+<tr><td>明</td><td>护国庇民妙灵昭应弘仁普济天妃</td><td>永乐七年（1409）</td><td>郑和下西洋推动，封号大幅加长</td></tr>
+<tr><td>清</td><td>天后</td><td>康熙二十三年（1684）</td><td>施琅平台后奏报妈祖助战有功，康熙晋封"天后"，达到最高等级</td></tr>
+</table>
+
+<p><strong>封号演变的规律</strong>：</p>
+<li>航海需求越迫切（宋元海上贸易、元明漕运、清代台海战事），褒封越频繁</li>
+<li>封号从二字"夫人"增长到数十字的"天后"，神格从地方保护神扩张为国家级全能神</li>
+
+<hr>
+
+<h2 id="四从人到神的关键节点">四、从人到神的关键节点</h2>
+
+<li><strong>生前</strong>（960—987）：林默娘作为湄洲岛上的"巫女"和航海救助者，在乡民中积累声望。</li>
+<li><strong>死后百年</strong>（987—1086）：湄洲岛上出现"妈祖庙"（初为小祠），作为地方保护神被祭祀。</li>
+<li><strong>宣和赐额</strong>（1123）：朝廷首次介入，从民间信仰升格为官方认可的祠神。</li>
+<li><strong>南宋至元</strong>：通过海上贸易网络，信仰沿航线扩散至浙江、广东、东南亚。</li>
+<li><strong>明清</strong>：郑和七下西洋、施琅平台等重大航海/海战事件中，官员奏报妈祖显灵，进一步推动朝廷加封。</li>
+
+<blockquote>
+<p>创作提示：从"人"到"神"的演变过程是绝佳的叙事线索。可以围绕几次关键的"显灵"事件（1123年路允迪使高丽、1405年郑和首次下西洋、1684年施琅平台）构建情节。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="五与其他民间信仰的比较">五、与其他民间信仰的比较</h2>
+
+<li>与<strong>关公</strong>（从武将到武财神）类似：妈祖也经历了从地方人物到全国神祇的"造神"过程。</li>
+<li>不同之处：妈祖信仰的核心始终与"海洋"绑定，而关公信仰向商业、武艺等多方向辐射。</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/权威资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AA%BD%E7%A5%96" target="_blank" class="ext-link">妈祖 - 维基百科</a> — 妈祖生平、封号演变、信仰体系的完整词条，含多语种对照</li>
+<li><a href="https://baike.baidu.com/item/%E5%A6%88%E7%A5%96" target="_blank" class="ext-link">妈祖 - 百度百科</a> — 中文世界最详细的妈祖线上词条，含36次褒封年表</li>
+<li><a href="https://en.wikipedia.org/wiki/Mazu" target="_blank" class="ext-link">Mazu (goddess) - Wikipedia EN</a> — 英文世界妈祖介绍，含UNESCO非遗认定与全球传播数据</li>
+
+<p><strong>学术著作</strong></p>
+<li>林国平《妈祖信仰与妈祖文化》（福建人民出版社，2003年）— 福建师范大学历史系教授，妈祖研究标准教科书</li>
+<li>张珣《妈祖·信仰的追寻》（台湾博扬文化，2000年）— 台湾中央研究院民族学研究所研究员的人类学田野研究</li>
+<li>徐晓望《妈祖信仰史研究》（福建人民出版社，2007年）— 福建省社科院历史所，对36次褒封有逐次考证</li>
+
+<p><strong>原始文献</strong></p>
+<li>《天妃显圣录》（明末清初编纂，湄洲妈祖祖庙藏版）— 妈祖传说最权威的原始文献汇编，收录传说约50余则</li>
+<li>《天后志》（清·林清标编，乾隆四十三年刊本）— 清代官方认可的妈祖志书，谱系记载最详</li>
+
+<p><strong>纪录片/影像</strong></p>
+<li>CCTV纪录片《妈祖》（6集，2012年）— 中国首部妈祖题材大型纪录片，可在CCTV官网/B站搜索</li>
+<li>湄洲妈祖祖庙官方宣传片 — 祖庙官网提供，含祭典仪式全程记录</li>
+
+<p><strong>数据出处</strong></p>
+<li>"36次褒封"数据据《天后志》及徐晓望《妈祖信仰史研究》统计</li>
+<li>林默娘生平年代据《天妃显圣录》《莆田县志》交叉比对</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

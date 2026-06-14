@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15 · 人物塑造：妈祖的四个面向与配角群像 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link active">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷三 · 创作方法论
+  </div>
+  <div class="article-summary">**摘要**：妈祖不是一个平面符号，她在不同生命阶段呈现出少女/圣女/母亲/守护者四个面向。配角不是背景板，每个角色都要有自己的愿望和困境。附完整人物小传模板。</div>
+  <article class="article">
+<h1 id="15-人物塑造妈祖的四个面向与配角群像">15 · 人物塑造：妈祖的四个面向与配角群像</h1>
+
+<blockquote>
+<p><strong>摘要</strong>：妈祖不是一个平面符号，她在不同生命阶段呈现出少女/圣女/母亲/守护者四个面向。配角不是背景板，每个角色都要有自己的愿望和困境。附完整人物小传模板。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一核心人物林默妈祖的四个面向">一、核心人物：林默（妈祖）的四个面向</h2>
+
+<p>妈祖之所以能成为跨越千年的信仰符号，恰恰因为她的人性层次极为丰富。在短剧创作中，我们将她拆解为四个面向，根据剧情需要灵活调用。</p>
+
+<h3 id="面向一少女默娘10-18岁">面向一：少女默娘（10-18岁）</h3>
+
+<p><strong>叙事功能</strong>：建立观众共情的入口</p>
+
+<p><strong>性格关键词</strong>：聪慧、好奇、倔强、不通世故</p>
+
+<p><strong>典型场景</strong>：</p>
+<li>第一次偷偷跟船出海被父亲抓住，挨骂但不服</li>
+<li>和同龄渔家女孩在海边捡贝壳、互相编头发</li>
+<li>对村里的规矩和偏见感到困惑</li>
+<li>第一次救人时的手忙脚乱和心跳加速</li>
+
+<p><strong>表演/写作提示</strong>：</p>
+<li>她不是"天生神童"，她只是比别人更愿意去看、去试</li>
+<li>她会犯错，会搞砸，会被海浪拍得狼狈不堪</li>
+<li>她的"不凡"藏在细节里——比如在所有人都跑回岸时，她反而往海里走</li>
+<li>她对海的理解不是天赋，是日复一日看海看到骨子里</li>
+
+<h3 id="面向二圣女默娘18-25岁">面向二：圣女默娘（18-25岁）</h3>
+
+<p><strong>叙事功能</strong>：展现选择的重量，人物弧光的关键转折段</p>
+
+<p><strong>性格关键词</strong>：坚定、沉默、自我牺牲、温柔而不可动摇</p>
+
+<p><strong>典型场景</strong>：</p>
+<li>深夜独自在岸边，为未归的渔船点一盏灯</li>
+<li>暴雨中拒绝回屋，说"我再等一会儿"</li>
+<li>救助成功后，对感谢轻轻摇头——她不是为了被感谢</li>
+<li>面对不理解她的人，不争辩，只是继续做</li>
+
+<p><strong>表演/写作提示</strong>：</p>
+<li>这个阶段的"神性"来自极致的人性——她的选择越来越不为自己</li>
+<li>沉默比宣言更有力量。她说话越来越少，但每句都重</li>
+<li>这个阶段的她，开始让周围的人感到一种"说不清的敬畏"</li>
+<li>关键写法：不是她变强了，而是她不再计算代价</li>
+
+<h3 id="面向三母亲般的默娘25-28岁及羽化后">面向三：母亲般的默娘（25-28岁及羽化后）</h3>
+
+<p><strong>叙事功能</strong>：信仰情感的核心——妈祖被信众称为"妈祖婆""默娘妈"</p>
+
+<p><strong>性格关键词</strong>：包容、宽厚、不审判、始终在场</p>
+
+<p><strong>典型场景</strong>：</p>
+<li>抱着受惊的孩子，不问是谁家的</li>
+<li>为死难者合上眼睛，不论他们生前如何</li>
+<li>对犯错的人说"下次小心"，而不是"我早就说过"</li>
+<li>她照顾的不只是身体，还有人的尊严</li>
+
+<p><strong>表演/写作提示</strong>：</p>
+<li>这个面向最容易被写俗——不要写成"慈祥的老奶奶"</li>
+<li>年轻的她如何具备"母性"？答案：不是年龄，是姿态</li>
+<li>核心动作是"接纳"——她接纳每一个到岸边的人，不管他们带来什么</li>
+
+<h3 id="面向四守护者妈祖超越生死的存在">面向四：守护者妈祖（超越生死的存在）</h3>
+
+<p><strong>叙事功能</strong>：短剧的"回响"层面——时间跳跃、代际传承</p>
+
+<p><strong>性格关键词</strong>：静默、恒久、无处不在但又不可名状</p>
+
+<p><strong>典型场景</strong>：</p>
+<li>千年后，一个渔民在风暴中隐约感到有人托了他一把</li>
+<li>台海之间，不同时代的商船水手望见同一个方向的微光</li>
+<li>一个现代女孩在湄洲岛，被一种莫名的平静包裹</li>
+
+<p><strong>表演/写作提示</strong>：</p>
+<li>这个面向"出场"极少，但存在感贯穿始终</li>
+<li>不要让她真的"显灵"，而是让观众感到"她可能来过"</li>
+<li>这个面向是短剧的"余味"，只可暗示，不可坐实</li>
+
+<h3 id="四个面向的调用逻辑">四个面向的调用逻辑</h3>
+
+<table>
+<tr><th>剧集类型</th><th>主导面向</th><th>辅助面向</th></tr>
+<tr><td>起源故事（少女期）</td><td>少女</td><td>—</td></tr>
+<tr><td>救助故事（成长期）</td><td>圣女</td><td>少女（回忆/对比）</td></tr>
+<tr><td>人间日常</td><td>母亲般的</td><td>圣女</td></tr>
+<tr><td>代际传承/尾声</td><td>守护者</td><td>母亲般的</td></tr>
+</table>
+
+<hr>
+
+<h2 id="二配角群像塑造三原则">二、配角群像塑造三原则</h2>
+
+<h3 id="原则一每个配角都有自己的愿望">原则一：每个配角都有自己的愿望</h3>
+
+<p>配角不能只为主角服务。你需要让每个角色拥有独立于林默之外的"小愿望"：</p>
+
+<li><strong>林愿（父亲）</strong>：希望女儿平安嫁人、过普通日子。他的"反对"不是反派行为，是父爱。</li>
+<li><strong>王氏（母亲）</strong>：希望女儿不要跟海走得太近。她的担心来自一个母亲见过太多海难。</li>
+<li><strong>兄长</strong>：作为家中长子，夹在父亲期望和妹妹的"异样"之间。</li>
+<li><strong>渔村阿婶</strong>：她只是想儿子能平安回来。她会去拜所有能拜的神——包括后来的妈祖。</li>
+
+<h3 id="原则二用功能型角色制造戏剧推力">原则二：用功能型角色制造戏剧推力</h3>
+
+<li><strong>质疑者</strong>（1-2人）：不是反派，而是"合理怀疑的代表"</li>
+<li><strong>受益者</strong>（被救助对象）：每次救助换不同的人，形成单元剧结构</li>
+<li><strong>传承者</strong>（后世角色）：在时间跳跃段落中承担叙事接力棒</li>
+
+<h3 id="原则三每个配角最多两个标签一个矛盾">原则三：每个配角最多两个标签，一个矛盾</h3>
+
+<p>❌ "阿福是一个淳朴善良勤劳勇敢的渔家少年……"</p>
+<p>✅ "阿福——怕水的渔家少年。他想让父亲骄傲，但他上船就吐。"</p>
+
+<p>标签让观众记住，矛盾让角色活起来。</p>
+
+<hr>
+
+<h2 id="三人物小传模板">三、人物小传模板</h2>
+
+<pre><code>
+【角色姓名】
+- 本名：
+- 剧中称呼：
+- 年龄（出场时）：
+- 与妈祖的关系：
+
+【外在标识】
+- 最具辨识度的外貌特征（一个即可）：
+- 标志性动作/习惯：
+- 常穿的衣物/颜色：
+
+【内在驱动】
+- 最大的愿望（明确、具体、可拍摄）：
+- 最深的恐惧：
+- 不能说的秘密：
+
+【与林默的关系】
+- 初见印象：
+- 关系转折点（一场戏）：
+- 最终关系状态：
+
+【人物弧光（一句话）】
+- 从______到______
+
+【功能性定位】
+- 本角色在叙事中的核心功能：
+  □ 共情入口  □ 戏剧推力  □ 情感锚点  □ 氛围营造  □ 信息传递
+
+【三个标志性瞬间】（写出三场戏的概念）
+1. 
+2. 
+3. 
+</code></pre>
+
+<hr>
+
+<h2 id="四林默的人物小传示例">四、林默的人物小传示例</h2>
+
+<p>依照上述模板，为编剧提供一个"少女默娘"的起点版本：</p>
+
+<pre><code>
+【角色姓名】
+- 本名：林默
+- 剧中称呼：默娘、阿默（家人）、默姑（乡邻）
+- 年龄（出场时）：14岁
+- 与妈祖的关系：——（这就是她）
+
+【外在标识】
+- 最具辨识度的外貌特征：眼睛。不是特别大，但看海的时候像在跟海说话
+- 标志性动作：赤脚走在礁石上，脚底长满茧子
+- 常穿的衣物：青蓝色粗布衫，袖口总是卷着
+
+【内在驱动】
+- 最大的愿望：想知道海的那边是什么
+- 最深的恐惧：看着船出海却回不来——而她什么都不能做
+- 不能说的秘密：她觉得自己跟别人不一样，但说不清哪里不一样
+
+【人物弧光（一句话）】
+- 从一个只是喜欢海的渔村女孩，到一个选择成为海的人
+
+【三个标志性瞬间】
+1. 14岁，第一次偷偷游到礁石灯塔，在上面坐了一整夜看星星
+2. 18岁，在大雨中第一次独自驾小船出海，救回一个落水的孩子
+3. 25岁，烧掉自家屋顶为迷航船只导航，看着父亲的眼神
+</code></pre>
+
+<hr>
+
+<h2 id="延伸阅读">延伸阅读</h2>
+
+<li><a href="14-叙事策略.html" class="wiki-link">14-叙事策略</a> — 四个降维锚点与人物塑造的配合</li>
+<li><a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a> — 人物选择背后的情感结构</li>
+<li><a href="18-对白写作.html" class="wiki-link">18-对白写作</a> — 每个面向的台词风格差异</li>
+<li><a href="19-对标作品分析.html" class="wiki-link">19-对标作品分析</a> — 《请回答1988》的群像塑造法</li>
+
+<hr>
+
+<p><em>参考来源：林明峪《妈祖传说》人物考、湄洲祖庙人物志、悉德·菲尔德《电影剧本写作基础》人物章节、《请回答1988》编剧李祐汀创作访谈</em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<li><a href="https://book.douban.com/subject/1080828/" target="_blank" class="ext-link">悉德·菲尔德《电影剧本写作基础》· 豆瓣</a> — 人物小传模板的理论源头（三幕结构、人物弧光、功能性角色分类）</li>
+<li><a href="https://www.koreanfilm.or.kr" target="_blank" class="ext-link">李祐汀编剧访谈· Korean Film</a> — 《请回答1988》编剧谈群像塑造："每个配角都是自己故事的主角"</li>
+<li><a href="https://movie.douban.com/subject/26302614/" target="_blank" class="ext-link">《请回答1988》豆瓣</a> — 评分9.7，群像塑造巅峰，每集人物都有完整的愿望与矛盾</li>
+<li><a href="https://movie.douban.com/subject/30331149/" target="_blank" class="ext-link">《白蛇·缘起》豆瓣</a> — 神话人物"前传化"范式：给已经被神化的人物写一段"她还是人时"的故事</li>
+<li><a href="https://www.amazon.com/Art-Character-Creating-Memorable-Fiction/dp/0143121574" target="_blank" class="ext-link">《角色设计圣经》· The Art of Character</a> — David Corbett: 角色"不能说的秘密"驱动一切行为的叙事逻辑</li>
+<li><a href="https://books.google.com" target="_blank" class="ext-link">林明峪《妈祖传说》· Google Books</a> — 妈祖传说人物谱系的文献学基础，四个面向的传说出处考证</li>
+<li><a href="https://wonderunit.com/storyboarder/" target="_blank" class="ext-link">Storyboarder</a> — 开源分镜工具，人物四个面向可在不同场景通过服装/姿态/色调视觉化呈现</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

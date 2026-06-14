@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>27 · 后期工作流 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link active">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷五 · AI管线
+  </div>
+  <div class="article-summary">AI生成的素材是「原料」，后期是把原料变成「作品」的炼金术。统一调色、节奏剪辑、字幕规范、双版本输出。</div>
+  <article class="article">
+<h1 id="27-后期工作流">27 · 后期工作流</h1>
+
+<blockquote>
+<p>AI生成的素材是「原料」，后期是把原料变成「作品」的炼金术。统一调色、节奏剪辑、字幕规范、双版本输出。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一素材管理规范">一、素材管理规范</h2>
+
+<h3 id="文件夹结构每集一个">文件夹结构（每集一个）</h3>
+<pre><code>
+EP01_渔火/
+├── 01_AI原始素材/        # Seedance/ComfyUI直出，不可修改
+│   ├── C01_海岸黎明.mp4
+│   ├── C02_庙内供香.mp4
+│   └── ...
+├── 02_精选素材/          # 导演筛选后的可用镜头
+├── 03_调色后/            # 统一LUT后的素材
+├── 04_声音/              # 配音/音效/配乐
+│   ├── VO/               # 配音文件
+│   ├── SFX/              # 音效
+│   └── BGM/              # 配乐
+├── 05_字幕/
+├── 06_工程文件/          # DaVinci/剪映项目文件
+└── 07_输出/              # 最终成片
+    ├── EP01_竖屏_1080x1920.mp4
+    └── EP01_横屏_1920x1080.mp4
+</code></pre>
+
+<h3 id="命名规范">命名规范</h3>
+<li>镜头：<code>EP{集号}_C{镜号}_{简短描述}.mp4</code></li>
+<li>版本：<code>EP01_v1.0_内部审阅.mp4</code> → <code>EP01_v1.2_终稿.mp4</code></li>
+
+<hr>
+
+<h2 id="二剪辑组织原则">二、剪辑组织原则</h2>
+
+<h3 id="节奏控制">节奏控制</h3>
+<li><strong>短剧黄金法则</strong>：前3秒必须抓住注意力</li>
+<li>每集3-5分钟，平均镜头长度3-5秒</li>
+<li>情绪高潮处镜头可以拉到8-10秒（慢镜头抒情）</li>
+<li>避免连续3个以上AI空镜（会暴露AI感）</li>
+
+<h3 id="ai素材特有的剪辑技巧">AI素材特有的剪辑技巧</h3>
+<li><strong>交叉剪辑</strong>：AI空镜（海浪）→ 实拍/半实拍人物反应 → AI空镜（香火）——用人物镜头「打断」AI感</li>
+<li><strong>叠化过渡</strong>：AI镜头之间用0.5-1秒叠化替代硬切，减少跳跃感</li>
+<li><strong>遮罩转场</strong>：利用烟雾/海浪/黑场做自然过渡</li>
+<li><strong>变速</strong>：AI出片帧率不稳的镜头，后期做光流法补帧或慢放</li>
+
+<hr>
+
+<h2 id="三调色统一方案">三、调色统一方案</h2>
+
+<h3 id="主lut妈祖色">主LUT：「妈祖色」</h3>
+<pre><code>
+基调：暖黄+青灰（南国海洋的温润感）
+色温：5800K-6200K（略偏暖）
+对比度：中等偏低（保留暗部细节，适合手机屏幕）
+饱和度：-10%（降饱和增加古朴感）
+暗角：轻微（集中视线）
+</code></pre>
+
+<h3 id="场景lut变体">场景LUT变体</h3>
+<table>
+<tr><th>场景类型</th><th>调性</th><th>要点</th></tr>
+<tr><td>庙内祭祀</td><td>暖金+暗红</td><td>烛光感，暗部不压死</td></tr>
+<tr><td>海洋白天</td><td>青蓝+淡金</td><td>天空不过曝，海水有层次</td></tr>
+<tr><td>海洋夜晚/风暴</td><td>墨蓝+银灰</td><td>保留浪花白色细节</td></tr>
+<tr><td>回忆/梦境</td><td>褪色+柔光</td><td>加film grain模拟记忆质感</td></tr>
+<tr><td>妈祖显灵</td><td>金辉+柔焦</td><td>神圣但不廉价</td></tr>
+</table>
+
+<h3 id="操作流程davinci-resolve">操作流程（DaVinci Resolve）</h3>
+<li>所有素材导入后，先套「妈祖色」主LUT</li>
+<li>镜头匹配：选一个「标准镜头」做参考，逐一匹配色温/曝光</li>
+<li>肤色保护：如有实拍人物，用qualifier单独处理肤色</li>
+<li>输出前做最终通调：全片播放检查色温一致性</li>
+
+<h3 id="ai素材特殊处理">AI素材特殊处理</h3>
+<li>AI视频常有色温漂移（同一prompt不同seed出图色温不同）</li>
+<li>必须逐镜头检查，必要时逐镜头调白平衡</li>
+<li>建议在拍摄（生成）阶段就用固定seed+参考图减少色温差</li>
+
+<hr>
+
+<h2 id="四字幕规范">四、字幕规范</h2>
+
+<h3 id="中文字幕">中文字幕</h3>
+<li>字体：思源黑体 Medium / 阿里巴巴普惠体（免费可商用）</li>
+<li>字号：竖屏48px，横屏36px（以1080p为基准）</li>
+<li>颜色：白色+黑色描边（2px）</li>
+<li>位置：竖屏距底部15%，横屏距底部8%</li>
+<li>每行不超过18字</li>
+<li>对白字幕+旁白字幕用不同样式区分（旁白用斜体或灰色）</li>
+
+<h3 id="英文字幕">英文字幕</h3>
+<li>字体：Source Sans Pro / Inter</li>
+<li>字号：竖屏28px，横屏22px</li>
+<li>颜色：浅黄（#F5E6C8）匹配国风暖色调</li>
+<li>位置：中文下方</li>
+
+<h3 id="字幕工具">字幕工具</h3>
+<li><strong>剪映</strong>：自动语音识别+双语字幕（中文较准）</li>
+<li><strong>ArcTime</strong>：专业字幕软件，支持双语时间轴</li>
+<li><strong>AI翻译</strong>：DeepL翻译字幕（文学性对白需人工润色）</li>
+
+<hr>
+
+<h2 id="五输出规格">五、输出规格</h2>
+
+<h3 id="竖屏版抖音小红书视频号">竖屏版（抖音/小红书/视频号）</h3>
+<pre><code>
+分辨率：1080×1920（9:16）
+编码：H.264 / H.265
+码率：15-20 Mbps（VBR）
+帧率：24fps / 25fps
+音频：AAC 320kbps
+时长：3-5分钟
+文件名：EP{集号}_{标题}_竖屏_v{版本号}.mp4
+</code></pre>
+
+<h3 id="横屏版b站youtube备份">横屏版（B站/YouTube/备份）</h3>
+<pre><code>
+分辨率：1920×1080（16:9）
+编码：H.264 / H.265
+码率：25-35 Mbps（VBR）
+帧率：24fps / 25fps
+音频：AAC 320kbps
+文件名：EP{集号}_{标题}_横屏_v{版本号}.mp4
+</code></pre>
+
+<h3 id="竖屏拍摄建议重要">竖屏拍摄建议（重要！）</h3>
+<li>AI生成时直接按720×1280竖屏构图</li>
+<li>不要先做横屏再裁剪——构图会崩</li>
+<li>关键元素放在画面中间60%区域（保证横屏裁剪后可用）</li>
+
+<hr>
+
+<h2 id="六审片流程">六、审片流程</h2>
+
+<pre><code>
+内部V1 → 导演审 → V2修改 → 编剧/美术审 → V3精修 → 全组试映 → 终稿
+</code></pre>
+
+<p>每轮修改不超过2天。V3之后只做微调不做大改。</p>
+
+<hr>
+
+<p><em>相关文档：<a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a> · <a href="25-角色一致性.html" class="wiki-link">25-角色一致性</a> · <a href="26-声音管线.html" class="wiki-link">26-声音管线</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="剪辑调色">剪辑调色</h3>
+<li><a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" class="ext-link">DaVinci Resolve</a> — 免费专业级剪辑+调色，推荐19.0+版本，支持自定义LUT导入/导出</li>
+<li><a href="https://www.capcut.cn" target="_blank" class="ext-link">剪映专业版</a> — 国内AI短剧首选，自动语音识别+AI调色+双语字幕一气呵成</li>
+<li><a href="https://www.adobe.com/products/premiere.html" target="_blank" class="ext-link">Adobe Premiere Pro</a> — 备选剪辑方案，与After Effects+Audition工作流联动，学习成本高但能力全面</li>
+
+<h3 id="lut参考">LUT参考</h3>
+<li><a href="https://lutify.me" target="_blank" class="ext-link">LUTify.me</a> — 专业电影LUT合集，搜索"vintage warm""coastal cinematic"可匹配"妈祖色"暖黄+青灰基调</li>
+<li><a href="https://www.blackmagicdesign.com/products/davinciresolve/lut-gallery" target="_blank" class="ext-link">DaVinci Resolve LUT Gallery</a> — 官方免费LUT素材库，可下载后微调作为"妈祖色"基础模板</li>
+
+<h3 id="字幕">字幕</h3>
+<li><a href="https://arctime.org" target="_blank" class="ext-link">ArcTime</a> — 专业字幕软件，支持双语时间轴同步+字幕样式模板，免费版足够使用</li>
+<li><a href="https://fonts.alibaba.com" target="_blank" class="ext-link">阿里巴巴普惠体</a> — 免费可商用中文字体，推荐用于妈祖短剧字幕（与原文描述一致）</li>
+<li><a href="https://github.com/adobe-fonts/source-han-sans" target="_blank" class="ext-link">思源黑体 GitHub</a> — Adobe/Google联合出品，免费可商用，中文字幕的行业标准</li>
+<li><a href="https://www.deepl.com" target="_blank" class="ext-link">DeepL翻译</a> — AI翻译英文字幕首选，文学性对白需人工润色</li>
+
+<h3 id="编码输出">编码输出</h3>
+<li><a href="https://handbrake.fr" target="_blank" class="ext-link">HandBrake</a> — 开源视频转码工具，h.264/h.265编码，支持精确码率控制</li>
+<li><a href="https://creator.douyin.com" target="_blank" class="ext-link">抖音创作服务平台·上传规范</a> — 抖音9:16竖屏1080×1920上传规范，码率/帧率/字幕位置的最新官方标准</li>
+<li><a href="https://member.bilibili.com" target="_blank" class="ext-link">B站创作中心·上传规范</a> — B站16:9横屏1920×1080上传规范，高码率支持（建议25-35 Mbps VBR）</li>
+
+<h3 id="ai后处理">AI后处理</h3>
+<li><a href="https://www.topazlabs.com/topaz-video-ai" target="_blank" class="ext-link">Topaz Video AI</a> — AI视频增强：升帧率（24→60fps）、去噪、面部修复，适合AI素材质量提升</li>
+<li><a href="https://nmkd.itch.io/flowframes" target="_blank" class="ext-link">Flowframes</a> — 开源光流法补帧工具，处理AI出片帧率不稳的镜头</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>07 · 闽南文化背景 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link active">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷二 · 文化土壤
+  </div>
+  <div class="article-summary">一句话摘要：妈祖信仰的诞生地——福建莆田湄洲岛，处于闽南文化圈与莆仙文化圈的交汇地带；宋元时期福建沿海是海上丝绸之路的核心起点，海洋移民将妈祖信仰带往全世界，形成了"有海水处有华人，有华人处有妈祖"的文化地理格局。</div>
+  <article class="article">
+<h1 id="07-闽南文化背景">07 · 闽南文化背景</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖信仰的诞生地——福建莆田湄洲岛，处于闽南文化圈与莆仙文化圈的交汇地带；宋元时期福建沿海是海上丝绸之路的核心起点，海洋移民将妈祖信仰带往全世界，形成了"有海水处有华人，有华人处有妈祖"的文化地理格局。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一地理生态">一、地理生态</h2>
+
+<h3 id="11-莆田山海之间的文化重镇">1.1 莆田：山海之间的文化重镇</h3>
+
+<li><strong>地理位置</strong>：福建省中部沿海，东临台湾海峡，北接福州，南连泉州。湄洲岛位于莆田市秀屿区东南海域，距大陆约1.8海里。</li>
+<li><strong>地形特征</strong>：莆田"七山二水一分田"，耕地稀缺，迫使居民向海而生。湄洲岛面积约14.35平方公里，地形狭长如眉，故名"湄洲"。</li>
+<li><strong>海洋环境</strong>：湄洲湾为天然深水良港，但台湾海峡风急浪高，东北季风季节海况尤为恶劣。海难是常态——这也是妈祖信仰的"刚需土壤"。</li>
+
+<h3 id="12-泉州漳州潮汕">1.2 泉州、漳州、潮汕</h3>
+
+<p>妈祖信仰在闽南语系地区影响力最为深远：</p>
+
+<table>
+<tr><th>区域</th><th>核心城市</th><th>妈祖信仰特点</th></tr>
+<tr><td>莆仙</td><td>莆田</td><td>妈祖诞生地，祖庙所在地，信仰最"正统"</td></tr>
+<tr><td>闽南</td><td>泉州、漳州、厦门</td><td>海上丝绸之路起点，妈祖信仰随海外贸易扩散</td></tr>
+<tr><td>潮汕</td><td>潮州、汕头、揭阳</td><td>妈祖与本地"海神"信仰融合，形成独特变体</td></tr>
+</table>
+
+<hr>
+
+<h2 id="二渔村生活形态">二、渔村生活形态</h2>
+
+<h3 id="21-以海为田">2.1 以海为田</h3>
+
+<li><strong>生计模式</strong>：近海捕捞+滩涂养殖（牡蛎、紫菜、海带）+ 航海贸易。男性出海，女性在家从事"讨小海"（滩涂采集）和渔产品加工。</li>
+<li><strong>风险结构</strong>：每一次出海都是一场赌博。风暴、触礁、海盗——任何一种都可能让一个家庭瞬间崩溃。妈祖信仰的根本驱动力，正是这种"朝不保夕"的生存焦虑。</li>
+
+<h3 id="22-女性角色">2.2 女性角色</h3>
+
+<li>闽南沿海女性承担着极为特殊的角色：她们是家庭的实际管理者（男性长期不在家），也是"等待者"——站在岸边等丈夫/儿子/父亲归来。</li>
+<li><strong>默娘的"站在崖顶望海"</strong>，实际上是闽南渔村女性的一个集体意象——每个海边村庄都有自己的"望海的女人"。</li>
+
+<h3 id="23-社区结构">2.3 社区结构</h3>
+
+<li>以宗族为单位，祠堂是社区核心。妈祖庙在闽南沿海常常扮演"第二祠堂"的角色——它超越宗族界限，成为整个渔业社区的精神中心。</li>
+
+<blockquote>
+<p>创作提示：短剧需要一个"烟火气"的底座。渔村的清晨——渔网在晨光中展开、海风中夹着鱼腥味、老人在妈祖庙前烧头香、女人在码头边补网边讲鬼怪传说……这些细节比"大场面"更能让观众沉浸。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="三海上丝绸之路与妈祖传播">三、海上丝绸之路与妈祖传播</h2>
+
+<h3 id="31-泉州港的世界地位">3.1 泉州港的世界地位</h3>
+
+<li>宋元时期的泉州港是"东方第一大港"，与埃及亚历山大港齐名。马可·波罗曾称泉州为"世界最大港口之一"【引自《马可·波罗游记》】。</li>
+<li>泉州港输出的主要商品：陶瓷、丝绸、茶叶、铜铁器。输入：香料、珍珠、象牙、犀角。</li>
+<li>妈祖信仰是泉州港的"精神基础设施"——航海者出发前必拜妈祖，确保心理上的"安全许可"。</li>
+
+<h3 id="32-莆田湄洲湾的角色">3.2 莆田湄洲湾的角色</h3>
+
+<li>湄洲湾位于泉州港与福州港之间，是航船的必经之路。湄洲岛上的妈祖祖庙因此成为过往船员的"海上加油站"（精神层面）。</li>
+
+<h3 id="33-信仰沿航线扩散">3.3 信仰沿航线扩散</h3>
+
+<p>妈祖信仰沿以下航线扩散：</p>
+<li><strong>南海航线</strong>：福建 → 广东 → 海南 → 东南亚（越南、泰国、马来西亚、新加坡、印尼）</li>
+<li><strong>东海航线</strong>：福建 → 浙江 → 江苏 → 山东 → 天津 → 东北</li>
+<li><strong>太平洋航线</strong>：福建/广东 → 台湾 → 琉球 → 日本 → 美洲</li>
+
+<hr>
+
+<h2 id="四闽南人移民与妈祖的全球化">四、闽南人移民与妈祖的全球化</h2>
+
+<h3 id="41-三次大规模移民潮">4.1 三次大规模移民潮</h3>
+
+<table>
+<tr><th>时间</th><th>方向</th><th>妈祖的角色</th></tr>
+<tr><td>明末清初</td><td>闽南→台湾</td><td>移民船上必供妈祖神像，"船上的妈祖"是移民的第一座"流动寺庙"</td></tr>
+<tr><td>晚清</td><td>福建/广东→东南亚</td><td>闽南劳工在种植园、矿场建简易妈祖庙，维持文化认同</td></tr>
+<tr><td>20世纪末至今</td><td>福建新移民→全球</td><td>妈祖庙在全球华人社区中继续新建</td></tr>
+</table>
+
+<h3 id="42-有海水处有华人有华人处有妈祖">4.2 "有海水处有华人，有华人处有妈祖"</h3>
+
+<p>这句话不是夸张修辞，而是事实描述。全球有华人的港口城市几乎都有一座妈祖庙或天后宫。妈祖不仅是"海神"，还是<strong>华人全球化的精神坐标</strong>。</p>
+
+<hr>
+
+<h2 id="五与短剧创作的连接点">五、与短剧创作的连接点</h2>
+
+<li><strong>"渔村的质感"</strong>：声音（海浪、船笛、风）、气味（海腥、香火）、光（日出时的金色海面、夜间的妈祖庙红灯）——五感全开的场景设定</li>
+<li><strong>"等待的文化"</strong>：闽南沿海女性的等待——等待丈夫从海上归来、等待儿子从南洋寄回侨汇——这是一种深沉的情感底色</li>
+<li><strong>"迁移的创伤与希望"</strong>：每一艘载着妈祖神像的移民船都是一个微型宇宙——恐惧、希望、离别、抵达</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/地理资料</strong></p>
+<li><a href="https://baike.baidu.com/item/%E6%B9%84%E6%B4%B2%E5%B2%9B" target="_blank" class="ext-link">湄洲岛 - 百度百科</a> — 湄洲岛面积、地理位置、气候水文详细数据</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%B3%89%E5%B7%9E%E6%B8%AF" target="_blank" class="ext-link">泉州港 - 维基百科</a> — 宋元时期"东方第一大港"的历史地位与贸易网络</li>
+<li><a href="https://baike.baidu.com/item/%E6%B5%B7%E4%B8%8A%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF" target="_blank" class="ext-link">海上丝绸之路 - 百度百科</a> — 海上丝绸之路的线路图与贸易品类</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%8E%86%E7%94%B0" target="_blank" class="ext-link">莆田 - 维基百科</a> — 莆田历史沿革、"海滨邹鲁"文化背景</li>
+
+<p><strong>学术著作</strong></p>
+<li>陈支平《福建六大民系》（福建人民出版社，2000年）— 厦门大学历史系教授，系统分析莆仙民系的地理文化与妈祖信仰关系</li>
+<li>王赓武《南海贸易与南洋华人》（香港中华书局，1988年）— 海外华人研究泰斗，华人移民与信仰传播的宏观分析</li>
+<li>林国平《闽台民间信仰源流》（福建人民出版社，2003年）— 闽台信仰文化的地理传播路径</li>
+
+<p><strong>纪录片/影像</strong></p>
+<li>CCTV纪录片《海上丝绸之路》（2016年，7集）— 含泉州港宋元贸易和妈祖信仰传播内容</li>
+<li>NHK纪录片《海上丝路》（2005年）— 日本视角下的福建海洋文化，含湄洲岛段落</li>
+<li>福建电视台《闽南人》系列（B站可搜索）— 闽南渔村生活形态的影像记录</li>
+
+<p><strong>数据出处</strong></p>
+<li>湄洲岛面积14.35平方公里据莆田市统计局官方发布的土地面积普查数据</li>
+<li>"七山二水一分田"为福建沿海地区通用俗语，最早见于《福建通志》对莆田地形描述</li>
+<li>马可·波罗对泉州港的描述出自《马可·波罗游记》第2卷第82章</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

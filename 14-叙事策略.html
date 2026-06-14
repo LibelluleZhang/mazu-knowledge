@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>14 · 叙事策略：从民间传说到国风短剧 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link active">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷三 · 创作方法论
+  </div>
+  <div class="article-summary">**摘要**：把"神"拉回"人"不是削弱信仰，恰恰是让信仰有了可以触摸的温度。本卷提供从传说选材到叙事落地的完整技法，核心理念——在日常里看见神圣，让情感高于奇观。</div>
+  <article class="article">
+<h1 id="14-叙事策略从民间传说到国风短剧">14 · 叙事策略：从民间传说到国风短剧</h1>
+
+<blockquote>
+<p><strong>摘要</strong>：把"神"拉回"人"不是削弱信仰，恰恰是让信仰有了可以触摸的温度。本卷提供从传说选材到叙事落地的完整技法，核心理念——在日常里看见神圣，让情感高于奇观。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一核心叙事转向从仰视神迹到平视人生">一、核心叙事转向：从"仰视神迹"到"平视人生"</h2>
+
+<h3 id="传统民间传说的叙事模式">传统民间传说的叙事模式</h3>
+
+<p>妈祖传说的经典讲述方式，通常遵循以下结构：</p>
+
+<pre><code>
+事迹列举 → 神迹展示 → 封号叠加 → 受万民敬仰
+</code></pre>
+
+<p>这种叙事在信仰语境中成立，但搬上荧幕就是灾难——观众无法共情一个"从小就是完人"的角色。</p>
+
+<h3 id="短剧需要的叙事转向">短剧需要的叙事转向</h3>
+
+<pre><code>
+一个具体的人 → 面对具体困境 → 做出具体选择 → 产生真实后果
+</code></pre>
+
+<p>把32个传说故事当作"素材池"，而不是"剧本大纲"。每一集短剧只取一个核心冲突，将其锚定在人的情感坐标上。</p>
+
+<p><strong>核心转换公式：</strong></p>
+<blockquote>
+<p>传说中"妈祖显灵救了谁" → 剧本中"林默为什么一定要救、她害怕吗、代价是什么"</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二如何把神拉到人四个降维锚点">二、如何把神拉到人：四个降维锚点</h2>
+
+<h3 id="锚点一身体性">锚点一：身体性</h3>
+
+<p>神没有身体。人有。所以：</p>
+
+<li>写她累。连续救人后的筋疲力尽，湿透的衣服贴在身上</li>
+<li>写她疼。礁石划破的伤口、海水浸泡的刺痛</li>
+<li>写她怕。风暴中最真实的恐惧——不是对死亡的恐惧，而是怕救不到</li>
+<li>写她饿。回到岸上狼吞虎咽一碗地瓜粥，跟普通渔家女没有区别</li>
+
+<p>参见 <a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a> 中关于"身体在场的信仰"的深度分析。</p>
+
+<h3 id="锚点二关系网">锚点二：关系网</h3>
+
+<p>神是孤立的信仰对象。人是活在关系中的。</p>
+
+<p>剧本中必须有：</p>
+<li>父母（林愿夫妇）：她不是石头里蹦出来的</li>
+<li>兄长/乡邻：日常互动产生戏剧张力</li>
+<li>被救助者：每次救助都是一个人际关系事件</li>
+<li>质疑者：不是所有人一开始就信她，这恰恰是戏剧冲突的来源</li>
+
+<h3 id="锚点三局限性">锚点三：局限性</h3>
+
+<p>全知全能的神不需要成长。但林默需要。</p>
+
+<li>她第一次救人时的手忙脚乱</li>
+<li>她面对无能为力的时刻——有人在她眼前被海浪吞没</li>
+<li>她对"为什么要做这些"的自我怀疑</li>
+<li>她的愤怒、不甘、脆弱时刻</li>
+
+<p><strong>一个真实的人必须有不完美，才能让她的选择有意义。</strong></p>
+
+<h3 id="锚点四日常性">锚点四：日常性</h3>
+
+<p>神迹之外，写她的日常：</p>
+<li>织渔网时的家长里短</li>
+<li>和母亲的拌嘴</li>
+<li>在礁石上发呆看海</li>
+<li>给父亲泡一碗粗茶</li>
+
+<p>这些日常时刻，是观众进入角色的入口。参见 <a href="17-场景考古.html" class="wiki-link">17-场景考古</a> 中的日常生活细节库。</p>
+
+<hr>
+
+<h2 id="三从传说中选材三种叙事类型">三、从传说中选材：三种叙事类型</h2>
+
+<h3 id="类型一救助叙事最核心">类型一：救助叙事（最核心）</h3>
+
+<table>
+<tr><th>传说</th><th>剧本化方向</th></tr>
+<tr><td>化草救商</td><td>聚焦商船上的人——他们是谁？为何冒险出航？被救后的反应？</td></tr>
+<tr><td>挂席泛槎</td><td>不是"妈祖用席子当帆飞过去"，而是她如何在风暴中找到遇难者</td></tr>
+<tr><td>焚屋导航</td><td>烧掉自家房子为迷航船只引路——这个选择背后的代价和纠结</td></tr>
+</table>
+
+<p><strong>改编要点</strong>：救助的对象必须是有血有肉的人，他们的故事和林默的故事形成双线共鸣。</p>
+
+<h3 id="类型二日常叙事人情味">类型二：日常叙事（人情味）</h3>
+
+<li>教乡邻辨识潮汐和风向</li>
+<li>为渔村医治疫病</li>
+<li>调解邻里纠纷</li>
+<li>和母亲学织布/刺绣</li>
+
+<p>这些场景看似"不传奇"，却是短剧的情感主菜。观众在短剧中最需要的是"人味儿"。</p>
+
+<h3 id="类型三成长叙事人物弧光">类型三：成长叙事（人物弧光）</h3>
+
+<li>少女默娘第一次面对死亡（可能是某个亲近的人）</li>
+<li>她意识到自己的能力与责任之间的关系</li>
+<li>从"帮一下"到"必须做"的心理转变</li>
+<li>28岁那年的最后选择</li>
+
+<hr>
+
+<h2 id="四日常中看见神圣五个具体技法">四、日常中看见神圣：五个具体技法</h2>
+
+<h3 id="技法一用细节代替形容词">技法一：用细节代替形容词</h3>
+
+<p>❌ 错误写法："她是一个善良的人。"</p>
+<p>✅ 正确写法："她把最后一块饼掰成两半，大的给了那个外乡人。"</p>
+
+<p>细节让观众自己得出"善良"的结论。不给形容词，只给动作。参见 <a href="18-对白写作.html" class="wiki-link">18-对白写作</a> 中的对白减量原则。</p>
+
+<h3 id="技法二不审判任何人">技法二：不审判任何人</h3>
+
+<p>剧本中不对任何角色做道德宣判。</p>
+
+<li>不出海救人的渔民，不是"懦夫"，他只是有妻儿</li>
+<li>对林默不理解的人，不是"愚昧"，他只是用另一种方式关心她</li>
+<li>甚至反派（如果有）也不必脸谱化——利益冲突不等于道德败坏</li>
+
+<p><strong>妈祖信仰的核心是"慈"而非"判"。剧本的叙事伦理应与之一致。</strong></p>
+
+<h3 id="技法三蹲下来平视">技法三：蹲下来平视</h3>
+
+<p>镜头和叙事不能"俯视众生"。</p>
+
+<li>渔民不是被启蒙的对象</li>
+<li>村民不是愚昧的背景板</li>
+<li>每个人都有自己的逻辑和尊严</li>
+
+<p>平视意味着：<strong>叙事者和角色在同一高度，角色和观众也在同一高度。</strong></p>
+
+<h3 id="技法四沉默比语言更有力">技法四：沉默比语言更有力</h3>
+
+<p>短剧讲求效率，但最打动人的时刻往往是沉默的：</p>
+
+<li>救助成功后，两人对视，什么都不说</li>
+<li>风暴过后，坐在岸上看复归平静的海</li>
+<li>一个仪式动作，没有旁白解释</li>
+
+<p>参见 <a href="19-对标作品分析.html" class="wiki-link">19-对标作品分析</a> 中《东京物语》的沉默力量分析。</p>
+
+<h3 id="技法五情感高于奇观">技法五：情感高于奇观</h3>
+
+<p>视觉特效不是这个系列的卖点。卖点是——</p>
+
+<li>"明知不能但还是做了"的瞬间（详见 <a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a>）</li>
+<li>人与人在极端处境下的真实反应</li>
+<li>日常中的温暖与坚韧</li>
+
+<hr>
+
+<h2 id="五短剧的集结构模型">五、短剧的集结构模型</h2>
+
+<p>每集5-8分钟的国风短剧，推荐结构：</p>
+
+<pre><code>
+00:00-00:30  开场钩子：一个日常动作中埋藏的非常事件
+00:30-01:30  冲突建立：困境出现，不是天灾而是"人的困境"
+01:30-03:30  人物应对：展示选择的过程（含犹豫、代价）
+03:30-05:30  情绪高潮：不是奇观高潮，是情感时刻
+05:30-06:30  余味收束：回到日常，但人物/关系已发生变化
+</code></pre>
+
+<hr>
+
+<h2 id="六叙事自检问题">六、叙事自检问题</h2>
+
+<p>写完一集剧本后，问自己：</p>
+
+<li>把"妈祖"换成"林默"，故事还成立吗？（不成立说明太依赖神设定）</li>
+<li>观众看完这集，记住的是一个画面还是一个道理？（应该是一个画面）</li>
+<li>这一集中，有超过两个人物有明确的动机吗？</li>
+<li>最打动人的瞬间，是靠台词还是靠行动？</li>
+<li>这一集的林默，是一个"人"在做选择，还是一个"符号"在完成任务？</li>
+
+<hr>
+
+<h2 id="延伸阅读">延伸阅读</h2>
+
+<li><a href="13-改编原则.html" class="wiki-link">13-改编原则</a> — 三条红线与三层自由度</li>
+<li><a href="15-人物塑造.html" class="wiki-link">15-人物塑造</a> — 妈祖四个面向与人物小传</li>
+<li><a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a> — "明知不能但还是做了"的情感结构</li>
+<li><a href="17-场景考古.html" class="wiki-link">17-场景考古</a> — 日常细节的历史考证</li>
+<li><a href="19-对标作品分析.html" class="wiki-link">19-对标作品分析</a> — 《给阿嬷的情书》叙事策略借鉴</li>
+
+<hr>
+
+<p><em>参考来源：《妈祖的传说》（周濯街）、《论民间文学的叙事模式》（刘守华）、罗伯特·麦基《故事》叙事理论、是枝裕和创作方法论</em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<li><a href="https://book.douban.com/subject/25955344/" target="_blank" class="ext-link">《故事的解剖》罗伯特·麦基 · 豆瓣</a> — 叙事结构圣经：冲突→选择→后果的短剧集结构模型源流</li>
+<li><a href="https://movie.douban.com/subject/26302614/" target="_blank" class="ext-link">《请回答1988》豆瓣</a> — 评分9.7，邻里群像+普通人史诗，双门洞胡同=渔村世界的最佳参照</li>
+<li><a href="https://www.criterion.com/films/284-tokyo-story" target="_blank" class="ext-link">《东京物语》Criterion修复版</a> — 小津安二郎叙事美学：低机位平视、沉默留白、日常中的神圣</li>
+<li><a href="https://www.imdb.com/title/tt32308439/" target="_blank" class="ext-link">《给阿嬷的情书》IMDb</a> — IMDb 8.3，全球票房超$2100万美金，东南亚影史冠军</li>
+<li><a href="https://www.criterion.com/current/posts/8236-the-passion-of-the-material" target="_blank" class="ext-link">是枝裕和 · Criterion导演访谈</a> — "我不审判角色，我只注视他们"——叙事伦理与平视方法论出处</li>
+<li><a href="https://kns.cnki.net" target="_blank" class="ext-link">刘守华《中国民间故事类型研究》· CNKI</a> — 民间传说叙事模式的学术框架，理解妈祖32个传说的类型学基础</li>
+<li><a href="https://book.douban.com/subject/2047095/" target="_blank" class="ext-link">《闽南语方言志》周長楫 · 豆瓣</a> — 闽南语词汇语法宝典，嵌入式方言写作的学术依据</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20 · 非遗影视案例库：五部作品的技法拆解 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link active">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷四 · 标杆作品
+  </div>
+  <div class="article-summary">**摘要**：从《长安十二时辰》的唐代日常还原到《天书奇谭》的民俗元素运用，五部代表作品分别提供了场景考古、神话新编、东方美学、留白叙事和民俗活化的方法论。每部作品提取可直接应用于妈祖短剧的创作技法。</div>
+  <article class="article">
+<h1 id="20-非遗影视案例库五部作品的技法拆解">20 · 非遗影视案例库：五部作品的技法拆解</h1>
+
+<blockquote>
+<p><strong>摘要</strong>：从《长安十二时辰》的唐代日常还原到《天书奇谭》的民俗元素运用，五部代表作品分别提供了场景考古、神话新编、东方美学、留白叙事和民俗活化的方法论。每部作品提取可直接应用于妈祖短剧的创作技法。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一长安十二时辰唐代日常的沉浸式还原">一、《长安十二时辰》——唐代日常的沉浸式还原</h2>
+
+<h3 id="基本信息">基本信息</h3>
+<li><strong>导演</strong>：曹盾</li>
+<li><strong>原著</strong>：马伯庸</li>
+<li><strong>类型</strong>：古装·悬疑·历史日常</li>
+<li><strong>核心对标维度</strong>：时代质感的建立方法</li>
+
+<h3 id="妈祖短剧最该学的三点">妈祖短剧最该学的三点</h3>
+
+<p><strong>学其一：用"过日子"建立时代感</strong></p>
+
+<p>《长安十二时辰》最成功的地方不是大场面战斗，而是对长安人"怎么过日子"的精细还原——水盆羊肉怎么做、街上怎么叫卖、官员怎么吃点心、百姓怎么取暖。</p>
+
+<p>观众信任一部古装剧，是因为相信"那个时代的人是这么活的"。</p>
+
+<p>→ 妈祖短剧应用：参见 <a href="17-场景考古.html" class="wiki-link">17-场景考古</a>。不只是"宋代服饰是对的"，而是让观众看到林默怎么洗衣服、渔妇怎么补网、孩子怎么在海边找贝壳。这些"过日子"的戏，比任何"历史解说"都能建立时代质感。</p>
+
+<p><strong>学其二：两个世界的平行建立</strong></p>
+
+<p>剧中长安的伟大之处在于同时呈现了"上层长安"（宫廷/官署）和"下层长安"（坊市/暗渠/不良人）。两个世界不互相解释，但相互映照。</p>
+
+<p>→ 妈祖短剧应用：同时建立"海上的世界"（船/风浪/商贾/海盗）和"岸上的世界"（渔村/家庭/庙宇/集市）。林默是唯一一个在两个世界之间自由穿行的人——这个设定本身就是戏剧。</p>
+
+<p><strong>学其三：用道具传递信息</strong></p>
+
+<p>剧中没有旁白告诉你"这是唐代的XX"。所有文化信息通过道具、环境、角色使用物品的方式自然传递。</p>
+
+<p>→ 妈祖短剧应用：</p>
+<li>不解释"福船"是什么——让林默在福船上干活，观众就懂了</li>
+<li>不解释"水罗盘"——让老渔民在暴风雨中颤抖着手端着它</li>
+<li>不解释"红砖厝"——让林默靠着红砖墙看日落</li>
+
+<h3 id="可迁移的技法清单">可迁移的技法清单</h3>
+
+<li><strong>时代质感 = 日常动作 × 正确细节</strong>（不只靠服化道）</li>
+<li><strong>每个场景至少有一个"功能性器物"</strong>（被人用的，不是被人看的）</li>
+<li><strong>底层视角与全局视角交替使用</strong></li>
+<li><strong>用食物作为时代/地域/情绪的多重信号</strong></li>
+
+<hr>
+
+<h2 id="二白蛇缘起神话新编的成功范式">二、《白蛇·缘起》——神话新编的成功范式</h2>
+
+<h3 id="基本信息">基本信息</h3>
+<li><strong>导演</strong>：黄家康、赵霁</li>
+<li><strong>类型</strong>：动画·神话新编·爱情</li>
+<li><strong>核心对标维度</strong>：如何给神话人物一个"人"的前传</li>
+
+<h3 id="为什么与妈祖高度相关">为什么与妈祖高度相关</h3>
+
+<p>《白蛇·缘起》做了一件妈祖短剧也需要做的事：<strong>给一个已经被神化的人物，写一段"她还是人时"的故事。</strong></p>
+
+<p>影片将白蛇传的叙事原点前移——不讲"白蛇报恩"，而讲许仙前世（阿宣）与小白如何相识。这个前移让"神"回到了"有情有惧的人"。</p>
+
+<h3 id="核心创作启示">核心创作启示</h3>
+
+<p><strong>启示一：前传逻辑——从"她后来成了XXX"到"她当时为什么那样"</strong></p>
+
+<p>白蛇传说中，白素贞千年后去报恩。但为什么是"他"？《缘起》给了答案：因为前世经历过。</p>
+
+<p>→ 妈祖短剧应用：妈祖传说中，她救助海难、医治疫病。但"为什么是她"？短剧的任务就是回答这个问题 ——不是"她天生就会"，而是"她一步一步选择了这条路"。参见 <a href="15-人物塑造.html" class="wiki-link">15-人物塑造</a>。</p>
+
+<p><strong>启示二：把神话事件改写为人际事件</strong></p>
+
+<p>《缘起》中"水漫金山"变成了两个人对抗世界的选择。神话事件被重新锚定在人物关系上。</p>
+
+<p>→ 妈祖短剧应用："化草救商"不只是"她用草变成木头救了船"，而是——船上的人是谁？她认识他们吗？如果那个船上有她认识的人，或者有曾经伤害过她的人，故事立刻不同了。</p>
+
+<p><strong>启示三：东方式的情感表达</strong></p>
+
+<p>《缘起》对"爱"的表达是东方式的——含蓄、物化、借景喻情。一把伞可以承载全部情感。</p>
+
+<p>→ 妈祖短剧应用：参见 <a href="18-对白写作.html" class="wiki-link">18-对白写作</a> 和 <a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a>。一盏灯、一碗粥、一件被海水浸透的外衣——用物件承载情感。</p>
+
+<hr>
+
+<h2 id="三大鱼海棠东方美学的视觉体系">三、《大鱼海棠》——东方美学的视觉体系</h2>
+
+<h3 id="基本信息">基本信息</h3>
+<li><strong>导演</strong>：梁旋、张春</li>
+<li><strong>类型</strong>：动画·奇幻·东方美学</li>
+<li><strong>核心对标维度</strong>：海洋文化的视觉表达、福建土楼的空间美学</li>
+
+<h3 id="与妈祖短剧的天然联系">与妈祖短剧的天然联系</h3>
+
+<p>《大鱼海棠》的视觉基因大量取材福建——土楼的环形结构、海洋与天空的意象、红色与青色的色彩体系。这些与妈祖文化的母体高度重合。</p>
+
+<h3 id="核心创作启示">核心创作启示</h3>
+
+<p><strong>启示一：海洋作为一种"世界观"而非只是"背景"</strong></p>
+
+<p>《大鱼海棠》中，海不是"背景"，海是另一个世界。角色与海的关系定义了他们的存在方式。</p>
+
+<p>→ 妈祖短剧应用：海不是林默故事的"场景"，海就是故事本身。她是海的女儿，她的选择都与海有关。把海当作一个"角色"来建立——它有脾气（风暴）、有温柔（平静）、有秘密（深处）。</p>
+
+<p><strong>启示二：福建建筑的空间诗意</strong></p>
+
+<p>《大鱼海棠》对土楼的运用达到了"建筑即叙事"的高度。环形结构暗示轮回和归属感。</p>
+
+<p>→ 妈祖短剧应用：参见 <a href="17-场景考古.html" class="wiki-link">17-场景考古</a>。红砖厝的天井、燕尾脊的天空剪影、蚵壳墙的纹理——这些建筑元素本身就可以成为镜头的叙事工具。</p>
+
+<p><strong>启示三：色彩的情感编码</strong></p>
+
+<p>《大鱼海棠》用红色表达生命力、用蓝色表达未知和深邃。色彩不只是美术，是情感语言。</p>
+
+<p>→ 妈祖短剧应用：</p>
+<li>林默的服装从浅蓝（少女）→ 深蓝（圣女）→ 赭红（母亲般的温暖）</li>
+<li>渔村用暖色调（木色、土色）</li>
+<li>海在不同情绪场景中使用不同的蓝色/灰色</li>
+<li>神龛/庙宇中保留红色（信仰的热度）</li>
+
+<hr>
+
+<h2 id="四刺客聂隐娘留白叙事的极致">四、《刺客聂隐娘》——留白叙事的极致</h2>
+
+<h3 id="基本信息">基本信息</h3>
+<li><strong>导演</strong>：侯孝贤</li>
+<li><strong>类型</strong>：古装·武侠·极简主义</li>
+<li><strong>核心对标维度</strong>：对白的最小化、沉默的叙事力量、环境先于情节</li>
+
+<h3 id="为什么一部武侠片适合对标妈祖">为什么一部武侠片适合对标妈祖</h3>
+
+<p>《聂隐娘》不是传统的武侠片。它对白极少、情节极其弱化、大量的固定长镜头、人物与环境的关系优先于人物与人物之间的关系。但恰恰是这些，让它成为"用沉默讲故事"的最高范本。</p>
+
+<h3 id="核心创作启示">核心创作启示</h3>
+
+<p><strong>启示一：人物的存在感来自"在场"而非"表达"</strong></p>
+
+<p>舒淇饰演的聂隐娘大部分时间沉默。但她的沉默不是空洞的——每一秒沉默都承载着心事、选择、犹豫。</p>
+
+<p>→ 妈祖短剧应用：林默不需要一直说话/行动来"证明"她存在。她坐在礁石上看海的背影，就是一场完整的戏。参见 <a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a> 中的"沉默地带"。</p>
+
+<p><strong>启示二：环境本身是叙事者</strong></p>
+
+<p>侯孝贤的镜头大量停留在自然——风吹树动、雾起山谷、水映天光。这些不是"空镜"，它们定义了人物的处境和心境。</p>
+
+<p>→ 妈祖短剧应用：海浪的节奏、风的方向、云的形态——用自然元素参与叙事。风暴来临前异常的平静、救人之后海面的安详——自然在"说话"。</p>
+
+<p><strong>启示三：选择在沉默中完成</strong></p>
+
+<p>《聂隐娘》最重要的决定——不杀——没有任何铺垫性对白，没有任何内心独白。观众从她的动作和环境的变化中理解一切。</p>
+
+<p>→ 妈祖短剧应用：林默人生中最重要的选择（第一次独驾小船出海、决定烧自家房子导航），都可以在沉默中完成。参见 <a href="14-叙事策略.html" class="wiki-link">14-叙事策略</a> 和 <a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a>。</p>
+
+<hr>
+
+<h2 id="五天书奇谭民俗元素的叙事活化">五、《天书奇谭》——民俗元素的叙事活化</h2>
+
+<h3 id="基本信息">基本信息</h3>
+<li><strong>导演</strong>：王树忱、钱运达</li>
+<li><strong>类型</strong>：动画·民间传说·奇幻</li>
+<li><strong>核心对标维度</strong>：如何把"民俗符号"变成"叙事角色"</li>
+
+<h3 id="核心创作启示">核心创作启示</h3>
+
+<p><strong>启示一：民俗不是装饰，民俗是角色</strong></p>
+
+<p>《天书奇谭》中的狐狸精、县太爷、小皇帝——都是中国传统民俗/戏曲中的典型形象，但他们被赋予了完整的个性和叙事功能。民俗元素不是贴上去的，是从故事里长出来的。</p>
+
+<p>→ 妈祖短剧应用：渔村里的阿婶不是"渔村文化背景板"，她是一个完整的人。参见 <a href="15-人物塑造.html" class="wiki-link">15-人物塑造</a> 中的配角塑造原则。</p>
+
+<p><strong>启示二：民间美学的视觉转化</strong></p>
+
+<p>影片大量借鉴了戏曲脸谱、年画、剪纸、皮影等民间艺术形式，但转化成了动画语言——不是复制，是转译。</p>
+
+<p>→ 妈祖短剧应用：泉州木偶戏、闽南剪纸、湄洲女服饰、妈祖髻——这些民间艺术形式可以被提炼为视觉语言（色彩、线条、象征），而不是被"展览"。</p>
+
+<p><strong>启示三：幽默作为文化传播的载体</strong></p>
+
+<p>《天书奇谭》是中国动画史上最幽默的作品之一。民俗题材不一定要沉重、庄严、教化。</p>
+
+<p>→ 妈祖短剧应用：短剧中适当加入生活幽默——渔村孩子的顽皮、老渔民之间的斗嘴、林默少年时的糗事。信仰题材更需要人味。参见 <a href="14-叙事策略.html" class="wiki-link">14-叙事策略</a> 中的"人味儿"原则。</p>
+
+<hr>
+
+<h2 id="五部作品的交叉启示矩阵">五部作品的交叉启示矩阵</h2>
+
+<table>
+<tr><th>作品</th><th>核心技法</th><th>妈祖短剧落地场景</th></tr>
+<tr><td>《长安十二时辰》</td><td>日常还原+双世界结构</td><td>[[17-场景考古]] 细节+海上/岸上叙事</td></tr>
+<tr><td>《白蛇·缘起》</td><td>神话人物"前传化"</td><td>[[15-人物塑造]] 林默的人性阶段</td></tr>
+<tr><td>《大鱼海棠》</td><td>海洋世界观+福建建筑美学</td><td>海的"角色化"+红砖厝场景</td></tr>
+<tr><td>《刺客聂隐娘》</td><td>沉默叙事+环境先于情节</td><td>[[16-情感锚点]] 沉默地带</td></tr>
+<tr><td>《天书奇谭》</td><td>民俗活化+民间幽默</td><td>渔村群像+生活化笑点</td></tr>
+</table>
+
+<hr>
+
+<h2 id="延伸阅读">延伸阅读</h2>
+
+<li><a href="17-场景考古.html" class="wiki-link">17-场景考古</a> — 从《长安十二时辰》学到的时代还原方法</li>
+<li><a href="14-叙事策略.html" class="wiki-link">14-叙事策略</a> — 与《聂隐娘》留白叙事的对应</li>
+<li><a href="15-人物塑造.html" class="wiki-link">15-人物塑造</a> — 《白蛇·缘起》的人物前传逻辑</li>
+<li><a href="19-对标作品分析.html" class="wiki-link">19-对标作品分析</a> — 更核心的三部对标作品</li>
+
+<hr>
+
+<p><em>参考来源：曹盾《长安十二时辰》美术访谈、黄家康《白蛇·缘起》创作谈、梁旋/张春《大鱼海棠》视觉设定集、侯孝贤《刺客聂隐娘》导演阐述、上海美术电影制片厂《天书奇谭》修复版访谈</em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="长安十二时辰">《长安十二时辰》</h3>
+<li><a href="https://movie.douban.com/subject/30394183/" target="_blank" class="ext-link">豆瓣</a> — 评分8.2，投资6亿，陕西历史博物馆+中国唐史学会做学术顾问</li>
+<li><a href="https://www.artofthetitle.com" target="_blank" class="ext-link">美术指导杨志家访谈· Art of the Title</a> — 唐代日常的沉浸式还原方法论："观众信任古装剧是因为相信那个时代的人是这么活的"</li>
+
+<h3 id="白蛇缘起">《白蛇·缘起》</h3>
+<li><a href="https://movie.douban.com/subject/30331149/" target="_blank" class="ext-link">豆瓣</a> — 评分7.9，全球票房$6500万+，追光动画代表作</li>
+<li><a href="https://www.imdb.com/title/tt9288776/" target="_blank" class="ext-link">IMDb</a> — IMDb 7.0，东方神话新编的国际市场验证</li>
+<li><a href="https://www.youtube.com/results?search_query=White+Snake+2019+director+interview" target="_blank" class="ext-link">黄家康导演创作谈· CGMeetup</a> — "把神话事件改写为人际事件"的前传逻辑</li>
+
+<h3 id="大鱼海棠">《大鱼海棠》</h3>
+<li><a href="https://movie.douban.com/subject/26256787/" target="_blank" class="ext-link">豆瓣</a> — 评分7.1，制作12年，福建土楼建筑美学+海洋世界观的视觉标杆</li>
+<li><a href="https://www.imdb.com/title/tt1920885/" target="_blank" class="ext-link">IMDb</a> — IMDb 7.0，Netflix全球发行，东方美学的海外传播案例</li>
+<li><a href="https://book.douban.com/subject/26837774/" target="_blank" class="ext-link">《大鱼海棠》设定集· 豆瓣</a> — 福建土楼空间设计、色彩编码（红=生命力/蓝=未知）、海洋世界观视觉参考</li>
+
+<h3 id="刺客聂隐娘">《刺客聂隐娘》</h3>
+<li><a href="https://movie.douban.com/subject/2303845/" target="_blank" class="ext-link">豆瓣</a> — 评分7.4，戛纳最佳导演奖，侯孝贤十年磨一剑</li>
+<li><a href="https://www.imdb.com/title/tt3508840/" target="_blank" class="ext-link">IMDb</a> — IMDb 6.4，国际影评人公认的"沉默叙事"极致范本</li>
+<li><a href="https://www.criterion.com/current/posts/3853-the-assassin-hidden-dragons" target="_blank" class="ext-link">侯孝贤大师课· Criterion</a> — 对白的最小化、沉默的叙事力量、环境先于情节的完整导演阐述</li>
+
+<h3 id="天书奇谭">《天书奇谭》</h3>
+<li><a href="https://movie.douban.com/subject/1427578/" target="_blank" class="ext-link">豆瓣</a> — 评分9.2，上海美术电影制片厂1983年出品，2021年4K修复重映</li>
+<li><a href="https://www.bilibili.com/video/BV1Zb4y1a7GR/" target="_blank" class="ext-link">4K修复版纪录片· 哔哩哔哩</a> — 戏曲脸谱、年画、剪纸、皮影等民间艺术形式的动画转化过程</li>
+<li><a href="https://kns.cnki.net" target="_blank" class="ext-link">中国动画学派· CNKI</a> — 搜"中国动画学派 民俗元素"，学术分析民间美学视觉转化的方法论</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

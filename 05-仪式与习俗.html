@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05 · 仪式与习俗 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link active">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷一 · 妈祖本身
+  </div>
+  <div class="article-summary">一句话摘要：妈祖信仰的仪式体系围绕"两祭一绕"展开——农历三月廿三诞辰祭、九月初九升天祭以及大甲妈祖绕境（9天8夜340公里）；辅以掷筊、进香、巡安等日常仪式实践，构成了一套从庙堂到乡野全覆盖的活态信仰行为系统。</div>
+  <article class="article">
+<h1 id="05-仪式与习俗">05 · 仪式与习俗</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖信仰的仪式体系围绕"两祭一绕"展开——农历三月廿三诞辰祭、九月初九升天祭以及大甲妈祖绕境（9天8夜340公里）；辅以掷筊、进香、巡安等日常仪式实践，构成了一套从庙堂到乡野全覆盖的活态信仰行为系统。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一核心节庆">一、核心节庆</h2>
+
+<h3 id="11-妈祖诞辰祭三月廿三">1.1 妈祖诞辰祭（三月廿三）</h3>
+
+<li><strong>时间</strong>：农历三月廿三日（公历通常在4-5月）</li>
+<li><strong>重要性</strong>：一年中最隆重的妈祖祭典</li>
+<li><strong>湄洲祖庙活动</strong>：</li>
+<li><strong>醮典（祭典）</strong>：遵循"三献礼"古制，设主祭、陪祭、与祭，依次行初献、亚献、终献之礼</li>
+<li><strong>进香谒祖</strong>：全球分灵庙组织信众团回湄洲祖庙进香，此时湄洲岛人山人海</li>
+<li><strong>巡安</strong>：妈祖神像被请出庙宇，巡游湄洲岛和莆田市区</li>
+<li><strong>酬神戏</strong>：莆仙戏、木偶戏在庙前广场连日演出</li>
+<li><strong>台湾各地活动</strong>：各庙宇各自举行祝寿大典，信众在家中设香案、供三牲五果</li>
+
+<h3 id="12-升天祭九月初九">1.2 升天祭（九月初九）</h3>
+
+<li><strong>时间</strong>：农历九月初九日（重阳节，公历通常在10月）</li>
+<li><strong>意义</strong>：纪念妈祖于雍熙四年（987年）此日"白日飞升"</li>
+<li><strong>湄洲祖庙活动</strong>：</li>
+<li><strong>海祭</strong>：在湄洲岛海滩举行的特色祭典，面向大海设香案</li>
+<li><strong>放水灯</strong>：夜幕降临时，信众将莲花形水灯放入海中，为海上亡魂祈福，同时象征妈祖的"光"照亮海上</li>
+<li><strong>区别于诞辰祭</strong>：升天祭的氛围更肃穆内敛，带有追思性质；诞辰祭热闹喜庆</li>
+
+<blockquote>
+<p>创作提示：九月初九也是重阳节（中国传统敬老节），"升天"与"敬老"的双重意涵可以在短剧中交叉呈现——例如一个年轻人陪长辈回乡参加升天祭的故事。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二大甲妈祖绕境进香">二、大甲妈祖绕境进香</h2>
+
+<h3 id="21-活动概况">2.1 活动概况</h3>
+
+<li><strong>主办庙宇</strong>：大甲镇澜宫（台湾台中）</li>
+<li><strong>时间</strong>：每年农历三月，通常在妈祖诞辰前后，具体起驾日由<strong>掷筊</strong>决定</li>
+<li><strong>行程</strong>：9天8夜，徒步约340公里，横跨台中、彰化、云林、嘉义四县市</li>
+<li><strong>目的地</strong>：历史上为北港朝天宫，1988年后改为新港奉天宫</li>
+<li><strong>参与规模</strong>：每年参与人次超过百万，被Discovery频道列为"世界三大宗教活动"之一（与麦加朝圣、梵蒂冈圣诞弥撒并列）</li>
+
+<h3 id="22-绕境流程">2.2 绕境流程</h3>
+
+<table>
+<tr><th>阶段</th><th>内容</th></tr>
+<tr><td>起驾</td><td>起驾前举行祈安大典、上轿大典，镇澜宫广场人潮涌动。起驾瞬间礼炮齐鸣、烟花绽放</td></tr>
+<tr><td>行进</td><td>妈祖銮轿由轿班抬行，沿途信众"钻轿脚"（匍匐在地让神轿从身上经过，被认为可获得庇佑）</td></tr>
+<tr><td>驻驾</td><td>途经各庙宇时短暂停留，接受当地信众朝拜</td></tr>
+<tr><td>祝寿大典</td><td>到达目的地后举行盛大的祝寿大典，数万人齐跪参拜</td></tr>
+<tr><td>回銮</td><td>原路返回大甲镇澜宫，途中举行"插香""添火"等仪式</td></tr>
+</table>
+
+<h3 id="23-信仰细节">2.3 信仰细节</h3>
+
+<li><strong>銮轿不落地</strong>：相传妈祖神轿在绕境途中不可落地，轿班需24小时轮换抬轿</li>
+<li><strong>报马仔</strong>：绕境队伍最前方的先导角色，穿古代差役服饰，负责为妈祖"开路"</li>
+<li><strong>三十六执事</strong>：仪仗队伍中的三十六种角色，各有职司</li>
+
+<blockquote>
+<p>创作提示：绕境是短剧的"天然史诗框架"。9天8夜、340公里、百万人——这条路上可以发生无数故事。一个角色跟随绕境，9天内重构了自己的人生，这种结构本身就很迷人。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="三日常仪式实践">三、日常仪式实践</h2>
+
+<h3 id="31-掷筊圣杯">3.1 掷筊（圣杯）</h3>
+
+<li><strong>工具</strong>：一对月牙形的木质筊杯（半月形，一面平一面凸）</li>
+<li><strong>用法</strong>：信众向妈祖请示某事，掷筊于地，观其正反：</li>
+<li><strong>圣杯（一平一凸）</strong>：妈祖同意/应允</li>
+<li><strong>笑杯（两平向上）</strong>：妈祖笑而不答，意为"问题不明确"或"时机未到"</li>
+<li><strong>阴杯（两凸向上）</strong>：妈祖不同意/此事不可行</li>
+<li><strong>文化地位</strong>：在闽台民间信仰中，掷筊被视为与神明"直接对话"的方式。重大事务（如起驾日期）必须通过掷筊获得妈祖"圣杯"确认方可执行。</li>
+
+<h3 id="32-进香">3.2 进香</h3>
+
+<li><strong>定义</strong>：信众前往妈祖庙朝拜，向妈祖焚香祈祷</li>
+<li><strong>谒祖进香</strong>：分灵庙返回湄洲祖庙进香。进香团通常数以千计，带着自己庙中的妈祖神像"回娘家"。</li>
+<li><strong>刈火（割火）</strong>：从祖庙香炉中取出香灰带回本庙，是分灵制度的核心仪式，详见 <a href="02-信仰体系.html" class="wiki-link">02-信仰体系</a>。</li>
+
+<h3 id="33-平安符与过火">3.3 平安符与过火</h3>
+
+<li><strong>平安符</strong>：妈祖庙出售/分发的符纸，信众随身佩戴或悬挂于车船，祈求平安</li>
+<li><strong>过火</strong>：部分庙宇在节庆期间举行"过火"仪式，信众赤足踏过燃烧的木炭，被认为可以祛除厄运</li>
+
+<hr>
+
+<h2 id="四禁忌与日常规范">四、禁忌与日常规范</h2>
+
+<table>
+<tr><th>禁忌</th><th>说明</th></tr>
+<tr><td>妈祖面前不食海产</td><td>部分渔民信众在妈祖诞辰日前后不捕鱼、不吃海鲜，以示对"海上保护神"的尊重</td></tr>
+<tr><td>女性经期不入庙</td><td>传统禁忌，当代已逐步松弛，但在部分乡村仍被遵守</td></tr>
+<tr><td>神轿不可跨越</td><td>妈祖神轿被视为神圣物，不可从上方跨越</td></tr>
+<tr><td>香不可吹熄</td><td>点燃的香火应用手轻扇或以香炉盖熄，不可用嘴吹</td></tr>
+<tr><td>神像不随意触摸</td><td>未经庙方允许，不可触碰妈祖金身</td></tr>
+</table>
+
+<hr>
+
+<h2 id="五当代仪式创新">五、当代仪式创新</h2>
+
+<li><strong>云进香</strong>：2020年后，部分庙宇推出线上"云进香"服务，信众可在线参与祭典</li>
+<li><strong>妈祖文化节</strong>：莆田、天津、台湾等地举办综合性的妈祖文化节，融合非遗展示、旅游观光和学术研讨</li>
+
+<hr>
+
+<h2 id="六游神的多维社会价值">六、游神的多维社会价值</h2>
+
+<blockquote>
+<p>宗族养老只是游神最表层的功能之一。绕境之所以能持续千年且在现代社会不减反增，是因为它在至少七个维度上回应了人类社会的深层需求。</p>
+</blockquote>
+
+<h3 id="61-跨宗族的社会整合">6.1 跨宗族的社会整合</h3>
+
+<p>传统中国社会以血缘宗族为基本单元，「外人」与「自己人」之间有清晰的边界。绕境打破了这条边界。</p>
+<p>大甲妈祖绕境九天八夜、横跨四县市、途经上百个村庄和街区。神轿过处，不管你姓林还是姓陈、本地人还是外来者——你都可以钻轿脚、接驾、设香案。这是一套<strong>超越血缘的公共空间</strong>，在前现代中国极度稀缺。</p>
+
+<h3 id="62-两岸民间的不可断之绳">6.2 两岸民间的「不可断之绳」</h3>
+
+<p>这是游神最独特的政治文化价值。1987年大甲镇澜宫组团赴湄洲谒祖进香，打破两岸38年隔绝——不是政府推动的，是妈祖推动的。</p>
+<p>「谒祖进香」的底层逻辑：分灵庙回祖庙 = 儿子回来看母亲。政治可以断航，但儿子回来看母亲无法禁。妈祖游神是两岸之间<strong>极少数不受政治气候影响的持续民间交流管道</strong>——不是一个外交事件，而是一个持续了三百年的家庭仪式。</p>
+
+<h3 id="63-分布式经济生态">6.3 分布式经济生态</h3>
+
+<p>大甲妈祖绕境九天直接经济产值保守估计在 <strong>30-50亿新台币</strong>（约7-11亿人民币）。妈祖庙不收门票。钱分散在：</p>
+
+<table>
+<tr><th>环节</th><th>受益者</th></tr>
+<tr><td>沿途饮食补给</td><td>沿线村民自发摆摊</td></tr>
+<tr><td>住宿交通</td><td>民宿、包车、高铁</td></tr>
+<tr><td>文创商品</td><td>平安符、妈祖Q版公仔、纪念币</td></tr>
+<tr><td>鞭炮金纸</td><td>传统行业整年旺季</td></tr>
+<tr><td>媒体转播</td><td>电视台/YouTube直播权</td></tr>
+<tr><td>品牌赞助</td><td>捷安特、台湾啤酒等</td></tr>
+</table>
+
+<p><strong>钱分散到千家万户，不集中到任何集团。</strong> 这是最健康的「文化赋能经济」模型。</p>
+
+<h3 id="64-公共心理健康基础设施">6.4 公共心理健康基础设施</h3>
+
+<p>这是最看不见但最重要的价值。台湾社会学研究显示，妈祖信众的抑郁率显著低于无信仰对照组。不是因为「神保佑了我」——是因为「我知道我属于一个比我自己大的东西」。</p>
+<p>当你跪在路边等神轿从头顶经过，前后左右都是跟你一样跪着的人——你突然就不孤独了。绕境为现代性带来的原子化孤独提供了一种集体疗愈。</p>
+
+<blockquote>
+<p>创作核弹：一个失业的屏东青年，深夜走到妈祖庙，什么都没求，只是站了一会儿。香炉里还有别人烧剩的半截香。</p>
+</blockquote>
+
+<h3 id="65-文化基因的活态传承">6.5 文化基因的活态传承</h3>
+
+<p>绕境不是博物馆里的非遗——它是<strong>活的</strong>。</p>
+
+<table>
+<tr><th>载体</th><th>传承方式</th></tr>
+<tr><td><strong>语言</strong></td><td>祝祷词、祭文、起马炮宣告——全程闽南语。跟一圈至少学会「妈祖婆保庇」</td></tr>
+<tr><td><strong>音乐</strong></td><td>南管、北管、开路鼓——不是表演，是仪式的一部分</td></tr>
+<tr><td><strong>身体记忆</strong></td><td>钻轿脚、扛神轿、徒步九天——文化不用「学」，身体替你记住</td></tr>
+<tr><td><strong>代际传递</strong></td><td>阿嬷牵着孙子的手跪在路边——不需要上课，陪阿嬷走一次就够了</td></tr>
+</table>
+
+<h3 id="66-女性赋权的隐秘通道">6.6 女性赋权的隐秘通道</h3>
+
+<p>妈祖信仰是中国传统文化中<strong>极少数以女性为核心的信仰体系</strong>。</p>
+<p>妈祖本人是女性。庙里核心执事常是女性（「妈祖婆」）。绕境队伍中女性占比极高。在一个传统上将女性排除在祭典核心之外的宗族社会里，妈祖信仰给了女性一个<strong>正统的、不受质疑的公共参与空间</strong>。</p>
+<p>「三月痟妈祖」——台湾俗语，指妈祖月大家狂热参与。疯的主力不是男性，是阿嬷们。那是一年里她们最自由、最有话语权的时间。</p>
+
+<h3 id="67-与现代性的共生进化">6.7 与现代性的共生进化</h3>
+
+<p>游神最颠覆认知之处：它一直在<strong>进化</strong>，不是「保存传统」。</p>
+
+<li><strong>白沙屯妈祖进香</strong>：GPS 定位神轿，APP 实时追踪，几十万人线上跟走</li>
+<li><strong>TikTok/抖音</strong>：#妈祖绕境 话题数十亿播放，年轻人拍 vlog、做 reaction</li>
+<li><strong>云进香</strong>：疫情期间庙里开直播，信众在屏幕前烧香跪拜</li>
+<li><strong>跨界融合</strong>：妈祖×电竞、妈祖×潮牌——不是「讨好年轻人」，是年轻人自己找来的</li>
+
+<p><strong>一个诞生于宋代的民间信仰，在短视频时代不减反增。</strong> 这说明它提供的不是「怀旧」——是当代生活里仍然稀缺的三样东西：<strong>归属感、仪式感、公共性</strong>。</p>
+
+<h3 id="68-对创作的启示">6.8 对创作的启示</h3>
+
+<p>绕境不是「文化背景板」——它可以是<strong>故事骨架</strong>。</p>
+
+<blockquote>
+<p>一个跟随妈祖绕境走了九天的中年女人。别人以为她虔诚。最后一天在神轿前跪下，说的不是「保庇」，是「妈祖婆，我走这九天是替阿爸走的。他去年走了，答应他要来还愿的。」</p>
+<p>绕境是人间路。妈祖的轿子只是让这些人有了一个走的理由。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/活动资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E7%94%B2%E5%AA%BD%E7%A5%96%E7%B9%9E%E5%A2%83%E9%80%B2%E9%A6%99" target="_blank" class="ext-link">大甲妈祖绕境进香 - 维基百科</a> — 完整绕境流程、历年路线变化、参与人数统计</li>
+<li><a href="https://en.wikipedia.org/wiki/Dajia_Mazu_Pilgrimage" target="_blank" class="ext-link">Dajia Mazu Pilgrimage - Wikipedia EN</a> — Discovery将其列为"世界三大宗教活动"的英文来源</li>
+<li><a href="https://www.ihchina.cn/project_details/12835/" target="_blank" class="ext-link">妈祖祭典（湄洲） - 中国非物质文化遗产网</a> — 国家级非遗祭典的官方流程介绍</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%99%BD%E6%B2%99%E5%B1%AF%E5%AA%BD%E7%A5%96%E9%80%B2%E9%A6%99" target="_blank" class="ext-link">白沙屯妈祖进香 - 维基百科</a> — 路线不固定、全凭神轿指引的特色进香</li>
+
+<p><strong>庙宇官网</strong></p>
+<li><a href="http://www.dajiamazu.org.tw/" target="_blank" class="ext-link">大甲镇澜宫 - 绕境专区</a> — 历年绕境日程、即时直播、参与人数统计</li>
+<li><a href="https://www.baishatun.org.tw/" target="_blank" class="ext-link">白沙屯拱天宫</a> — GPS神轿定位追踪（特色！创作参考价值极高）</li>
+
+<p><strong>纪录片资源</strong></p>
+<li>Discovery频道《台湾妈祖绕境》（2008年）— "世界三大宗教活动"说法的原始出处</li>
+<li>公视纪录片《妈祖迺台湾》（2013年，任贤齐导演）— 全程9天跟拍绕境，B站有资源</li>
+<li>央视纪录片《闽南妈祖》（2015年）— 含湄洲祖庙祭典完整流程</li>
+
+<p><strong>学术论文</strong></p>
+<li>林美容《妈祖绕境的仪式与象征》（《中研院民族学研究所集刊》第85期，1998年）— 绕境仪式的人类学解读</li>
+<li>张珣《遶境与地方社会：大甲妈祖进香的社群构成》（发表于《台湾宗教研究》，2005年）</li>
+
+<p><strong>数据出处</strong></p>
+<li>"绕境参与人次逾百万"数据据大甲镇澜宫历年官方统计及台媒报道</li>
+<li>"9天8夜340公里"数据据大甲镇澜宫绕境日程公告</li>
+<li>"世界三大宗教活动"据Discovery频道2008年纪录片的评语原文</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

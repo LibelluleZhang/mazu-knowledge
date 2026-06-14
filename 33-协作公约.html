@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>33 · 协作公约 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link active">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷七 · 基础设施
+  </div>
+  <div class="article-summary">知识库不是「读完就放下的说明书」，而是「25个人共同呼吸的创作大脑」。这份公约定义了怎么用它、怎么养它、怎么让它越滚越厚。</div>
+  <article class="article">
+<h1 id="33-协作公约">33 · 协作公约</h1>
+
+<blockquote>
+<p>知识库不是「读完就放下的说明书」，而是「25个人共同呼吸的创作大脑」。这份公约定义了怎么用它、怎么养它、怎么让它越滚越厚。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一知识库的角色定位">一、知识库的角色定位</h2>
+
+<p>这份知识库是<strong>活体</strong>，不是死文档。</p>
+
+<li><strong>对内</strong>：所有人统一的「创作语料库」和「决策参考系」。遇到分歧时，先查知识库里有没有相关讨论（见<a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a>）</li>
+<li><strong>对外</strong>：不公开。内部使用，保护创作先发优势</li>
+<li><strong>对AI</strong>：如果你的Hermes Agent / Claude / ChatGPT需要上下文，直接从知识库中引用</li>
+
+<hr>
+
+<h2 id="二使用规范">二、使用规范</h2>
+
+<h3 id="21-新成员onboarding">2.1 新成员onboarding</h3>
+<li><strong>入职第一天</strong>：通读本知识库全部33个文件（约2小时）</li>
+<li><strong>第一周</strong>：带着知识库去完成第一次AI镜头生成实践</li>
+<li><strong>第一月</strong>：至少对一篇文档提交一条补充/修正</li>
+
+<h3 id="22-日常工作引用">2.2 日常工作引用</h3>
+<p>团队讨论和交付物中使用 <code><a href="双链语法.html" class="wiki-link">双链语法</a></code>引用知识库文件：</p>
+<li>编剧讨论剧本 → 「这个场景参考<a href="29-意象库.html" class="wiki-link">29-意象库</a>第23条」</li>
+<li>AI组调参 → 「按<a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a>第三节海洋模板执行」</li>
+<li>后期调色 → 「套<a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a>中的妈祖色LUT」</li>
+
+<p><strong>原则</strong>：能引用的不重复说，能链接的不复述。</p>
+
+<h3 id="23-版本意识">2.3 版本意识</h3>
+<p>每个文件头部有最后更新日期（建议用Git追踪更佳）。引用时注意版本时效性——半年前的提示词模板可能已经过时。</p>
+
+<hr>
+
+<h2 id="三更新机制">三、更新机制</h2>
+
+<h3 id="31-谁可以更新">3.1 谁可以更新？</h3>
+<p><strong>所有人。</strong> 知识库不属于任何一个人。发现错误、有新发现、踩了坑——直接更新。</p>
+
+<h3 id="32-怎么更新">3.2 怎么更新？</h3>
+<pre><code>
+流程：发现问题 → 在对应md文件中补充 → 提交到共享仓库 → 
+      在团队群通知「更新了XX文档，主要变化是XXX」
+</code></pre>
+
+<li><strong>小修正</strong>（错别字、链接修正）：直接改</li>
+<li><strong>内容补充</strong>（新案例、新数据）：追加到对应章节末尾，标注 <code>[更新日期-姓名]</code></li>
+<li><strong>结构调整</strong>（拆分/合并章节）：先在群里讨论，2人以上同意后执行</li>
+<li><strong>争议内容</strong>：不删除原有观点，用「另一种看法」「更新于X年X月」标注并存</li>
+
+<h3 id="33-谁来维护">3.3 谁来维护？</h3>
+<p>指定<strong>1名知识库管理员</strong>（兼职，建议由编剧组或导演助理兼任）：</p>
+<li>每周检查各文件更新情况</li>
+<li>整理散落的讨论记录，归入对应文件</li>
+<li>每月做一次知识库「体检」：哪些过时了？哪些缺了？</li>
+
+<h3 id="34-定期review节奏">3.4 定期Review节奏</h3>
+<table>
+<tr><th>频率</th><th>内容</th><th>负责人</th></tr>
+<tr><td>每周</td><td>收集本周AI生成参数日志</td><td>AI组</td></tr>
+<tr><td>每两周</td><td>回顾[[30-问题与留白]]，补充新问题</td><td>导演+编剧</td></tr>
+<tr><td>每月</td><td>全库review，标记过时内容</td><td>管理员</td></tr>
+<tr><td>每季</td><td>知识库v2.0大版本更新</td><td>全员</td></tr>
+</table>
+
+<hr>
+
+<h2 id="四创作讨论规范">四、创作讨论规范</h2>
+
+<h3 id="41-讨论前">4.1 讨论前</h3>
+<li>确认你要讨论的问题是否已在知识库中有记录</li>
+<li>带上具体的案例/截图/数据，少说「我觉得」</li>
+
+<h3 id="42-讨论中">4.2 讨论中</h3>
+<li><strong>不说「不行」，说「怎么才行」</strong></li>
+<li>技术限制不直接否定创意——先记到<a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a>作为待解问题</li>
+<li>分歧时回到知识库的基本原则：「以人的故事承载信仰」</li>
+
+<h3 id="43-讨论后">4.3 讨论后</h3>
+<li>结论24小时内落到对应文档</li>
+<li>未解决的问题移到<a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a></li>
+<li>新的意象/故事种子/术语直接补充到对应文件</li>
+
+<hr>
+
+<h2 id="五贡献新发现">五、贡献新发现</h2>
+
+<h3 id="什么值得贡献">什么值得贡献？</h3>
+<li>AI生成的prompt和参数组合（好的和不好的都要记录）</li>
+<li>田野调查中发现的新故事/新细节</li>
+<li>看到的好片子、好镜头、好音乐</li>
+<li>踩过的坑：浪费了时间的方案、花了钱没效果的尝试</li>
+<li>读者/观众反馈：「我妈是信众，她说这一集拍得不对……」</li>
+
+<h3 id="贡献格式">贡献格式</h3>
+<pre><code>
+在对应文件末尾追加：
+---
+### [日期] [贡献者姓名] 
+[内容]
+</code></pre>
+
+<p>例如：在<a href="29-意象库.html" class="wiki-link">29-意象库</a>末尾添加你发现的新意象。</p>
+
+<hr>
+
+<h2 id="六知识库体质指标">六、知识库「体质」指标</h2>
+
+<p>每月检查：</p>
+<li>[ ] 每个故事种子（<a href="28-故事种子.html" class="wiki-link">28-故事种子</a>）至少有一个被拍出来了吗？</li>
+<li>[ ] 提示词日志（<a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a>第六节）这周更新了吗？</li>
+<li>[ ] 术语表（<a href="31-术语表.html" class="wiki-link">31-术语表</a>）有没有新发现的词需要加？</li>
+<li>[ ] <a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a>有没有新增问题？有没有旧问题被解答？</li>
+<li>[ ] 这周有没有一个「如果没查知识库就会犯的错」被避免了？</li>
+
+<p><strong>最差的评价</strong>：「这个知识库存在，但我们从来不看。」</p>
+<p><strong>最好的评价</strong>：「这个知识库，我们每集都在用，而且每集都在往里面加东西。」</p>
+
+<hr>
+
+<p><em>相关文档：【首发必读】全库索引 · <a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a> · <a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="协作工具">协作工具</h3>
+<li><a href="https://github.com" target="_blank" class="ext-link">GitHub· 版本控制与知识库管理</a> — 推荐用Git管理Markdown知识库，追踪每篇文档的修改历史和贡献者</li>
+<li><a href="https://obsidian.md" target="_blank" class="ext-link">Obsidian· 双链笔记</a> — Markdown双链语法<a href="文件链接.html" class="wiki-link">文件链接</a>的最佳编辑器，支持图谱视图可视化知识库结构</li>
+<li><a href="https://www.notion.so" target="_blank" class="ext-link">Notion· 团队Wiki</a> — 备选方案：如果团队更习惯GUI界面，Notion的Database+Wiki模板可替代纯MD文件</li>
+<li><a href="https://www.feishu.cn" target="_blank" class="ext-link">飞书文档· 协作编辑</a> — 国内团队协作首选，在线协同编辑+评论+版本历史，适合分布式团队</li>
+
+<h3 id="知识库方法论">知识库方法论</h3>
+<li><a href="https://www.writethedocs.org/guide/" target="_blank" class="ext-link">Write the Docs· Documentation Guide</a> — 开源社区文档最佳实践：知识库结构设计/更新机制/贡献规范</li>
+<li><a href="https://documentation.divio.com" target="_blank" class="ext-link">The Documentation System· Divio</a> — 四类文档模型（教程/指南/解释/参考），妈祖知识库的结构参照此模型</li>
+<li><a href="https://handbook.gitlab.com" target="_blank" class="ext-link">GitLab Handbook</a> — 全球最大开源公司手册，公开透明的知识库更新机制和协作规范参考</li>
+
+<h3 id="创作团队管理">创作团队管理</h3>
+<li><a href="https://www.pixar.com" target="_blank" class="ext-link">Pixar's Braintrust· 创作讨论规范</a> — 皮克斯创意评审机制："不说不行，说怎么才行"的讨论文化源头</li>
+<li><a href="https://basecamp.com/shapeup" target="_blank" class="ext-link">Basecamp· Shape Up方法论</a> — 6周冲刺周期+固定冷却期，适用于AI短剧的并行排期管理</li>
+<li><a href="https://book.douban.com/subject/25907271/" target="_blank" class="ext-link">《创造力》Ed Catmull· 豆瓣</a> — 皮克斯联合创始人："知识库不是死文档，是所有人共同呼吸的创作大脑"</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

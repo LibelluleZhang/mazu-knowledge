@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>00 · 总览 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link active">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 总览
+  </div>
+  <div class="article-summary">妈祖AI国风短剧 · 背景知识库</div>
+  <article class="article">
+<h1 id="00-总览">00 · 总览</h1>
+
+<blockquote>
+<p>妈祖AI国风短剧 · 背景知识库</p>
+<p>指导单位：妈祖文化协会 × 莆田文旅</p>
+<p>版本：v1.1 / 2026年6月 · <a href="34-会议纪要.html">最新会议记录 →</a></p>
+</blockquote>
+
+<hr>
+
+<h2 id="这是什么">这是什么</h2>
+
+<p>一份为「妈祖AI国风短剧」项目建立的共享知识底本。我们25个人，背景各异——导演、编剧、摄影、音乐人、AI工程师、文化研究——但我们需要在同一片土地上创作。</p>
+
+<p>这份知识库不是学术论文汇编，是<strong>创作者的武器库</strong>。它告诉你妈祖是谁、她活在什么样的世界里、哪些传说可以变成故事、怎么用AI拍出来、谁拍过类似的可以学。</p>
+
+<hr>
+
+<h2 id="怎么用">怎么用</h2>
+
+<h3 id="如果你是编剧">如果你是编剧</h3>
+<p>必读：<a href="04-传说故事.html" class="wiki-link">04-传说故事</a> → <a href="13-改编原则.html" class="wiki-link">13-改编原则</a> → <a href="14-叙事策略.html" class="wiki-link">14-叙事策略</a> → <a href="28-故事种子.html" class="wiki-link">28-故事种子</a></p>
+<p>进阶：<a href="15-人物塑造.html" class="wiki-link">15-人物塑造</a> <a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a> <a href="17-场景考古.html" class="wiki-link">17-场景考古</a> <a href="18-对白写作.html" class="wiki-link">18-对白写作</a></p>
+
+<h3 id="如果你是导演摄影">如果你是导演/摄影</h3>
+<p>必读：<a href="09-视觉符号体系.html" class="wiki-link">09-视觉符号体系</a> → <a href="19-对标作品分析.html" class="wiki-link">19-对标作品分析</a> → <a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a></p>
+<p>进阶：<a href="10-音乐与声音.html" class="wiki-link">10-音乐与声音</a> <a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a> <a href="25-角色一致性.html" class="wiki-link">25-角色一致性</a></p>
+
+<h3 id="如果你是ai生成后期">如果你是AI生成/后期</h3>
+<p>必读：<a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a> → <a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a> → <a href="25-角色一致性.html" class="wiki-link">25-角色一致性</a> → <a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a></p>
+<p>进阶：<a href="26-声音管线.html" class="wiki-link">26-声音管线</a> <a href="29-意象库.html" class="wiki-link">29-意象库</a></p>
+
+<h3 id="如果你是文化顾问研究">如果你是文化顾问/研究</h3>
+<p>必读：<a href="01-历史起源.html" class="wiki-link">01-历史起源</a> → <a href="02-信仰体系.html" class="wiki-link">02-信仰体系</a> → <a href="05-仪式与习俗.html" class="wiki-link">05-仪式与习俗</a></p>
+<p>进阶：<a href="06-人物谱系.html" class="wiki-link">06-人物谱系</a> <a href="08-方言与语言.html" class="wiki-link">08-方言与语言</a> <a href="11-全球传播.html" class="wiki-link">11-全球传播</a> <a href="12-两岸意义.html" class="wiki-link">12-两岸意义</a></p>
+
+<h3 id="如果你是统筹制片">如果你是统筹/制片</h3>
+<p>必读：<a href="33-协作公约.html" class="wiki-link">33-协作公约</a> → <a href="32-参考资源.html" class="wiki-link">32-参考资源</a> → <a href="31-术语表.html" class="wiki-link">31-术语表</a></p>
+<p>适合快速浏览全貌，了解每个板块的范围。</p>
+
+<hr>
+
+<h2 id="结构与导航">结构与导航</h2>
+
+<h3 id="卷一-妈祖本身01-06">卷一 · 妈祖本身（01-06）</h3>
+<p>妈祖是谁——从人到神的历史、信仰、传说、仪式、相关人物。</p>
+<p>→ <a href="01-历史起源.html" class="wiki-link">01-历史起源</a> <a href="02-信仰体系.html" class="wiki-link">02-信仰体系</a> <a href="03-非遗地位.html" class="wiki-link">03-非遗地位</a> <a href="04-传说故事.html" class="wiki-link">04-传说故事</a> <a href="05-仪式与习俗.html" class="wiki-link">05-仪式与习俗</a> <a href="06-人物谱系.html" class="wiki-link">06-人物谱系</a></p>
+
+<h3 id="卷二-文化土壤07-12">卷二 · 文化土壤（07-12）</h3>
+<p>妈祖生活的世界——闽南地理、方言、视觉符号、音乐、全球传播、两岸意义。</p>
+<p>→ <a href="07-闽南文化背景.html" class="wiki-link">07-闽南文化背景</a> <a href="08-方言与语言.html" class="wiki-link">08-方言与语言</a> <a href="09-视觉符号体系.html" class="wiki-link">09-视觉符号体系</a> <a href="10-音乐与声音.html" class="wiki-link">10-音乐与声音</a> <a href="11-全球传播.html" class="wiki-link">11-全球传播</a> <a href="12-两岸意义.html" class="wiki-link">12-两岸意义</a></p>
+
+<h3 id="卷三-创作方法论13-18">卷三 · 创作方法论（13-18）</h3>
+<p>怎么把妈祖变成故事——改编原则、叙事策略、人物塑造、情感结构、场景还原、对白写作。</p>
+<p>→ <a href="13-改编原则.html" class="wiki-link">13-改编原则</a> <a href="14-叙事策略.html" class="wiki-link">14-叙事策略</a> <a href="15-人物塑造.html" class="wiki-link">15-人物塑造</a> <a href="16-情感锚点.html" class="wiki-link">16-情感锚点</a> <a href="17-场景考古.html" class="wiki-link">17-场景考古</a> <a href="18-对白写作.html" class="wiki-link">18-对白写作</a></p>
+
+<h3 id="卷四-标杆作品拆解19-22">卷四 · 标杆作品拆解（19-22）</h3>
+<p>向最好的学——对标作品逐帧分析、非遗影视案例、海外参考、失败案例避坑。</p>
+<p>→ <a href="19-对标作品分析.html" class="wiki-link">19-对标作品分析</a> <a href="20-非遗影视案例库.html" class="wiki-link">20-非遗影视案例库</a> <a href="21-海外参考.html" class="wiki-link">21-海外参考</a> <a href="22-失败案例.html" class="wiki-link">22-失败案例</a></p>
+
+<h3 id="卷五-ai生产管线23-27">卷五 · AI生产管线（23-27）</h3>
+<p>怎么用AI拍出来——完整工作流、提示词工程、角色一致性、声音管线、后期标准。</p>
+<p>→ <a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a> <a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a> <a href="25-角色一致性.html" class="wiki-link">25-角色一致性</a> <a href="26-声音管线.html" class="wiki-link">26-声音管线</a> <a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a></p>
+
+<h3 id="卷六-创作入口28-30">卷六 · 创作入口（28-30）</h3>
+<p>直接可用的创作素材——12个故事种子、50个视觉意象、未解问题与留白。</p>
+<p>→ <a href="28-故事种子.html" class="wiki-link">28-故事种子</a> <a href="29-意象库.html" class="wiki-link">29-意象库</a> <a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a></p>
+
+<h3 id="卷七-基础设施31-33">卷七 · 基础设施（31-33）</h3>
+<p>团队协作必需品——术语表、参考资源、协作公约。</p>
+<p>→ <a href="31-术语表.html" class="wiki-link">31-术语表</a> <a href="32-参考资源.html" class="wiki-link">32-参考资源</a> <a href="33-协作公约.html" class="wiki-link">33-协作公约</a></p>
+
+<h3 id="卷八-会议记录34">卷八 · 会议记录（34）</h3>
+<p>共创团队的实时对话——6/11三场早期讨论、6/14十二人深度共创会。</p>
+<p>→ <a href="34-会议纪要.html" class="wiki-link">34-会议纪要</a> · <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" target="_blank">6/11 会议全记录 ↗</a> · <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" target="_blank">6/14 会议全记录 ↗</a></p>
+
+<hr>
+
+<h2 id="使用工具">使用工具</h2>
+
+<p>这些文件是纯 Markdown，用任何编辑器都能打开。推荐：</p>
+
+<li><strong>Obsidian</strong>（免费）：打开 <code>mazu-knowledge</code> 文件夹作为 Vault，可以看到双向链接图谱</li>
+<li><strong>VS Code</strong>：预览 Markdown，支持 <code>Ctrl+Click</code> 跳转链接</li>
+<li><strong>Typora</strong>：所见即所得 Markdown 编辑器</li>
+
+<hr>
+
+<h2 id="更新机制">更新机制</h2>
+
+<p>这份知识库是活的。发现新资料、新想法、或者发现哪篇写错了——</p>
+
+<p>见 <a href="33-协作公约.html" class="wiki-link">33-协作公约</a> 中的更新流程。</p>
+
+<hr>
+
+<h2 id="最后">最后</h2>
+
+<blockquote>
+<p>人需要被接住。</p>
+</blockquote>
+<p>></p>
+<blockquote>
+<p>我们在做的这件事——用当代的方式讲传统的故事，有品质、有温度、有人愿意看。</p>
+</blockquote>
+<p>></p>
+<blockquote>
+<p>这个知识库是第一步。后面的事，我们一起写。</p>
+</blockquote>
+
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.1 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30 · 问题与留白 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link active">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷六 · 创作入口
+  </div>
+  <div class="article-summary">知识库不是「标准答案集」，而是「探索的起点」。以下是我们也不知道的、还在争论的、或者永远无法确定的。承认不知道，本身就是一种学术诚实——也是创作灵感的富矿。</div>
+  <article class="article">
+<h1 id="30-问题与留白">30 · 问题与留白</h1>
+
+<blockquote>
+<p>知识库不是「标准答案集」，而是「探索的起点」。以下是我们也不知道的、还在争论的、或者永远无法确定的。承认不知道，本身就是一种学术诚实——也是创作灵感的富矿。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一历史争议与未解之谜">一、历史争议与未解之谜</h2>
+
+<h3 id="1-林默是否真实存在">1. 林默是否真实存在？</h3>
+<li><strong>已知</strong>：宋代文献（如《圣墩祖庙重建顺济庙记》）记载了「湄洲林氏女」的事迹。但最早的记载距其「在世」已逾百年。</li>
+<li><strong>未知</strong>：历史上是否确实有一位名叫林默的渔家女子？还是多位灵验的巫女事迹融合而成的一位神祇？</li>
+<li><strong>创作启发</strong>：一个真实的人被神化的过程，本身就是极具张力的叙事素材。</li>
+
+<h3 id="2-妈祖信仰为何能出海">2. 妈祖信仰为何能「出海」？</h3>
+<li><strong>现象</strong>：从闽南一隅的神祇扩展为全球上万座分灵庙。这个传播力在中国的民间信仰中几乎是孤例。</li>
+<li><strong>假说</strong>：海洋文化天然需要保护神？闽南移民的「连带信仰」习惯？宋代官方敕封的推波助澜？</li>
+<li><strong>我们缺</strong>：系统的传播学/人类学解释。</li>
+
+<h3 id="3-显灵事件的真实与建构">3. 「显灵」事件的真实与建构</h3>
+<li><strong>郑和七下西洋</strong>据传得妈祖神助，明代《天妃显圣录》记载了大量灵验故事。</li>
+<li><strong>问题</strong>：哪些是事后附会？哪些是当时参与者的真实体验？这种「建构」本身又意味着什么？</li>
+<li><strong>创作方向</strong>：不去判断真假，而是呈现「人们相信什么」以及「这种相信如何改变他们的行为」。</li>
+
+<h3 id="4-妈祖与地方政治的千年纠缠">4. 妈祖与地方政治的千年纠缠</h3>
+<li>从宋到清，历代帝王对妈祖的敕封（从「夫人」到「天妃」到「天后」），背后都有政治考量：安抚海疆、收编民间信仰、对外宣示海权。</li>
+<li><strong>我们不确定</strong>：每次敕封在地方上引起了怎样的反应？渔民真的在意「天妃」还是「天后」吗？</li>
+<li><strong>创作可能性</strong>：一个发生在敕封诏书送达当日的故事——庙里的人和朝廷的人想的是一回事吗？</li>
+
+<h3 id="5-两岸妈祖信仰的分与合">5. 两岸妈祖信仰的分与合</h3>
+<li>1949年后两岸妈祖信仰各自发展，1987年开放探亲后「宗教直航」成为两岸交流的先声。</li>
+<li><strong>敏感但真实</strong>：两岸妈祖庙之间的关系远比「一家亲」的叙事复杂。有竞争，有归属争议，有政治力量的介入。</li>
+<li><strong>我们建议</strong>：不回避，不站队。以具体的人和事为载体，呈现复杂性本身。</li>
+
+<hr>
+
+<h2 id="二创作过程中的开放问题">二、创作过程中的开放问题</h2>
+
+<h3 id="6-ai神性表达的边界">6. AI「神性」表达的边界</h3>
+<li>AI可以生成宏伟的天象、温柔的光晕、庄严的场景。但它能表达「慈悲」吗？观众会在AI生成的妈祖面容中感受到神的临在吗？</li>
+<li><strong>我们的立场</strong>：不知道。这也是这个项目最核心的实验——<strong>AI与神性的碰撞</strong>。</li>
+<li><strong>团队探索方向</strong>：不是「让AI画一个完美的神」，而是「让观众感受到某种超越画面的东西」。具体怎么做？靠试。</li>
+
+<h3 id="7-信仰题材的分寸感">7. 信仰题材的「分寸感」</h3>
+<li>妈祖是活着的信仰，全球上亿信众。我们不能拍成猎奇的「民俗奇观」，也不能拍成布道式的「宗教宣传」。</li>
+<li><strong>问题</strong>：叙事语调怎么把握？</li>
+<li><strong>参考坐标</strong>：是枝裕和的「日常中的神圣」、侯孝贤的「远观」、宫崎骏的「万物有灵」。</li>
+<li><strong>具体原则</strong>：</li>
+<li>不编造神迹（除非有文献依据或民间传说支撑）</li>
+<li>不嘲讽，不煽情</li>
+<li>以人的故事承载信仰，而非以信仰绑架故事</li>
+
+<h3 id="8-闽南语的文化重量">8. 闽南语的文化重量</h3>
+<li>闽南语承载着妈祖文化的「在地感」。但全闽南语可能劝退非闽南语区观众。</li>
+<li><strong>我们在犹豫</strong>：全闽南语？中闽双语？普通话为主+闽南语关键词/仪式用语？</li>
+<li><strong>建议</strong>：前3集各试一种方案，看数据反馈。</li>
+
+<h3 id="9-竖屏叙事语法">9. 竖屏叙事语法</h3>
+<li>妈祖文化的很多意象（宏大庙宇、辽阔海面）天然适合横屏。</li>
+<li>竖屏如何呈现「壮阔」？如何设计「小而精」的构图？</li>
+<li><strong>方向</strong>：不是把横屏画面裁成竖屏，而是重新设计竖屏原生的视觉语言。如：纵向的烟上升、从天而降的光、从下而上的仰视构图。</li>
+
+<hr>
+
+<h2 id="三鼓励团队探索的方向">三、鼓励团队探索的方向</h2>
+
+<h3 id="10-田野而非案头">10. 「田野」而非「案头」</h3>
+<p>鼓励团队去实地——湄洲岛、泉州天后宫、鹿港天后宫。不带剧本去，只带眼睛和耳朵。最好的故事不在资料里，在码头上、在香炉边、在退潮后的沙滩上。</p>
+
+<h3 id="11-非妈祖文化圈的视角">11. 非妈祖文化圈的视角</h3>
+<p>找几个完全不了解妈祖的团队成员（或外部朋友），让他们看粗剪。他们哪里困惑？哪里感动？哪里觉得「这跟我有什么关系？」——这些反馈比内部意见更珍贵。</p>
+
+<h3 id="12-失败的审美价值">12. 「失败」的审美价值</h3>
+<p>AI生成会有大量「废片」——人物扭曲的、构图奇怪的、色调诡异的。不要全部丢掉。有些「错误」可能是你没想过的视觉语言。</p>
+
+<hr>
+
+<h2 id="四本文档的更新承诺">四、本文档的更新承诺</h2>
+
+<p>每两周回顾一次，增补团队在实践中发现的新问题。好的问题比好的答案更值钱。</p>
+
+<hr>
+
+<p><em>相关文档：<a href="28-故事种子.html" class="wiki-link">28-故事种子</a> · <a href="33-协作公约.html" class="wiki-link">33-协作公约</a> · <a href="32-参考资源.html" class="wiki-link">32-参考资源</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="妈祖历史争议">妈祖历史争议</h3>
+<li><a href="https://ctext.org" target="_blank" class="ext-link">《圣墩祖庙重建顺济庙记》· CTEXT</a> — 宋代最早记载"湄洲林氏女"的文献，距其"在世"已逾百年，历史真实性的争论起点</li>
+<li><a href="https://kns.cnki.net/kns8/defaultresult/index?kwd=妈祖+起源+演变+博士" target="_blank" class="ext-link">妈祖信仰的起源与演变· CNKI博士论文</a> — 学术讨论：真实人物 vs 多巫女融合的神祇</li>
+<li><a href="https://kns.cnki.net/kns8/defaultresult/index?kwd=妈祖+传播学+林国平" target="_blank" class="ext-link">林国平《妈祖信仰的传播学研究》· 知网</a> — 妈祖信仰从闽南一隅→全球上万座分灵庙的传播机制学术分析</li>
+
+<h3 id="两岸妈祖">两岸妈祖</h3>
+<li><a href="https://kns.cnki.net/kns8/defaultresult/index?kwd=两岸+妈祖+交流" target="_blank" class="ext-link">两岸妈祖信仰交流史· 知网</a> — 1949年后的分合/1987年宗教直航/政治与信仰的复杂关系</li>
+<li><a href="https://www.lukang.org.tw" target="_blank" class="ext-link">鹿港天后宫· 两岸交流专题</a> — 分灵庙回祖庙谒祖的第一手资料：仪式/情感/争议</li>
+
+<h3 id="ai与神性">AI与神性</h3>
+<li><a href="https://kns.cnki.net" target="_blank" class="ext-link">AI生成宗教艺术的可能性与边界· 知网</a> — 学术讨论：AI能否表达"慈悲""临在"等宗教性情感</li>
+<li><a href="https://link.springer.com" target="_blank" class="ext-link">The Ethics of AI-generated Religious Imagery· Springer</a> — 国际学术视角：AI生成宗教形象的文化/伦理边界</li>
+
+<h3 id="叙事分寸参考">叙事分寸参考</h3>
+<li><a href="https://www.criterion.com/current/posts/8236-the-passion-of-the-material" target="_blank" class="ext-link">是枝裕和· "日常中的神圣"方法论· Criterion</a> — "信仰不是被展览的，是在日常中自然流露的"</li>
+<li><a href="https://www.criterion.com/current/posts/3853-the-assassin-hidden-dragons" target="_blank" class="ext-link">侯孝贤· "远观"叙事哲学· Criterion</a> — 不审判/不煽情/不解释，让观众在沉默中感受</li>
+<li><a href="https://www.ghibli.jp" target="_blank" class="ext-link">宫崎骏· "万物有灵"· Studio Ghibli</a> — 自然与神圣的一体化世界观，与妈祖"海神"叙事的审美共鸣</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

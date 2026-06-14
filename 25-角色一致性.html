@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>25 · 角色一致性 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link active">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷五 · AI管线
+  </div>
+  <div class="article-summary">AI短剧最大的技术痛点：同一个妈祖/渔民/信众，如何在不同镜头、不同集数中保持面貌一致。这不是「能不能生成」的问题，而是「能不能重复生成」的问题。</div>
+  <article class="article">
+<h1 id="25-角色一致性">25 · 角色一致性</h1>
+
+<blockquote>
+<p>AI短剧最大的技术痛点：同一个妈祖/渔民/信众，如何在不同镜头、不同集数中保持面貌一致。这不是「能不能生成」的问题，而是「能不能重复生成」的问题。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一问题本质">一、问题本质</h2>
+
+<p>AI视频生成的核心挑战：每次推理都是独立采样。没有原生「角色记忆」。同一句prompt跑两次，出来的是两个不同的人。</p>
+
+<p><strong>必须建立外挂角色一致性体系。</strong></p>
+
+<hr>
+
+<h2 id="二五层解决方案由易到难">二、五层解决方案（由易到难）</h2>
+
+<h3 id="第1层seed锁定入门成本最低">第1层：Seed锁定（入门，成本最低）</h3>
+<pre><code>
+策略：固定随机种子(seed) + 固定prompt模板
+适用范围：同一场景内连续镜头
+局限：换场景/换角度后失效
+</code></pre>
+
+<p><strong>操作</strong>：在Seedance中，同一场戏的镜头使用相同seed值（如seed=42）。保证prompt结构、光线描述、风格标签完全一致。</p>
+
+<p><strong>实测效果</strong>：同场景相似度约60-70%，仅适用于背景人物或远景。</p>
+
+<hr>
+
+<h3 id="第2层参考图库-ip-adapter推荐主力方案">第2层：参考图库 + IP-Adapter（推荐主力方案）</h3>
+
+<p><strong>建设参考图库</strong>（立项第一周完成）：</p>
+
+<p>为每个主要角色建立参考图文件夹：</p>
+<pre><code>
+角色参考库/
+├── 妈祖/
+│   ├── 正面_中景.png       # 标准照
+│   ├── 侧面_45度.png       # 多角度
+│   ├── 背面_全身.png
+│   ├── 表情_慈悲.png
+│   ├── 表情_威严.png
+│   └── 服饰_凤冠霞帔.png   # 服饰细节
+├── 老渔民/
+│   ├── ... 
+└── 青年信众/
+    └── ...
+</code></pre>
+
+<p><strong>参考图生成策略</strong>：</p>
+<li>先用Midjourney/Stable Diffusion生成一套「角色标准照」（选最优方案）</li>
+<li>再基于标准照，用AI换角度工具生成多角度版本</li>
+<li>所有版本经人工筛选后入库</li>
+
+<p><strong>使用方式</strong>（ComfyUI）：</p>
+<li>IP-Adapter节点，weight=0.7-0.85</li>
+<li>配合ControlNet OpenPose锁定姿态</li>
+<li>每次生成时附角色参考图</li>
+
+<p><strong>实测效果</strong>：同角色跨镜头相似度可达80-85%。</p>
+
+<hr>
+
+<h3 id="第3层角色lora训练进阶投入较大">第3层：角色LoRA训练（进阶，投入较大）</h3>
+
+<p><strong>适用场景</strong>：核心角色（妈祖、主角）高频出场</p>
+
+<p><strong>流程</strong>：</p>
+<li>从参考图库挑选20-30张高质量角色图</li>
+<li>使用Kohya SS / FluxGym 训练LoRA</li>
+<li>训练参数：rank=16, alpha=8, 约2000-3000 steps</li>
+<li>在ComfyUI中加载LoRA，weight=0.6-0.8</li>
+
+<p><strong>投入产出</strong>：训练一个LoRA约需2-4小时（A100），但一旦训练完成，所有镜头可直接调用。25集以上的项目建议投入。</p>
+
+<p><strong>注意</strong>：LoRA不能解决所有问题——换光线/换角度仍可能漂移，需要配合参考图使用。</p>
+
+<hr>
+
+<h3 id="第4层角色换脸后处理兜底方案">第4层：角色换脸后处理（兜底方案）</h3>
+
+<li><strong>工具</strong>：ReActor / FaceFusion / InsightFace</li>
+<li><strong>场景</strong>：AI生成的视频中角色脸崩了，但肢体和场景可用</li>
+<li><strong>操作</strong>：提取视频帧 → 替换面部 → 重新合成</li>
+<li><strong>注意</strong>：仅适用于少量镜头，批量换脸质量会劣化</li>
+
+<hr>
+
+<h3 id="第5层后期统一调色-遮罩视觉终裁">第5层：后期统一调色 + 遮罩（视觉终裁）</h3>
+
+<li>同一角色画面统一套LUT</li>
+<li>肤色统一校色</li>
+<li>必要时AI补帧间过渡</li>
+
+<p>见<a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a>。</p>
+
+<hr>
+
+<h2 id="三角色一致性检查清单">三、角色一致性检查清单</h2>
+
+<p>每个角色出片前：</p>
+<li>[ ] 参考图是否更新到最新版本？</li>
+<li>[ ] 同场景镜头seed是否锁定？</li>
+<li>[ ] LoRA weight是否在推荐范围内？</li>
+<li>[ ] 后期调色是否统一？</li>
+<li>[ ] 导演是否逐镜头确认过角色面貌？</li>
+
+<hr>
+
+<h2 id="四实战建议">四、实战建议</h2>
+
+<li><strong>降低观众预期</strong>：在剧本阶段就避免过多面部特写。用氛围、背影、远景叙事。</li>
+<li><strong>角色符号化</strong>：给每个角色固定「视觉锚点」——某条围巾、某个发簪、某件蓑衣。即使面部有偏差，观众靠道具也能辨认。</li>
+<li><strong>同场景集中拍摄</strong>：同一场景的镜头在一次session中全部跑完，减少模型随机性。</li>
+
+<hr>
+
+<p><em>相关文档：<a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a> · <a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a> · <a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="lora训练">LoRA训练</h3>
+<li><a href="https://github.com/kohya-ss/sd-scripts" target="_blank" class="ext-link">Kohya SS SD Scripts</a> — LoRA训练主力工具，推荐参数：rank=16, alpha=8, ~2000-3000 steps, A100约2-4小时</li>
+<li><a href="https://github.com/cocktailpeanut/fluxgym" target="_blank" class="ext-link">FluxGym</a> — 面向Flux模型的LoRA训练器，GUI界面更友好入门门槛更低</li>
+<li><a href="https://civitai.com/articles/2378" target="_blank" class="ext-link">CivitAI LoRA教程</a> — 社区精选：角色LoRA训练全流程（从20-30张图选取到训练参数调优）</li>
+
+<h3 id="参考图驱动">参考图驱动</h3>
+<li><a href="https://github.com/tencent-ailab/IP-Adapter" target="_blank" class="ext-link">IP-Adapter GitHub</a> — 参考图驱动角色一致性，推荐weight=0.7-0.85，配合ControlNet OpenPose锁定姿态</li>
+<li><a href="https://huggingface.co/lllyasviel/ControlNet-v1-1" target="_blank" class="ext-link">ControlNet OpenPose</a> — 骨架姿态控制，保证角色动作一致性，配合IP-Adapter实现跨镜头角色稳定</li>
+
+<h3 id="换脸兜底">换脸兜底</h3>
+<li><a href="https://github.com/Gourieff/sd-webui-reactor" target="_blank" class="ext-link">ReActor</a> — Stable Diffusion WebUI插件，一键换脸，适合少量AI崩坏镜头的兜底修复</li>
+<li><a href="https://github.com/facefusion/facefusion" target="_blank" class="ext-link">FaceFusion</a> — 开源换脸工具，支持视频帧级面部替换+重新合成</li>
+<li><a href="https://github.com/deepinsight/insightface" target="_blank" class="ext-link">InsightFace</a> — 学术级人脸识别/替换框架，精度高但需要技术能力</li>
+
+<h3 id="midjourney角色图">Midjourney角色图</h3>
+<li><a href="https://www.midjourney.com" target="_blank" class="ext-link">Midjourney官网</a> — 角色标准照生成首选（AI组替代方案：Stable Diffusion + LoRA）</li>
+<li><a href="https://docs.midjourney.com/docs/character-reference" target="_blank" class="ext-link">Midjourney角色一致性技巧</a> — 官方角色参考功能：上传参考图+--cref参数锁定角色面貌</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

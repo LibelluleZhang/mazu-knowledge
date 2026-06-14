@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>26 · 声音管线 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link active">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷五 · AI管线
+  </div>
+  <div class="article-summary">没有声音的短剧是没有灵魂的。妈祖故事的声音世界：闽南语的潮汐、南音的幽咽、海风的叹息。AI生成+人工精修。</div>
+  <article class="article">
+<h1 id="26-声音管线">26 · 声音管线</h1>
+
+<blockquote>
+<p>没有声音的短剧是没有灵魂的。妈祖故事的声音世界：闽南语的潮汐、南音的幽咽、海风的叹息。AI生成+人工精修。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一配音方案闽南语tts">一、配音方案：闽南语TTS</h2>
+
+<h3 id="主方案chattts-cosyvoice-闽南语微调">主方案：ChatTTS / CosyVoice + 闽南语微调</h3>
+<li><strong>基座模型</strong>：CosyVoice 2.0（阿里，支持few-shot音色克隆）</li>
+<li><strong>微调策略</strong>：收集3-5分钟闽南语母语者录音作为参考音色</li>
+<li><strong>目标</strong>：至少覆盖妈祖（女声·温厚慈悲）、老渔民（男声·沧桑）、年轻信众（男/女）</li>
+
+<h3 id="备选方案人工配音-ai增强">备选方案：人工配音 + AI增强</h3>
+<li>如果TTS闽南语效果不达预期，采用人工录音</li>
+<li>用AI做降噪、去齿音、EQ均衡</li>
+<li>工具：Adobe Podcast Enhance / Resemble AI</li>
+
+<h3 id="口型同步lip-sync">口型同步（Lip Sync）</h3>
+<li><strong>MuseTalk</strong>：输入视频+音频，驱动口型。实测中文口型效果一般，闽南语更未知</li>
+<li><strong>策略</strong>：<strong>尽量避开正面说话镜头</strong>。用侧面、背影、环境遮挡来规避口型问题</li>
+<li>必须正面说话时：后期单独处理，用Wav2Lip手动修</li>
+
+<hr>
+
+<h2 id="二环境音效ai生成">二、环境音效AI生成</h2>
+
+<h3 id="分层音效架构">分层音效架构</h3>
+<pre><code>
+第1层 · 环境底噪（全程贯穿）
+├── 海浪声（根据不同场景：平静/汹涌）
+├── 风声（海风/穿堂风/竹林风）
+├── 庙宇氛围（远处诵经/木鱼/钟声）
+└── 渔港环境（船发动机/缆绳/吆喝声）
+
+第2层 · 动作音效（同步画面）
+├── 脚步（沙滩/石板/木船板）
+├── 器物（香炉放置/灯笼点燃/渔网撒开）
+└── 衣物（绸缎摩擦/蓑衣抖动）
+
+第3层 · 情绪音效（关键时刻）
+├── 心跳声
+├── 钟鸣（妈祖显灵时刻）
+└── 寂静（留白也是一种声音）
+</code></pre>
+
+<h3 id="ai音效工具">AI音效工具</h3>
+<li><strong>ElevenLabs SFX</strong>：文字描述生成音效（如「木船在波浪中摇晃的吱嘎声」）</li>
+<li><strong>Stable Audio</strong>：长音频环境生成</li>
+<li><strong>AudioLDM 2</strong>：开源方案，可本地部署</li>
+
+<h3 id="音效库建设同步进行">音效库建设（同步进行）</h3>
+<li>实地录制：湄洲岛海岸、祖庙内、渔港码头（派1人专门采音）</li>
+<li>整理归档：按场景/情绪/器物三级分类</li>
+<li>命名规范：<code>场景_类型_描述_时长.wav</code>（如 <code>渔港_环境_清晨码头_120s.wav</code>）</li>
+
+<hr>
+
+<h2 id="三配乐风格指南">三、配乐风格指南</h2>
+
+<h3 id="核心方向南音采样-现代电子融合">核心方向：南音采样 + 现代电子融合</h3>
+
+<p><strong>南音采样素材</strong>：</p>
+<li>琵琶（南琶，横抱演奏）</li>
+<li>洞箫（尺八般幽远）</li>
+<li>二弦、三弦</li>
+<li>拍板节奏</li>
+
+<p><strong>现代电子层</strong>：</p>
+<li>Ambient pad（氛围铺底）</li>
+<li>Subtle beat（克制节奏，不喧宾夺主）</li>
+<li>低频 drone（海洋的深沉感）</li>
+
+<h3 id="参考艺术家作品">参考艺术家/作品</h3>
+<li>林海《琵琶相》—— 传统器乐+现代编曲的标杆</li>
+<li>坂本龙一《Async》—— 氛围与留白的极致</li>
+<li>王勇《往生》—— 民乐与电子融合实验</li>
+<li>汉斯·季默《Interstellar》管风琴段落 —— 神圣感的参考</li>
+
+<h3 id="ai配乐工具">AI配乐工具</h3>
+<li><strong>Suno / Udio</strong>：输入风格描述生成配乐小样</li>
+<li>策略：AI生成 → 人工挑选 → 南音采样替换部分声部 → 混音</li>
+<li><strong>注意</strong>：AI生成的音乐版权归属不明确，最终成品建议人工重混</li>
+
+<hr>
+
+<h2 id="四混音标准">四、混音标准</h2>
+
+<h3 id="响度标准抖音平台">响度标准（抖音平台）</h3>
+<li>综合响度：-14 LUFS（与平台推荐一致）</li>
+<li>真峰值：不超过 -1 dBTP</li>
+
+<h3 id="分层混音比例">分层混音比例</h3>
+<table>
+<tr><th>层次</th><th>相对音量</th><th>说明</th></tr>
+<tr><td>对白</td><td>基准 0dB</td><td>清晰度为第一优先级</td></tr>
+<tr><td>环境音效</td><td>-12~-18dB</td><td>感知到但不抢戏</td></tr>
+<tr><td>动作音效</td><td>-6~-10dB</td><td>与画面同步突出</td></tr>
+<tr><td>配乐</td><td>-15~-20dB</td><td>情绪烘托，对白时自动闪避(ducking)</td></tr>
+</table>
+
+<hr>
+
+<h2 id="五声音制作管线排期">五、声音制作管线排期</h2>
+
+<pre><code>
+剧本定稿 → 配音（2天）→ 环境音效（1天，与AI视频同步启动）→ 
+配乐（2天）→ 混音（1天）→ 终审
+</code></pre>
+
+<p>音频组建议3人：1人配音+口型、1人音效+素材库、1人配乐+混音。</p>
+
+<hr>
+
+<p><em>相关文档：<a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a> · <a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a> · <a href="31-术语表.html" class="wiki-link">31-术语表</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="tts配音">TTS配音</h3>
+<li><a href="https://github.com/FunAudioLLM/CosyVoice" target="_blank" class="ext-link">CosyVoice 2.0 GitHub</a> — 阿里通义实验室开源，支持few-shot音色克隆（3-5分钟参考音频即可），推荐用于妈祖角色</li>
+<li><a href="https://github.com/2noise/ChatTTS" target="_blank" class="ext-link">ChatTTS GitHub</a> — 开源对话式TTS，韵律自然，适合日常对白场景</li>
+<li><a href="https://elevenlabs.io" target="_blank" class="ext-link">ElevenLabs</a> — 商业级AI语音，29种语言+语音克隆，质量最高但需付费（$5/月起）</li>
+<li><a href="https://www.resemble.ai" target="_blank" class="ext-link">Resemble AI</a> — AI语音增强+降噪+EQ均衡，人工录音后处理的推荐工具</li>
+
+<h3 id="口型同步">口型同步</h3>
+<li><a href="https://github.com/TMElyralab/MuseTalk" target="_blank" class="ext-link">MuseTalk GitHub</a> — 腾讯音乐开源，输入视频+音频驱动口型，latentspace方法质量高于Wav2Lip</li>
+<li><a href="https://github.com/Rudrabha/Wav2Lip" target="_blank" class="ext-link">Wav2Lip GitHub</a> — 学术基准口型同步，作为MuseTalk效果不达预期时的手动兜底方案</li>
+
+<h3 id="ai音效">AI音效</h3>
+<li><a href="https://elevenlabs.io/sound-effects" target="_blank" class="ext-link">ElevenLabs SFX</a> — 文字描述生成音效："木船在波浪中摇晃的吱嘎声"→一键生成</li>
+<li><a href="https://www.stableaudio.com" target="_blank" class="ext-link">Stable Audio</a> — Stability AI出品，长音频环境生成（海浪/风声/庙宇氛围2-3分钟连贯环境音）</li>
+<li><a href="https://github.com/haoheliu/AudioLDM2" target="_blank" class="ext-link">AudioLDM 2 GitHub</a> — 开源音效生成方案，可本地部署避免API费用</li>
+
+<h3 id="ai配乐">AI配乐</h3>
+<li><a href="https://suno.com" target="_blank" class="ext-link">Suno</a> — AI音乐生成首选，输入"南音琵琶+ambient pad+海洋氛围"即可生成配乐小样</li>
+<li><a href="https://www.udio.com" target="_blank" class="ext-link">Udio</a> — AI音乐生成备选，音质优于Suno但生成速度较慢</li>
+
+<h3 id="参考音乐">参考音乐</h3>
+<li><a href="https://music.163.com/#/album?id=19552" target="_blank" class="ext-link">林海《琵琶相》· 网易云</a> — 传统器乐+现代编曲的标杆，妈祖短剧配乐风格参照</li>
+<li><a href="https://open.spotify.com/album/7Gyd7nPi19e7eDZBZ0Hn0M" target="_blank" class="ext-link">坂本龙一《Async》· Spotify</a> — 氛围与留白的极致，"沉默也是声音"的配乐哲学</li>
+<li><a href="https://music.163.com" target="_blank" class="ext-link">南音经典曲目· 网易云</a> — 搜索"南音 风打梨""南音 因送哥嫂"，感受南音的节奏和情绪用于采样</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

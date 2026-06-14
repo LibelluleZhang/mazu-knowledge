@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>29 · 意象库 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link active">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷六 · 创作入口
+  </div>
+  <div class="article-summary">妈祖短剧的视觉词汇表。每一个意象都是可以拍成一帧画的「视觉锚点」。用于[[24-提示词工程]]灌入、分镜设计、海报物料。共50个。</div>
+  <article class="article">
+<h1 id="29-意象库">29 · 意象库</h1>
+
+<blockquote>
+<p>妈祖短剧的视觉词汇表。每一个意象都是可以拍成一帧画的「视觉锚点」。用于<a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a>灌入、分镜设计、海报物料。共50个。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="自然意象">自然意象</h2>
+
+<li><strong>香火</strong> — 三炷香插入铜炉，青烟笔直上升，在无风的大殿里不散。镜头从香头特写缓缓拉远。</li>
+
+<li><strong>海浪</strong> — 不是狂暴的巨浪，是那种永不停歇的、一层层涌上沙滩的潮。远景，灰蓝色调。</li>
+
+<li><strong>退潮后的滩涂</strong> — 镜面一样的水洼倒映天空，有小螃蟹横着走过。安静、空旷、时间的质感。</li>
+
+<li><strong>海上日出</strong> — 从渔船的船头方向升起来，把整片海染成金色。渔民眯着眼看。</li>
+
+<li><strong>海雾</strong> — 晨雾锁住海面，看不见地平线。渔船像飘在云里。充满了不确定感。</li>
+
+<li><strong>台风前的天空</strong> — 紫灰色的云层低垂，海面异常平静。老渔民看一眼就知道要变天。</li>
+
+<li><strong>沙滩上的脚印</strong> — 一行脚印通向海里，涨潮前最后的痕迹。谁走进去的？有没有走出来？</li>
+
+<li><strong>礁石上的海蛎</strong> — 密密麻麻附着的海蛎壳，被浪冲刷得发亮。生命的顽强。</li>
+
+<li><strong>月光海</strong> — 满月之夜，海面铺满碎银。一个人坐在礁石上，只剩剪影。</li>
+
+<li><strong>海风中的发丝</strong> — 女性角色的发丝被海风吹起，逆光下泛着金边。不拍脸，只拍发丝和光。</li>
+
+<hr>
+
+<h2 id="人文意象">人文意象</h2>
+
+<li><strong>红砖厝</strong> — 闽南特有的红砖建筑，燕尾脊翘向天空。斜阳把砖墙染得更红。</li>
+
+<li><strong>凤冠</strong> — 妈祖神像头上的九旒凤冠，珠帘微动，像下一秒就要睁眼。</li>
+
+<li><strong>灯笼</strong> — 庙檐下成排的红色灯笼，在夜风中轻轻摇晃。每一盏都是一个愿望。</li>
+
+<li><strong>渔网</strong> — 摊在码头上的巨大渔网，渔家女坐在网边补网。手指穿梭，像弹琴。</li>
+
+<li><strong>竹篙</strong> — 立在船尾的竹篙，顶端挑着一盏小灯。渔船归港时远远就能看见。</li>
+
+<li><strong>木船板</strong> — 老渔船甲板上被岁月和海水浸出的纹理。一双赤脚踩在上面。</li>
+
+<li><strong>香炉</strong> — 铜制大香炉，炉耳被千万只手摸得发亮。香灰堆成小山。</li>
+
+<li><strong>妈祖令旗</strong> — 黄底红字三角旗，插在船头或庙前。风吹旗展，猎猎作响。</li>
+
+<li><strong>掷筊</strong> — 两片月牙形木块被抛向空中，旋转着，落下。所有人屏息等结果。</li>
+
+<li><strong>供品</strong> — 一盘盘水果、糕点整齐摆在供桌上，烛光映照。虔诚的秩序。</li>
+
+<li><strong>功德箱</strong> — 一只被摸得包浆的木箱，缝隙里塞满了纸币。投入硬币的叮当声。</li>
+
+<li><strong>签筒</strong> — 竹签在筒中摇晃的沙沙声。抽出一支，命运的刻度。</li>
+
+<li><strong>红绳</strong> — 系在手腕上的红绳，从庙里求来的。有的人戴到褪色也不摘。</li>
+
+<li><strong>神轿</strong> — 妈祖绕境时的轿子，雕龙画凤，由八个壮汉抬着。轿子过处人群伏拜。</li>
+
+<li><strong>鞭炮碎屑</strong> — 仪式过后满地的红色碎屑，被海风吹得四处飞散。热闹之后的寂寥。</li>
+
+<hr>
+
+<h2 id="人物意象">人物意象</h2>
+
+<li><strong>跪拜的背影</strong> — 一个人跪在妈祖像前，从背后拍。看不见脸，但肩膀在微微颤抖。</li>
+
+<li><strong>老渔民的手</strong> — 掌心布满老茧，指节粗大。这只手正在点香，动作很慢很稳。</li>
+
+<li><strong>赤脚踩沙滩</strong> — 一双孩子的赤脚在海滩上跑，身后留下一串小脚印。浪来了，脚印消失。</li>
+
+<li><strong>合十的双手</strong> — 特写：一双合十的手，指尖抵着额头。背景虚化成烛光。</li>
+
+<li><strong>望向海的老人</strong> — 一个老渔民站在码头尽头，面对大海，一动不动。只有衣角被风吹起。</li>
+
+<li><strong>缝补衣裳的女人</strong> — 渔家女坐在门槛上缝补，针线穿过粗布。旁边放着一盏小油灯。</li>
+
+<li><strong>出海前的拥抱</strong> — 码头上的送别。没有台词，只有用力抱紧然后松开。</li>
+
+<li><strong>守庙人的扫帚</strong> — 一把扫帚有节奏地扫过石板地面，落叶被归拢成堆。日复一日。</li>
+
+<li><strong>孩童的好奇眼</strong> — 一个小孩踮脚扒着供桌边缘，只露出一双眼睛，看着神像。</li>
+
+<li><strong>船上的独坐者</strong> — 一个人坐在船头，双腿悬空晃荡。下方是墨色的海水。</li>
+
+<hr>
+
+<h2 id="器物意象">器物意象</h2>
+
+<li><strong>木雕妈祖像</strong> — 一尊掌心大小的随身妈祖像，木头被磨得光滑发亮，贴着胸口携带。</li>
+
+<li><strong>铜钟</strong> — 庙里的铜钟被敲响，声波似乎可见。余韵在海风中飘向远方。</li>
+
+<li><strong>木鱼</strong> — 单调而有节奏的敲击声，在空旷大殿里回荡。既是修行，也是计时。</li>
+
+<li><strong>蓑衣</strong> — 棕色的蓑衣挂在墙上，雨水顺着棕毛滴下。斗笠在旁边。</li>
+
+<li><strong>船灯</strong> — 一盏煤油灯在船舱里摇晃，光晕忽明忽暗。唯一的光源。</li>
+
+<li><strong>航海罗盘</strong> — 古老的木制罗盘，指针微微颤抖。上面刻着天干地支。</li>
+
+<li><strong>海图</strong> — 一张手绘的航海图，边角被海水浸过。上面用毛笔标着暗礁和航线。</li>
+
+<li><strong>香囊</strong> — 一个小小的刺绣香囊，挂在船舵上。里面装着祖庙的香灰。</li>
+
+<li><strong>平安符</strong> — 黄色的符纸折成三角，塑封好，放在船员的上衣口袋里。</li>
+
+<hr>
+
+<h2 id="场景意象">场景意象</h2>
+
+<li><strong>晨雾中的庙宇</strong> — 无人机视角：晨雾笼罩妈祖庙建筑群，只露出飞檐翘角，宛如天上宫阙。</li>
+
+<li><strong>渔港黎明</strong> — 凌晨四点的渔港，船灯如星。发动机声陆续响起，一天开始。</li>
+
+<li><strong>空荡的大殿</strong> — 深夜，大殿里只剩长明灯。神像的面容在半明半暗中庄严肃穆。</li>
+
+<li><strong>水中的倒影</strong> — 雨后石板地上积了一洼水，倒映出庙宇的飞檐和一个人的身影。</li>
+
+<li><strong>码头送别人群</strong> — 俯拍：码头上密密麻麻的送别人群，有人在挥手，有人在抹泪。</li>
+
+<li><strong>灯火通明的庙会</strong> — 妈祖诞辰日的夜晚，整座庙灯火辉煌，人潮涌动。热闹中的神圣。</li>
+
+<hr>
+
+<h2 id="使用方式">使用方式</h2>
+
+<li><strong>每日一练</strong>：AI组每天抽3个意象，尝试生成对应的镜头，积累「可用意象素材库」</li>
+<li><strong>提示词注入</strong>：将意象描述直接作为<a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a>中的画面描述部分</li>
+<li><strong>分镜填充</strong>：意象库中的描述可以直接填入分镜脚本的「画面描述」栏</li>
+
+<hr>
+
+<p><em>相关文档：<a href="28-故事种子.html" class="wiki-link">28-故事种子</a> · <a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a> · <a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="视觉参考库">视觉参考库</h3>
+<li><a href="https://www.pinterest.com/search/?q=Mazu+Chinese+sea+goddess" target="_blank" class="ext-link">Pinterest· Mazu Chinese Sea Goddess</a> — 妈祖视觉灵感板：神像造型/凤冠特写/祭祀场景/湄洲岛风景</li>
+<li><a href="https://lexica.art" target="_blank" class="ext-link">Lexica.art· traditional Chinese coastal ink painting</a> — AI图像搜索：国风水墨风格的海洋/渔村/庙宇场景生成效果参考</li>
+<li><a href="https://www.dpm.org.cn/Home.html" target="_blank" class="ext-link">故宫数字文物库· 宋代</a> — 宋代服饰/器物/建筑高清图像，意象库中衣物/建筑/器物的视觉溯源</li>
+
+<h3 id="意象来源">意象来源</h3>
+<li><a href="https://www.loc.gov/item/2012405212/" target="_blank" class="ext-link">《天后圣母事迹图志》</a> — 清代绘本，妈祖生平的图像叙事，50个意象中"凤冠""神轿""香炉"等可直接作分镜参考</li>
+<li><a href="https://www.qzswhg.com" target="_blank" class="ext-link">泉州木偶戏· 数字博物馆</a> — 闽南民间视觉艺术：木偶造型/服饰/动作可提炼为视觉符号（线条/色彩/象征）</li>
+<li><a href="https://www.ihchina.cn" target="_blank" class="ext-link">闽南剪纸图样· 中国非物质文化遗产网</a> — 妈祖髻/燕尾脊/渔船的剪纸化图形，可供AI提示词中注入"民间美学"风格</li>
+
+<h3 id="色彩参考">色彩参考</h3>
+<li><a href="https://www.zhongguose.com" target="_blank" class="ext-link">中国传统色色谱</a> — 50个意象的色彩编码：青蓝（靛青/月白）、赭红（赭石/檀色）、暖金（琥珀/鹅黄）</li>
+<li><a href="https://coolors.co" target="_blank" class="ext-link">Coolors.co· 调色板</a> — 在线配色工具，按"coastal Fujian warm minimal"风格生成统一色调方案</li>
+
+<h3 id="空间参考">空间参考</h3>
+<li><a href="https://book.douban.com/subject/26837774/" target="_blank" class="ext-link">《大鱼海棠》设定集· 豆瓣</a> — 福建土楼+海洋世界观的视觉构建，色彩编码与妈祖短剧高度重合</li>
+<li><a href="https://www.youtube.com/results?search_query=Meizhou+Island+Mazu+aerial" target="_blank" class="ext-link">湄洲岛航拍· YouTube</a> — 航拍湄洲祖庙建筑群/渔港/海岸线，"晨雾中的庙宇"等场景意象的实拍参考</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

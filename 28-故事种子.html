@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>28 · 故事种子 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link active">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷六 · 创作入口
+  </div>
+  <div class="article-summary">不是完整剧本，而是「如果这样……会怎样？」的火种。按难易度标注，团队可以直接选用。每个种子一句话梗概 + 情感类型 + 建议集数。</div>
+  <article class="article">
+<h1 id="28-故事种子">28 · 故事种子</h1>
+
+<blockquote>
+<p>不是完整剧本，而是「如果这样……会怎样？」的火种。按难易度标注，团队可以直接选用。每个种子一句话梗概 + 情感类型 + 建议集数。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="难度说明">难度说明</h2>
+<li>★☆☆ 简单：场景少、角色少、AI擅长镜头多。适合开篇试水。</li>
+<li>★★☆ 中等：多场景/多角色/需精细情感。适合主力剧集。</li>
+<li>★★★ 困难：复杂叙事/大量人物特写/历史考据。适合团队成熟后挑战。</li>
+
+<hr>
+
+<h2 id="故事种子">故事种子</h2>
+
+<h3 id="1-最后一炷香">1. 【★☆☆】最后一炷香</h3>
+<p><strong>梗概</strong>：一个老渔民每次出海前都给妈祖烧一炷香。他知道这炷香不能平息风暴，但他还是烧了——这是他跟自己对话的方式。这一次，是他最后一次出海。</p>
+<p><strong>情感</strong>：告别 / 信仰 / 克制深情</p>
+<p><strong>集数</strong>：1集（3-4分钟）</p>
+
+<hr>
+
+<h3 id="2-四十年汇款">2. 【★☆☆】四十年汇款</h3>
+<p><strong>梗概</strong>：马来西亚一个华侨家庭，每年除夕往湄洲岛一座小庙汇一笔钱，不多不少，刚好够庙里一年的香火。40年没断过。重孙女翻出汇款单，决定飞回湄洲岛看看那座庙。</p>
+<p><strong>情感</strong>：乡愁 / 传承 / 寻根</p>
+<p><strong>集数</strong>：2集（每集4分钟）</p>
+
+<hr>
+
+<h3 id="3-分灵的重量">3. 【★★☆】分灵的重量</h3>
+<p><strong>梗概</strong>：台湾某妈祖庙的「分灵」要回湄洲岛「谒祖」。护送分灵神像的是一个从来没去过大陆的年轻人。在海上，他做了一个梦。</p>
+<p><strong>情感</strong>：身份认同 / 血脉 / 成长</p>
+<p><strong>集数</strong>：3集</p>
+
+<hr>
+
+<h3 id="4-退潮时出现的石像">4. 【★★☆】退潮时出现的石像</h3>
+<p><strong>梗概</strong>：湄洲岛一个不起眼的海蚀洞里，只有大退潮时才能看到一尊石雕妈祖像。一个研究海平面变化的博士生发现了它，也发现了一段被潮水淹没的往事。</p>
+<p><strong>情感</strong>：发现 / 历史 / 惊鸿一瞥</p>
+<p><strong>集数</strong>：2-3集</p>
+
+<hr>
+
+<h3 id="5-渔网里的妈祖令旗">5. 【★☆☆】渔网里的妈祖令旗</h3>
+<p><strong>梗概</strong>：新渔民用拖网捞上来一面褪色的妈祖令旗。老渔民说这是几十年前某艘遇难渔船留下的，令旗还在替那个人守护这片海。</p>
+<p><strong>情感</strong>：悬疑 / 敬畏 / 因果</p>
+<p><strong>集数</strong>：1集</p>
+
+<hr>
+
+<h3 id="6-台风夜的值守人">6. 【★★☆】台风夜的值守人</h3>
+<p><strong>梗概</strong>：台风登陆湄洲岛那夜，祖庙的管理员没有撤离。他要守着千年不灭的香火。天亮时风暴过去，他发现妈祖像面向的方向变了。</p>
+<p><strong>情感</strong>：坚守 / 灵异 / 孤勇</p>
+<p><strong>集数</strong>：2集</p>
+
+<hr>
+
+<h3 id="7-沈有容与妈祖">7. 【★★★】沈有容与妈祖</h3>
+<p><strong>梗概</strong>：1604年，明代将领沈有容收复澎湖，据传得妈祖神助。我们不讲战争，只讲战前一晚，沈有容独自在海边坐了一夜。他在想什么？</p>
+<p><strong>情感</strong>：历史 / 沉思 / 家国</p>
+<p><strong>集数</strong>：3-4集（需历史考据，AI难以还原明代军备）</p>
+
+<hr>
+
+<h3 id="8-沙滩上的名字">8. 【★☆☆】沙滩上的名字</h3>
+<p><strong>梗概</strong>：退潮后，沙滩上出现用贝壳摆成的两个名字。涨潮时被冲掉。第二天退潮，名字又出现了。谁每天晚上来摆？为什么是两个名字？</p>
+<p><strong>情感</strong>：悬念 / 深情 / 守护</p>
+<p><strong>集数</strong>：1-2集</p>
+
+<hr>
+
+<h3 id="9-渡海来的人">9. 【★★☆】渡海来的人</h3>
+<p><strong>梗概</strong>：一个中年人从福建偷渡去东南亚（设定在百年前）。蜷在船舱最底层，怀里抱着一个巴掌大的妈祖像。到了彼岸，他把妈祖像放在神龛上，再没回过家乡。</p>
+<p><strong>情感</strong>：漂泊 / 移民 / 信仰的力量</p>
+<p><strong>集数</strong>：2-3集</p>
+
+<hr>
+
+<h3 id="10-庙口的猫">10. 【★★☆】庙口的猫</h3>
+<p><strong>梗概</strong>：以一只祖庙里的流浪猫为主视角，看人来人往：求平安的、还愿的、哭的、笑的、独自坐一下午的。猫什么都懂，猫什么都不说。</p>
+<p><strong>情感</strong>：温情 / 日常 / 众生相</p>
+<p><strong>集数</strong>：单集or系列（可做成松散集锦）</p>
+
+<hr>
+
+<h3 id="11-两座妈祖庙之间">11. 【★★★】两座妈祖庙之间</h3>
+<p><strong>梗概</strong>：湄洲祖庙和鹿港天后宫之间有某种「感应」——两地同时出现的异常天象，指向一段被刻意遗忘的历史。一个记者和一位庙祝联手追查。</p>
+<p><strong>情感</strong>：悬疑 / 历史 / 两岸</p>
+<p><strong>集数</strong>：4-5集（长线叙事）</p>
+
+<hr>
+
+<h3 id="12-还愿">12. 【★☆☆】还愿</h3>
+<p><strong>梗概</strong>：一个企业家多年前在妈祖面前许愿「如果公司上市就捐一座庙」。他真的上市了，也真的来还愿。但还愿的时候，他说了另一个故事。</p>
+<p><strong>情感</strong>：反转 / 人性 / 信仰的秤</p>
+<p><strong>集数</strong>：1集</p>
+
+<hr>
+
+<h2 id="使用建议">使用建议</h2>
+
+<li><strong>第一周</strong>：选用2个★☆☆种子做测试，跑通<a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a>全流程</li>
+<li><strong>第二周起</strong>：★★☆种子进入主力排期</li>
+<li><strong>第三周后</strong>：视团队磨合情况选1个★★★种子做「精品集」</li>
+<li>每个种子可先拍1集试播，好评再加集（「剧集开发式」创作）</li>
+
+<hr>
+
+<p><em>相关文档：<a href="29-意象库.html" class="wiki-link">29-意象库</a> · <a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a> · <a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="灵感来源">灵感来源</h3>
+<li><a href="https://ctext.org/wiki.pl?if=en&res=317046" target="_blank" class="ext-link">《天妃显圣录》</a> — 明代妈祖灵验故事集，记载大量救助海难/医治疫病/平息风浪的传说原型</li>
+<li><a href="https://book.douban.com/subject/1055962/" target="_blank" class="ext-link">《讨海人》廖鸿基· 豆瓣</a> — 台湾海洋文学代表，渔民的日常与灵魂，故事种子中"老渔民"形象的文学源头</li>
+<li><a href="https://book.douban.com/subject/2572961/" target="_blank" class="ext-link">《海浪的记忆》夏曼·蓝波安· 豆瓣</a> — 达悟族海洋书写，提供另一种"人与海"的视角，与妈祖文化形成跨族群对话</li>
+<li><a href="https://storyfm.cn" target="_blank" class="ext-link">《故事FM》· 妈祖/渔民/福建</a> — 搜索关键词"妈祖""渔民""福建"，素人亲述的真实故事，比虚构更有力量</li>
+<li><a href="https://kns.cnki.net/kns8/defaultresult/index?kwd=湄洲岛+口述史" target="_blank" class="ext-link">《湄洲岛渔村口述史》· CNKI</a> — 学术田野调查中记录的真实渔民故事，退潮石像/渔网令旗等意象背后的原型</li>
+
+<h3 id="叙事参考">叙事参考</h3>
+<li><a href="https://www.masterclass.com/classes/neil-gaiman-teaches-the-art-of-storytelling" target="_blank" class="ext-link">Neil Gaiman MasterClass</a> — 故事种子思维："一个好故事从一个'如果...会怎样？'开始"</li>
+<li><a href="https://www.pixar.com/feature-films-launch" target="_blank" class="ext-link">Pixar's 22 Rules of Storytelling</a> — 皮克斯编剧法则，第1条"观众欣赏的是角色的努力，而非成功"</li>
+<li><a href="https://www.amazon.com/Story-Substance-Structure-Principles-Screenwriting/dp/0060391685" target="_blank" class="ext-link">《故事》罗伯特·麦基· Amazon</a> — "一个好故事种子包含：冲突的双方、赌注、改变的潜力"</li>
+
+<h3 id="历史故事">历史故事</h3>
+<li><a href="https://ctext.org/wiki.pl?if=en&res=8077801" target="_blank" class="ext-link">《明史·沈有容传》· CTEXT</a> — 1604年沈有容收复澎湖的史料原文，"战前一晚独坐海边"的创作起点</li>
+<li><a href="https://kns.cnki.net/kns8/defaultresult/index?kwd=郑和+妈祖" target="_blank" class="ext-link">郑和下西洋与妈祖信仰· CNKI</a> — 郑和七下西洋据传得妈祖神助，明代航海+信仰的史诗级叙事素材</li>
+
+<h3 id="台海跨国故事">台海/跨国故事</h3>
+<li><a href="https://www.lukang.org.tw" target="_blank" class="ext-link">鹿港天后宫· 官网</a> — 台湾重要分灵庙，分灵/谒祖/绕境文化的第一手资料</li>
+<li><a href="https://whc.unesco.org/en/tentativelists/5936/" target="_blank" class="ext-link">马六甲青云亭· UNESCO</a> — 马来西亚最古老华人庙宇，海外妈祖信仰在地化的活化石</li>
+<li><a href="https://www.thianhockkeng.com.sg" target="_blank" class="ext-link">新加坡天福宫· 官网</a> — 新加坡最古老华人庙宇，华人移民史+信仰传播的完整叙事</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

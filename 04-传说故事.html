@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04 · 传说故事 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link active">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷一 · 妈祖本身
+  </div>
+  <div class="article-summary">一句话摘要：妈祖传说数量逾百则，按其主题可分为**海上救难、降妖除魔、显灵济世、抗灾护民**四大类；每则传说不仅是一个"神迹"，更承载着底层民众对安全、正义、慈悲的情感诉求，是短剧创作最直接的素材库。</div>
+  <article class="article">
+<h1 id="04-传说故事">04 · 传说故事</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖传说数量逾百则，按其主题可分为<strong>海上救难、降妖除魔、显灵济世、抗灾护民</strong>四大类；每则传说不仅是一个"神迹"，更承载着底层民众对安全、正义、慈悲的情感诉求，是短剧创作最直接的素材库。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一传说总览">一、传说总览</h2>
+
+<p>妈祖传说主要收录于《天妃显圣录》（明末清初）、《天后显圣录》（清）等文献，今人整理的传说逾100则。按类型编排如下：</p>
+
+<hr>
+
+<h2 id="二海上救难类">二、【海上救难类】</h2>
+
+<p>这是妈祖传说的核心类型，占传说总量的半数以上，直接塑造了妈祖作为"海上保护神"的形象。</p>
+
+<h3 id="21-机上救亲">2.1 机上救亲</h3>
+
+<li><strong>梗概</strong>：默娘16岁时，父兄出海遭遇风暴。默娘在家织布时忽然"神游"海上，以手挽父、口衔兄、脚踏一舟（载着另一位落水者），将父兄及一船人救起。但母亲见她伏机不动，呼唤其名，默娘张口应答，口中衔着的兄长掉入海中溺亡。苏醒后，默娘哭道："兄已没矣。"数日后父亲归来，所述与默娘梦境完全吻合。</li>
+<li><strong>情感内核</strong>：① 至亲之爱 vs 天命不可违的悲剧张力；② 女性在父权社会中的无力——即使有神力，"被叫了一声"就导致兄长殒命；③ "舍小我为大家"——为了救更多人而牺牲了至亲。</li>
+<li><strong>创作适配</strong>：极佳的戏剧结构。可改编为默娘的"创伤起源"事件——为什么她终身未嫁？为什么她义无反顾地救助每一个海上遇险者？因为这个终身遗憾。</li>
+
+<h3 id="22-化草救商">2.2 化草救商</h3>
+
+<li><strong>梗概</strong>：湄洲岛附近有商船遇风浪将覆，船员呼救。默娘在岸上随手拔了一把草，抛向海中。草入水即化为巨大的杉木，依附在船的两侧，使船体稳住。最终商船安然靠岸，商人们登岛拜谢默娘，却发现海面上漂浮的不过是普通杂草。</li>
+<li><strong>情感内核</strong>：① "最卑微之物蕴含最大神力"——草化为木的意象极具视觉冲击；② 助人不求报——商人们来时默娘已悄然离去。</li>
+<li><strong>创作适配</strong>："化草"可以成为一个视觉母题。在短剧中可以反复出现——当角色处于绝境时，看似无用的东西（一根草、一块布）在妈祖手中成为救命的工具。</li>
+
+<h3 id="23-挂席泛槎">2.3 挂席泛槎</h3>
+
+<li><strong>梗概</strong>：默娘需渡海但又无船可用。她将屋檐下挂着的草席取下，铺于海面，以竹篙为篙，站立于席上渡海而去。乡人见之惊呼，默娘已远在海中如履平地。</li>
+<li><strong>情感内核</strong>：① 超越物理法则的自由——"想渡海，席子就够了"，极具浪漫主义色彩；② 急人之困的紧迫感，默娘几乎是以"瞬移"的方式奔赴救援现场。</li>
+<li><strong>创作适配</strong>：标志性的视觉画面——少女立于草席之上，竹篙击水，破浪而行。这几乎是妈祖的"超级英雄特写"。</li>
+
+<hr>
+
+<h2 id="三降妖除魔类">三、【降妖除魔类】</h2>
+
+<p>这类传说反映了妈祖在民间认知中的"战神"面向，同时也构建了妈祖的"团队"。</p>
+
+<h3 id="31-收晏公">3.1 收晏公</h3>
+
+<li><strong>梗概</strong>：晏公原为海上水怪，常在湄洲湾兴风作浪，掀翻船只。默娘与之斗法，先以神力将其定于海中，晏公现出原形——一条巨大的海蛟（一说为海豚/鲸形水怪）。默娘感化之，晏公伏法归降，成为妈祖驾前的护航总管。</li>
+<li><strong>情感内核</strong>：① "降服"而非"消灭"——妈祖的做法不是斩妖，而是"收编"，体现了慈悲为怀；② 每一个妖怪都可能成为护法。</li>
+<li><strong>创作适配</strong>：晏公可以塑造成一个具有"悲情反派"色彩的角色——也许他并非故意为恶，而是被大海的狂暴所驱使。</li>
+
+<h3 id="32-收二怪千里眼顺风耳">3.2 收二怪（千里眼、顺风耳）</h3>
+
+<li><strong>梗概</strong>：桃花山上有一对妖怪兄弟，兄目能视千里之外（千里眼），弟耳能听万里之遥（顺风耳）。二怪在山中作恶，默娘以手中丝帕化为祥云，将其困住。二怪不服，与默娘斗法，最终被收服，成为妈祖驾前两大护法——千里眼负责观察海面险情，顺风耳负责聆听求救之声。</li>
+<li><strong>情感内核</strong>：① "化敌为友"——最可怕的敌人变成最忠实的伙伴；② "缺陷即天赋"——二怪之所以成为妖怪，也许正因为他们的超能力不被世人理解，直到遇到妈祖。</li>
+<li><strong>创作适配</strong>：千里眼顺风耳是妈祖文化中辨识度最高的"配角"，详见 <a href="06-人物谱系.html" class="wiki-link">06-人物谱系</a>。</li>
+
+<hr>
+
+<h2 id="四显灵济世类">四、【显灵济世类】</h2>
+
+<p>妈祖不只救海难，还介入陆地上的民生疾苦。</p>
+
+<h3 id="41-祷雨济民">4.1 祷雨济民</h3>
+
+<li><strong>梗概</strong>：莆田大旱，庄稼枯焦，百姓苦不堪言。县令听闻默娘有通神之能，前来求助。默娘设坛祈雨，诵祷词毕，天上乌云密布，甘霖普降。县令上奏朝廷，为妈祖后来获得官方认可埋下伏笔。</li>
+<li><strong>情感内核</strong>：① "神力不限于海"——妈祖的能力圈超越了海洋；② "为民请愿"——默娘不是冷漠的神，而是与百姓休戚与共的保护者。</li>
+<li><strong>创作适配</strong>：可以作为妈祖从"巫女"到被朝廷认同的第一个转折点。</li>
+
+<h3 id="42-圣泉救疫">4.2 圣泉救疫</h3>
+
+<li><strong>梗概</strong>：莆田发生瘟疫，百姓染病无数。默娘以铜符（一说为剑）插入地下，清泉涌出。喝了此水的病人痊愈，瘟疫得以平息。这口泉水后被尊称为"圣泉"，其址至今犹存（一说在湄洲岛上，一说在莆田港里村）。</li>
+<li><strong>情感内核</strong>：① "以水疗愈"——水是大海的延伸，也是生命的起源；② 默娘的慈悲是全方位的——不仅是海上的救生员，还是陆地上的医者。</li>
+<li><strong>创作适配</strong>：瘟疫是短剧中极具代入感的设定。"圣泉"可以作为一个物理场景反复出现，甚至可以设计成短剧的主题线索。</li>
+
+<hr>
+
+<h2 id="五传说的叙事规律与创作建议">五、传说的叙事规律与创作建议</h2>
+
+<h3 id="51-叙事模式">5.1 叙事模式</h3>
+
+<table>
+<tr><th>元素</th><th>规律</th></tr>
+<tr><td>危机</td><td>海难、瘟疫、旱灾、妖怪作恶——多为底层民众无力应对的灾难</td></tr>
+<tr><td>求助</td><td>百姓呼救（有时甚至不需要呼救，默娘已经"感应"到）</td></tr>
+<tr><td>显灵</td><td>妈祖以超凡手段（化草、挂席、祷雨）解决问题</td></tr>
+<tr><td>余韵</td><td>被救者建庙/上奏/感恩，"神迹"传播，信仰扩散</td></tr>
+</table>
+
+<h3 id="52-短剧改编建议">5.2 短剧改编建议</h3>
+
+<li><strong>不要照搬传说做"神仙打架"</strong>：现代观众需要人物弧光。让妈祖"回到人间"，在救人的过程中展示她的犹豫、她的创伤（如机上救亲的遗憾）、她的成长。</li>
+<li><strong>每个传说都可以有一个"凡人的视角"</strong>：被救的商人、渔夫、县令……从他们的眼睛看妈祖，比直接描写神迹更有代入感。</li>
+<li><strong>"化敌为友"是最强的叙事引擎</strong>：晏公、千里眼顺风耳——每个反派都有自己的故事，收服过程本身就是一部短剧。</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/传说整理</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AA%BD%E7%A5%96#%E5%82%B3%E8%AA%AA" target="_blank" class="ext-link">妈祖 - 维基百科（传说章节）</a> — 按分类整理的妈祖传说列表</li>
+<li><a href="https://baike.baidu.com/item/%E5%A6%88%E7%A5%96%E4%BC%A0%E8%AF%B4" target="_blank" class="ext-link">妈祖传说 - 百度百科</a> — 收录主流妈祖传说故事</li>
+
+<p><strong>学术著作</strong></p>
+<li>周濯街《妈祖》（民间传说整理，1998年，团结出版社）— 100余则妈祖传说系统整理，含机上救亲、化草救商等民间口述版本</li>
+<li>蔡相煇《妈祖信仰研究》（台湾学生书局，2006年）— 对妈祖传说的历史演变有详细考证</li>
+<li>徐晓望《宋代妈祖信仰的起源》（《福建论坛》期刊论文，2002年）— 将传说置于宋代历史语境中考证</li>
+
+<p><strong>原始文献（在线）</strong></p>
+<li>《天妃显圣录》电子化版本部分可见于<a href="http://www.guoxuedashi.net/" target="_blank" class="ext-link">国学大师网站</a>、《中国民间信仰文献汇编》</li>
+<li>《天后显圣录》（清雍正刊本）— 台北故宫博物院及福建图书馆有藏本，部分影印件可在学术数据库检索</li>
+
+<p><strong>纪录片/影像</strong></p>
+<li>东南卫视《妈祖之光》晚会系列（2006年起）— 每年妈祖诞辰在湄洲岛举办的大型文艺演出，含传说故事的舞台化呈现</li>
+<li>莆田市政府官方宣传片《妈祖故里》（B站/YouTube可搜索）— 含湄洲岛取景及传说还原片段</li>
+
+<p><strong>创作改编参考</strong></p>
+<li>刘涛主演电视剧《妈祖》（2013年，38集，CCTV）— 目前最知名的妈祖题材影视作品，可参考其传说改编方式</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

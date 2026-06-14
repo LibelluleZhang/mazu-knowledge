@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>31 · 术语表 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link active">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷七 · 基础设施
+  </div>
+  <div class="article-summary">妈祖文化核心专有名词，中英对照+拼音。用于剧本写作、字幕翻译、AI提示词一致性。至少30个词条。</div>
+  <article class="article">
+<h1 id="31-术语表">31 · 术语表</h1>
+
+<blockquote>
+<p>妈祖文化核心专有名词，中英对照+拼音。用于剧本写作、字幕翻译、AI提示词一致性。至少30个词条。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="神祇与人物">神祇与人物</h2>
+
+<table>
+<tr><th>中文</th><th>拼音</th><th>英文</th><th>注释</th></tr>
+<tr><td>妈祖</td><td>Māzǔ</td><td>Mazu / Ma-Tsu</td><td>海神，原名林默（林默娘）</td></tr>
+<tr><td>林默</td><td>Lín Mò</td><td>Lin Mo</td><td>妈祖俗名，宋代湄洲岛渔家女</td></tr>
+<tr><td>天妃</td><td>Tiānfēi</td><td>Heavenly Consort</td><td>元代敕封号</td></tr>
+<tr><td>天后</td><td>Tiānhòu</td><td>Heavenly Empress</td><td>清代敕封号，最高封号</td></tr>
+<tr><td>湄洲神女</td><td>Méizhōu Shénnǚ</td><td>Divine Lady of Meizhou</td><td>早期民间称呼</td></tr>
+<tr><td>千里眼</td><td>Qiānlǐyǎn</td><td>Thousand-Mile Eye</td><td>妈祖驾前护法，能视千里</td></tr>
+<tr><td>顺风耳</td><td>Shùnfēng'ěr</td><td>Wind-Following Ear</td><td>妈祖驾前护法，能听万里</td></tr>
+</table>
+
+<hr>
+
+<h2 id="地名与庙宇">地名与庙宇</h2>
+
+<table>
+<tr><th>中文</th><th>拼音</th><th>英文</th><th>注释</th></tr>
+<tr><td>湄洲岛</td><td>Méizhōu Dǎo</td><td>Meizhou Island</td><td>妈祖诞生地，福建莆田</td></tr>
+<tr><td>湄洲祖庙</td><td>Méizhōu Zǔmiào</td><td>Meizhou Ancestral Temple</td><td>天下妈祖庙的祖庭</td></tr>
+<tr><td>天后宫</td><td>Tiānhòu Gōng</td><td>Tianhou Temple</td><td>妈祖庙的通用名称之一</td></tr>
+<tr><td>鹿港天后宫</td><td>Lùgǎng Tiānhòu Gōng</td><td>Lukang Tianhou Temple</td><td>台湾彰化，重要分灵庙</td></tr>
+<tr><td>泉州天后宫</td><td>Quánzhōu Tiānhòu Gōng</td><td>Quanzhou Tianhou Temple</td><td>福建泉州，历史最悠久之一</td></tr>
+<tr><td>北港朝天宫</td><td>Běigǎng Cháotiān Gōng</td><td>Beigang Chaotian Temple</td><td>台湾云林，香火极盛</td></tr>
+</table>
+
+<hr>
+
+<h2 id="信仰与仪式">信仰与仪式</h2>
+
+<table>
+<tr><th>中文</th><th>拼音</th><th>英文</th><th>注释</th></tr>
+<tr><td>分灵</td><td>Fēnlíng</td><td>Spirit Division / Fenling</td><td>从祖庙分香火到新庙，建立隶属关系</td></tr>
+<tr><td>谒祖</td><td>Yèzǔ</td><td>Ancestral Pilgrimage</td><td>分灵庙回祖庙朝拜</td></tr>
+<tr><td>绕境</td><td>Ràojìng</td><td>Pilgrimage Circuit / Raojing</td><td>妈祖神轿巡游辖境，赐福消灾</td></tr>
+<tr><td>进香</td><td>Jìnxiāng</td><td>Pilgrimage / Incense Offering</td><td>信众到庙里进献香火</td></tr>
+<tr><td>掷筊</td><td>Zhìjiǎo</td><td>Moon Block Divination</td><td>用筊杯请示神明旨意</td></tr>
+<tr><td>筊杯</td><td>Jiǎobēi</td><td>Moon Blocks</td><td>占卜工具，一对月牙形木片</td></tr>
+<tr><td>圣杯</td><td>Shèngbēi</td><td>Divine Answer (one flat, one curved)</td><td>筊杯一正一反，表示神明应允</td></tr>
+<tr><td>阴杯</td><td>Yīnbēi</td><td>Negative Answer (both curved down)</td><td>两片皆俯，表示神明不允</td></tr>
+<tr><td>笑杯</td><td>Xiàobēi</td><td>Laughing Answer (both flat up)</td><td>两片皆仰，表示神明笑而不答</td></tr>
+<tr><td>还愿</td><td>Huányuàn</td><td>Fulfilling a Vow</td><td>愿望实现后回庙答谢</td></tr>
+</table>
+
+<hr>
+
+<h2 id="建筑与器物">建筑与器物</h2>
+
+<table>
+<tr><th>中文</th><th>拼音</th><th>英文</th><th>注释</th></tr>
+<tr><td>燕尾脊</td><td>Yànwěijǐ</td><td>Swallowtail Ridge</td><td>闽南建筑标志性翘脊</td></tr>
+<tr><td>红砖厝</td><td>Hóngzhuāncuò</td><td>Red Brick House</td><td>闽南传统红砖建筑</td></tr>
+<tr><td>妈祖令旗</td><td>Māzǔ Lìngqí</td><td>Mazu Command Banner</td><td>黄色三角旗，镇邪护船</td></tr>
+<tr><td>香炉</td><td>Xiānglú</td><td>Incense Burner</td><td>铜制大炉，插香用</td></tr>
+<tr><td>长明灯</td><td>Chángmíngdēng</td><td>Eternal Flame Lamp</td><td>庙中不灭的灯</td></tr>
+<tr><td>凤冠</td><td>Fèngguān</td><td>Phoenix Crown</td><td>妈祖神像头戴的九旒冠</td></tr>
+<tr><td>神轿</td><td>Shénjiào</td><td>Divine Palanquin</td><td>绕境时抬妈祖神像的轿子</td></tr>
+</table>
+
+<hr>
+
+<h2 id="时间与节庆">时间与节庆</h2>
+
+<table>
+<tr><th>中文</th><th>拼音</th><th>英文</th><th>注释</th></tr>
+<tr><td>妈祖诞辰</td><td>Māzǔ Dànchén</td><td>Mazu's Birthday</td><td>农历三月廿三（公历4-5月）</td></tr>
+<tr><td>妈祖升天日</td><td>Māzǔ Shēngtiān Rì</td><td>Mazu's Ascension Day</td><td>农历九月初九</td></tr>
+<tr><td>朔望</td><td>Shuòwàng</td><td>New Moon and Full Moon</td><td>每月初一、十五，上香日</td></tr>
+</table>
+
+<hr>
+
+<h2 id="文化概念">文化概念</h2>
+
+<table>
+<tr><th>中文</th><th>拼音</th><th>英文</th><th>注释</th></tr>
+<tr><td>海神</td><td>Hǎishén</td><td>Sea Deity / Sea God</td><td>妈祖的核心神格</td></tr>
+<tr><td>讨海人</td><td>Tǎohǎirén</td><td>Sea-Faring People / Fishermen</td><td>闽南语对渔民的称呼</td></tr>
+<tr><td>香火</td><td>Xiānghuǒ</td><td>Incense Fire / Lineage</td><td>字面为香烛之火，引申为信仰传承</td></tr>
+<tr><td>保佑</td><td>Bǎoyòu</td><td>Bless and Protect</td><td>神明庇护</td></tr>
+<tr><td>显灵</td><td>Xiǎnlíng</td><td>Manifestation / Theophany</td><td>神明显现神力</td></tr>
+</table>
+
+<hr>
+
+<p><em>共35个词条。持续更新。</em></p>
+
+<hr>
+
+<p><em>相关文档：<a href="32-参考资源.html" class="wiki-link">32-参考资源</a> · <a href="26-声音管线.html" class="wiki-link">26-声音管线</a>（闽南语配音相关）</em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<li><a href="https://www.moedict.tw" target="_blank" class="ext-link">教育部台湾闽南语常用词辞典</a> — 在线闽南语标准词典，术语表中闽南语词汇的拼音/用字规范来源</li>
+<li><a href="https://en.wiktionary.org/wiki/Mazu" target="_blank" class="ext-link">Wiktionary· Mazu</a> — 妈祖相关术语的英文/拼音标准化参考，英文维基词典收录</li>
+<li><a href="https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227" target="_blank" class="ext-link">UNESCO· 妈祖信俗</a> — 2009年入选人类非物质文化遗产，"分灵""绕境""进香"等核心术语的国际定义</li>
+<li><a href="https://mazu.ncue.edu.tw" target="_blank" class="ext-link">台湾妈祖文化研究中心· 术语库</a> — 彰化师范大学维护：妈祖信仰核心专有名词的中英日三语对照</li>
+<li><a href="https://ctext.org" target="_blank" class="ext-link">CTEXT· 妈祖封号沿革</a> — 从"夫人"→"天妃"→"天后"的历代敕封文献原文，"天妃""天后"术语的历史演变</li>
+<li><a href="https://www.youtube.com/results?search_query=闽南语+发音+妈祖" target="_blank" class="ext-link">闽南语发音教学· YouTube</a> — 术语表中关键词的标准闽南语发音示范，配音组必看</li>
+<li><a href="https://book.douban.com/subject/1078258/" target="_blank" class="ext-link">《中国民间诸神》· 豆瓣</a> — 千里眼/顺风耳等妈祖驾前护法的完整神格考据</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

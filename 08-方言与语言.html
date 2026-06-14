@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>08 · 方言与语言 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link active">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷二 · 文化土壤
+  </div>
+  <div class="article-summary">一句话摘要：妈祖信仰的语言土壤是闽南语系中的莆仙话（兴化语），这是妈祖母语、信众母语，也是祭祀仪式的原生语言；理解这些关键词汇和方言质感，是创作"有妈祖味的对白"的前提。</div>
+  <article class="article">
+<h1 id="08-方言与语言">08 · 方言与语言</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖信仰的语言土壤是闽南语系中的莆仙话（兴化语），这是妈祖母语、信众母语，也是祭祀仪式的原生语言；理解这些关键词汇和方言质感，是创作"有妈祖味的对白"的前提。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一语言地理">一、语言地理</h2>
+
+<h3 id="11-莆仙话兴化语">1.1 莆仙话（兴化语）</h3>
+
+<li><strong>归属</strong>：汉藏语系 > 汉语族 > 闽语支 > 莆仙话</li>
+<li><strong>使用区域</strong>：福建省莆田市（含湄洲岛）、仙游县及周边</li>
+<li><strong>使用人口</strong>：约300万（莆田本地）+ 海外莆仙籍侨民</li>
+<li><strong>与闽南语的关系</strong>：莆仙话是闽南语（泉州话/漳州话/厦门话）的近亲，但差异显著，相互不能直接互通。莆仙话保留了更多古汉语特征。</li>
+
+<h3 id="12-妈祖信仰中的语言层级">1.2 妈祖信仰中的语言层级</h3>
+
+<table>
+<tr><th>层级</th><th>语言</th><th>使用场景</th></tr>
+<tr><td>神圣层</td><td>莆仙话/文言文</td><td>诵读祭文、祝祷词，多使用文读（汉字音读）</td></tr>
+<tr><td>仪式层</td><td>莆仙话/闽南语</td><td>道士/法师主持仪式、掷筊时的默祷</td></tr>
+<tr><td>日常层</td><td>各地方言</td><td>信众日常祈祷、庙中交谈</td></tr>
+</table>
+
+<blockquote>
+<p>创作提示：在短剧中，不需要让角色全程说闽南语——那是纪录片的路数。但几个关键词汇的"点状植入"（称呼、感叹词、仪式用语）可以瞬间建立文化认同感。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二妈祖相关核心词汇表">二、妈祖相关核心词汇表</h2>
+
+<h3 id="21-称呼类">2.1 称呼类</h3>
+
+<table>
+<tr><th>词汇</th><th>读音（莆仙话/闽南语）</th><th>释义</th><th>创作场景</th></tr>
+<tr><td>妈祖</td><td>Má-tsóo（闽南语白读）</td><td>对神明的通称，"妈"即祖母/母亲，"祖"为祖先</td><td>最通用的称呼</td></tr>
+<tr><td>娘妈</td><td>Niû-má</td><td>闽南语中对妈祖的昵称，"娘"即姑娘</td><td>年长女性信众常用</td></tr>
+<tr><td>默娘</td><td>Bi̍k-niû</td><td>林默娘名号，含有亲近感</td><td>叙事中对年轻默娘的称呼</td></tr>
+<tr><td>天上圣母</td><td>Thian-siōng Sìng-bú</td><td>清代封号，庙宇匾额常用</td><td>正式场合/匾额出现</td></tr>
+<tr><td>天妃</td><td>Thian-hui</td><td>元代封号，文言文中出现</td><td>历史剧/古代场景</td></tr>
+<tr><td>天后</td><td>Thian-hiō</td><td>清代封号，最正式的尊称之一</td><td>官方文书/正式称谓</td></tr>
+<tr><td>阿妈</td><td>A-má</td><td>闽南语中对妈祖的简称，"奶奶"</td><td>日常生活对话</td></tr>
+<tr><td>湄洲妈</td><td>Bî-tsiu-má</td><td>特指湄洲祖庙分灵的神像</td><td>分灵庙信众提及祖庙时</td></tr>
+</table>
+
+<h3 id="22-仪式用语">2.2 仪式用语</h3>
+
+<table>
+<tr><th>词汇</th><th>读音</th><th>释义</th><th>创作场景</th></tr>
+<tr><td>跋杯（掷筊）</td><td>Pua̍h-pue</td><td>以筊杯掷地问神</td><td>角色向妈祖请示某事</td></tr>
+<tr><td>圣杯</td><td>Sìng-pue</td><td>一正一反，表示神明应允</td><td>"三圣杯"即连续三次圣杯，表示绝对同意</td></tr>
+<tr><td>进香</td><td>Tsìn-hiunn</td><td>前往庙宇焚香朝拜</td><td>角色说"我去进香"</td></tr>
+<tr><td>刈火</td><td>Kuah-hué</td><td>从祖庙香炉取香灰回本庙</td><td>分灵相关的仪式场景</td></tr>
+<tr><td>绕境</td><td>Jiàu-kíng</td><td>神明出巡辖区</td><td>"妈祖要绕境了"</td></tr>
+<tr><td>钻轿脚</td><td>Tsǹg-kiō-kha</td><td>匍匐跪地从神轿下钻过</td><td>绕境中的高潮场景</td></tr>
+<tr><td>三牲</td><td>Sam-sing</td><td>猪、鸡、鱼三样祭品</td><td>供桌上的标准配置</td></tr>
+<tr><td>五果</td><td>Gōo-kó</td><td>五种水果祭品</td><td>节庆场景</td></tr>
+</table>
+
+<h3 id="23-日常信仰用语">2.3 日常信仰用语</h3>
+
+<table>
+<tr><th>词汇</th><th>读音</th><th>释义</th><th>创作场景</th></tr>
+<tr><td>妈祖婆</td><td>Má-tsóo-pô</td><td>对妈祖的亲切称呼</td><td>老人日常聊天</td></tr>
+<tr><td>保庇</td><td>Pó-pì</td><td>保佑、庇护</td><td>"妈祖保庇"——最常见的一句祈祷</td></tr>
+<tr><td>香火</td><td>Hiunn-hué</td><td>庙中香火，引申为信仰传承</td><td>"香火不断"——信仰延续的象征</td></tr>
+<tr><td>还愿</td><td>Hîng-guān</td><td>愿望实现后回去感谢神明</td><td>角色承诺"我会来还愿"</td></tr>
+<tr><td>天公</td><td>Thinn-kong</td><td>玉皇大帝</td><td>与妈祖信仰并行</td></tr>
+</table>
+
+<hr>
+
+<h2 id="三常见妈祖相关谚语与俗语">三、常见妈祖相关谚语与俗语</h2>
+
+<table>
+<tr><th>谚语（闽南语/普通话混合呈现）</th><th>释义</th><th>创作使用场景</th></tr>
+<tr><td>"妈祖婆面前也敢讲"</td><td>指在神明面前说谎/耍赖是对信仰的严重亵渎</td><td>角色之间的信任危机——"你敢在妈祖婆面前再说一遍？"</td></tr>
+<tr><td>"落海靠妈祖"</td><td>出海人的口头禅，表达对妈祖的依赖</td><td>渔民出海前的日常对话</td></tr>
+<tr><td>"北港妈祖——兴外方"</td><td>台湾歇后语，指北港朝天宫的妈祖对外地信众特别灵验</td><td>可用于表现不同庙宇间的"竞争"</td></tr>
+<tr><td>"三月痟妈祖"</td><td>台湾俗语，指妈祖诞辰月信众狂热参与绕境</td><td>形容角色的狂热或盲目</td></tr>
+<tr><td>"走船跑马三分命"</td><td>出海和骑马一样，三分靠天命</td><td>闽南沿海的生存哲学</td></tr>
+</table>
+
+<blockquote>
+<p>创作提示："保庇"（pó-pì）是最有妈祖味的口头禅。一个角色在紧张时刻下意识说出"妈祖保庇"，比大段宗教独白更真实。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="四语气质感如何在短剧中还原妈祖味">四、语气质感：如何在短剧中还原"妈祖味"</h2>
+
+<h3 id="41-称呼的温度">4.1 称呼的"温度"</h3>
+
+<p>闽南语中对妈祖的称呼自带温度：</p>
+<li><strong>"阿妈"</strong>（A-má）：像叫自己的奶奶——亲切、依赖</li>
+<li><strong>"妈祖婆"</strong>（Má-tsóo-pô）：最日常化的称呼，老人挂在嘴边</li>
+<li><strong>"天上圣母"</strong>：庙里匾额上的文字——距离感、敬畏感</li>
+
+<p>在短剧中，一个角色从称呼"天上圣母"（敬畏）到称呼"阿妈"（亲近）的变化，本身就是一条人物弧线。</p>
+
+<h3 id="42-祈祷的口语气">4.2 祈祷的"口语气"</h3>
+
+<p>真实的妈祖祈祷不是念经，而是说话：</p>
+<li>"妈祖婆，我是港尾的阿珠，我儿子明天要出远洋，你帮我看看……"——带有具体信息和个人关系的祈祷</li>
+<li>不需要文雅的措辞，越口语越真实</li>
+
+<h3 id="43-声音设计要点">4.3 声音设计要点</h3>
+<li>莆仙话音调比普通话更"硬"（入声字多，短促有力）</li>
+<li>闽南语的祈祷带有吟诵感，语调在"说"和"唱"之间</li>
+<li>庙中掷筊的"啪嗒"声——两个木块落地的脆响——是最具辨识度的声音记忆点</li>
+
+<hr>
+
+<h2 id="五两岸语言差异提示">五、两岸语言差异提示</h2>
+
+<li>中国大陆的妈祖庙祭祀中，祝祷文通常使用普通话或莆仙话混合</li>
+<li>台湾的妈祖庙，仪式语言以<strong>闽南语（台语）</strong>为主</li>
+<li>同一句话在不同语言中的"质感"完全不同——短剧中如果涉及两岸场景切换，语言差异可以成为有趣的叙事元素</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/语言资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%8E%86%E4%BB%99%E8%AF%9D" target="_blank" class="ext-link">莆仙话 - 维基百科</a> — 莆仙话的音系、声调、与闽南语的差异比较</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%97%BD%E5%8D%97%E8%AF%AD" target="_blank" class="ext-link">闽南语 - 维基百科</a> — 闽南语的总体介绍，含白读/文读系统说明</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E9%96%A9%E5%8D%97%E8%AA%9E%E7%BE%85%E9%A6%AC%E5%AD%97%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88" target="_blank" class="ext-link">闽南语罗马拼音方案（台罗拼音）</a> — 本文词汇表使用的拼音方案</li>
+
+<p><strong>学术著作/工具书</strong></p>
+<li>周长楫《闽南方言大词典》（福建人民出版社，2006年）— 闽南语的权威词典，收录方言语汇和读音</li>
+<li>洪惟仁《台湾语言地图》（台湾前卫出版社，2019年）— 台湾语言分布和方言区划的经典</li>
+<li>《莆田市志·方言志》— 莆仙话的官方记录，可在莆田市方志办官网查电子版</li>
+
+<p><strong>田野记录/音像资源</strong></p>
+<li>台湾闽南语常用词辞典（教育部）: https://twblg.dict.edu.tw/ — 可在线查闽南语发音（含真人录音），编剧查询台词读音首选</li>
+<li>闽南语有声资源库（华侨大学文学院维护）— 闽南语民谣、谚语的音频记录</li>
+
+<p><strong>影视创作参考</strong></p>
+<li>电影《海角七号》（2008年，魏德圣导演）— 闽南语对白占比极高的华语电影，可参考方言在影视中的自然融入方式</li>
+<li>台剧《俗女养成记》（2019年）— 闽南语与普通话切换的日常口吻参考</li>
+
+<p><strong>数据出处</strong></p>
+<li>莆仙话使用人口约300万据《莆田市志·方言志》及第六次全国人口普查莆田市常住人口推算</li>
+<li>妈祖相关词汇读音据周长楫《闽南方言大词典》及台湾教育部台语辞书比对</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24 · 提示词工程 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link active">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷五 · AI管线
+  </div>
+  <div class="article-summary">面向Seedance和ComfyUI的国风视觉提示词模板库，含实战参数与风格一致性控制方案。</div>
+  <article class="article">
+<h1 id="24-提示词工程">24 · 提示词工程</h1>
+
+<blockquote>
+<p>面向Seedance和ComfyUI的国风视觉提示词模板库，含实战参数与风格一致性控制方案。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一提示词结构公式">一、提示词结构公式</h2>
+
+<pre><code>
+[主体描述] + [动作/状态] + [环境背景] + [光线氛围] + [镜头参数] + [风格标签] + [质量词]
+</code></pre>
+
+<p><strong>示例</strong>：</p>
+<blockquote>
+<p>一位宋代装束的渔家女子，面向大海双手合十，背景是黎明时分的湄洲岛海岸，金色晨光穿透薄雾，中景固定镜头，中国水墨意境风格，电影级画质，8K</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二场景分类模板">二、场景分类模板</h2>
+
+<h3 id="21-海洋场景">2.1 海洋场景</h3>
+<pre><code>
+基础标签：ocean, waves, coastline, fishing boat, sea mist, horizon
+光线：golden hour / overcast / storm light / moonlight on water
+国风加持：traditional Chinese ink painting style, ethereal atmosphere
+</code></pre>
+
+<p><strong>实战参数</strong>（Seedance）：</p>
+<li>分辨率：1280×720（横屏）或 720×1280（竖屏）</li>
+<li>帧数：24fps</li>
+<li>运动幅度：0.3-0.5（海洋场景可略高）</li>
+<li>种子：固定角色场景时锁定seed</li>
+
+<h3 id="22-祭祀场景">2.2 祭祀场景</h3>
+<pre><code>
+基础标签：incense smoke, candlelight, temple interior, offering table, red lanterns
+光线：warm candlelight, dim interior, smoke diffusion, soft glow
+国风加持：Fujian Mazu temple, traditional Chinese ritual, solemn atmosphere
+</code></pre>
+
+<p><strong>注意</strong>：祭祀场景烟雾较多，AI容易产生飘忽不定的结果。建议：</p>
+<li>降低运动幅度至0.2-0.3</li>
+<li>用「静态镜头」prompt强调稳定</li>
+<li>烟、火、人影可分层生成后合成</li>
+
+<h3 id="23-红砖厝建筑">2.3 红砖厝/建筑</h3>
+<pre><code>
+基础标签：Fujian red brick architecture, traditional courtyard, swallowtail roof, stone carvings
+光线：afternoon sunlight, warm tones, shadow play on brick walls
+</code></pre>
+
+<p><strong>参考图策略</strong>：必须附湄洲岛祖庙实拍参考图，否则AI自由发挥偏离太远。</p>
+
+<h3 id="24-人物场景">2.4 人物场景</h3>
+<pre><code>
+全身/中景：full body shot, traditional Han Chinese costume, fabric flowing in wind
+面部谨慎：close-up portrait —— 仅在明确需要时使用，且预期pass率低
+</code></pre>
+
+<hr>
+
+<h2 id="三风格一致性控制关键">三、风格一致性控制（关键！！）</h2>
+
+<h3 id="方法1固定种子-风格注入">方法1：固定种子 + 风格注入</h3>
+<p>在同一集/同一场景的prompt末尾追加固定风格串：</p>
+<pre><code>
+[style: traditional Chinese ink painting, muted color palette, film grain, 
+atmospheric, Song Dynasty aesthetics]
+</code></pre>
+<p>这个串在整个项目里保持不变。</p>
+
+<h3 id="方法2参考图-ip-adaptercomfyui">方法2：参考图 + IP-Adapter（ComfyUI）</h3>
+<p>使用ComfyUI的IP-Adapter节点，输入一张「风格样图」（如电影《刺客聂隐娘》的截图），锁定色调与氛围。</p>
+
+<h3 id="方法3后期统一lut">方法3：后期统一LUT</h3>
+<p>见<a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a>，即使AI出图色温有偏差，统一调色可大幅改善。</p>
+
+<hr>
+
+<h2 id="四负面提示词negative-prompt模板">四、负面提示词（Negative Prompt）模板</h2>
+
+<pre><code>
+现代元素：modern buildings, cars, smartphones, neon lights, power lines
+人物瑕疵：deformed face, extra fingers, blurred face, asymmetric eyes, bad anatomy
+氛围破坏：cartoon style, oversaturated colors, unrealistic lighting, text, watermark
+</code></pre>
+
+<p><strong>Seedance专用</strong>：</p>
+<li><code>low quality, jpeg artifacts, motion blur, distorted body</code></li>
+
+<hr>
+
+<h2 id="五seedance-vs-comfyui-选择指南">五、Seedance vs ComfyUI 选择指南</h2>
+
+<table>
+<tr><th>场景</th><th>推荐工具</th><th>原因</th></tr>
+<tr><td>空镜/环境</td><td>Seedance 文生视频</td><td>快速、氛围好</td></tr>
+<tr><td>需要精确构图</td><td>ComfyUI ControlNet</td><td>可用线稿/深度图控制</td></tr>
+<tr><td>角色特写</td><td>ComfyUI + LoRA</td><td>需角色LoRA锁定面部</td></tr>
+<tr><td>批量变体</td><td>Seedance</td><td>一次prompt出多个版本</td></tr>
+<tr><td>风格迁移</td><td>ComfyUI IP-Adapter</td><td>参考图驱动更稳</td></tr>
+</table>
+
+<hr>
+
+<h2 id="六提示词迭代日志必做">六、提示词迭代日志（必做！）</h2>
+
+<p>每次生成后记录到共享文档：</p>
+
+<pre><code>
+镜头编号 | prompt原文 | 参数(seed/cfg/steps) | 结果评级(1-5) | 备注
+C03-02  | [prompt]   | seed=42 cfg=7.5     | ★★★★         | 海浪纹理佳，天空偏灰
+</code></pre>
+
+<p>积累50条以上即可反推优化模板。此项由AI组1人专职维护。</p>
+
+<hr>
+
+<h2 id="七快速启动模板">七、快速启动模板</h2>
+
+<h3 id="妈祖短剧默认模板">妈祖短剧「默认模板」</h3>
+<pre><code>
+[主体]，[动作]，[场景]，[光线]，traditional Chinese aesthetic, 
+Fujian coastal atmosphere, film quality, 8K,
+negative: modern elements, cartoon, distorted, watermark, text
+</code></pre>
+
+<p>直接填空使用，前10个镜头用此模板跑通再调优。</p>
+
+<hr>
+
+<p><em>相关文档：<a href="23-AI短剧工作流.html" class="wiki-link">23-AI短剧工作流</a> · <a href="25-角色一致性.html" class="wiki-link">25-角色一致性</a> · <a href="29-意象库.html" class="wiki-link">29-意象库</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="seedance工具链">Seedance工具链</h3>
+<li><a href="https://www.seedance.com/docs" target="_blank" class="ext-link">Seedance官方文档</a> — 完整API参数：分辨率/帧率/运动幅度/seed/CFG的推荐范围与默认值</li>
+<li><a href="https://www.seedance.com/prompt-guide" target="_blank" class="ext-link">Seedance提示词指南</a> — 官方提示词最佳实践：结构公式、风格标签权重、负面提示词优化</li>
+
+<h3 id="comfyui工具链">ComfyUI工具链</h3>
+<li><a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" class="ext-link">ComfyUI GitHub</a> — 开源节点化工作流，ControlNet/IP-Adapter/LoRA一键加载</li>
+<li><a href="https://github.com/tencent-ailab/IP-Adapter" target="_blank" class="ext-link">IP-Adapter GitHub</a> — 腾讯AI Lab出品，参考图驱动风格一致性，推荐weight=0.7-0.85</li>
+<li><a href="https://huggingface.co/lllyasviel/ControlNet-v1-1" target="_blank" class="ext-link">ControlNet模型库</a> — OpenPose/Canny/Depth控制构图，配合IP-Adapter保证角色+场景一致性</li>
+<li><a href="https://civitai.com/search/models?query=Chinese+traditional+style" target="_blank" class="ext-link">CivitAI·国风LoRA</a> — 社区共享的中国传统风格LoRA模型库，可下载后用于ComfyUI</li>
+
+<h3 id="提示词工程参考">提示词工程参考</h3>
+<li><a href="https://openart.ai/promptbook" target="_blank" class="ext-link">Stable Diffusion Prompt Book</a> — OpenArt出品免费提示词手册，结构公式/风格标签/负面提示词的完整参考</li>
+<li><a href="https://lexica.art" target="_blank" class="ext-link">Lexica.art</a> — AI图像搜索引擎，搜索"Song Dynasty Chinese coastal"可看大量国风海洋场景的实际生成效果</li>
+<li><a href="https://docs.midjourney.com/docs/prompts" target="_blank" class="ext-link">Midjourney提示词参考</a> — 虽非主力工具，但其提示词结构（主体+环境+光线+风格+参数）可直接转换为Seedance格式</li>
+
+<h3 id="国风视觉参考">国风视觉参考</h3>
+<li><a href="https://www.dpm.org.cn/Home.html" target="_blank" class="ext-link">故宫博物院数字文物库</a> — 宋代服饰/器物/建筑高清数字资源，可截图作参考图输入IP-Adapter</li>
+<li><a href="https://www.zhongguose.com" target="_blank" class="ext-link">中国传统色色谱</a> — 蓝色系/赭色系/暖金色系的色码在线查询，prompt中的色调描述依据</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

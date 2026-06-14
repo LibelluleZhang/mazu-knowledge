@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>34 · 会议纪要 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link active">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷八 · 会议记录
+  </div>
+  <div class="article-summary">共创会议纪要</div>
+  <article class="article">
+<h1 id="34-会议纪要">34 · 会议纪要</h1>
+
+<blockquote>
+<p>这份会议纪要是妈祖AI短剧项目从0到1的共创记录。它不是会议记录，是一群人把想法变成现实的过程。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="0611-三场早期讨论">6月11日 · 三场早期讨论</h2>
+
+<p><a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" target="_blank">📄 查看完整记录 →</a></p>
+
+<h3>第一场：初代同事 & 项目起源</h3>
+<ul>
+<li>Libi（布布）与早期伙伴探讨"妈祖AI短剧"的出发点</li>
+<li>核心问题：为什么是妈祖？为什么是现在？</li>
+<li>关键洞察：当代年轻人对妈祖的认知正在转变——从"求平安"变成"被接住"</li>
+</ul>
+
+<h3>第二场：女团穿越故事方案（波塔版）</h3>
+<ul>
+<li>编剧波塔提出"女团穿越"叙事框架</li>
+<li>将当代偶像文化与宋代湄洲岛碰撞</li>
+<li>讨论了节奏、笑点密度、文化尊重边界</li>
+</ul>
+
+<h3>第三场：导演初步交流</h3>
+<ul>
+<li>史老师（郁斌）加入讨论</li>
+<li>确立"民间信仰/民间哲学"叙事定位，不搞"显灵神迹"</li>
+<li>提出单元剧结构、神器串联线索</li>
+</ul>
+
+<hr>
+
+<h2 id="0614-十二人深度共创会">6月14日 · 十二人深度共创会</h2>
+
+<p><a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" target="_blank">📄 查看完整记录 →</a></p>
+
+<h3>参与人</h3>
+<p>Libellule（布布）、giulianoooooo（史老师/郁斌）、AhJuan（阿娟）、长风、Booker、William（庞老师）、马老师、Hazel、元庐、肥诗、sing——共12位。</p>
+
+<h3>核心共识</h3>
+
+<h4>1. 叙事定位</h4>
+<p>「不要搞成信仰宣传片，也不能搞成神迹分享会。」——马老师</p>
+<p>如果这部剧体现的是妈祖有多厉害，就没意思了。要体现的是：一个真实的人，在海上，做了什么让别人记住了她。</p>
+
+<h4>2. 三重主题</h4>
+<ul>
+<li><strong>女性主义</strong>：林默（妈祖）是一位宋代女性，她的故事本身就是一部女性力量史</li>
+<li><strong>两岸联结</strong>：妈祖信仰是两岸最重要的情感纽带</li>
+<li><strong>海外认同</strong>：全球5000+座妈祖庙，连接3亿信众</li>
+</ul>
+
+<h4>3. 形式确认</h4>
+<ul>
+<li><strong>单元剧结构</strong>：每集独立故事，通过妈祖（或神器）串联</li>
+<li><strong>参考《爱死机》开放格式</strong>：每集可以有不同风格、不同视角</li>
+<li><strong>3分钟×N集</strong>：适合短视频传播的节奏</li>
+</ul>
+
+<h4>4. 素材方向</h4>
+<ul>
+<li>优先浔埔村活态信仰生态，非景区化天后宫</li>
+<li>真实故事优先——渔民的口述、船上的香炉、风浪前的祈祷</li>
+<li>元庐分享了真实的"掷圣杯"经历——三次掷出圣杯才相信妈祖"应了"</li>
+</ul>
+
+<h4>5. 圣杯容错哲学</h4>
+<p>导演史老师提出的核心创作方法：</p>
+<blockquote>
+<p>掷圣杯这个动作本身就包含了容错机制——一次不行两次，两次不行三次。信仰不是一次性的绝对判断，是反复对话中的逐渐确认。</p>
+<p>我们的叙事也应该这样：允许观众先不信、再半信半疑、最后被某个瞬间击中。</p>
+</blockquote>
+
+<h4>6. 缺的人才</h4>
+<ul>
+<li><strong>核心编剧（2-3人）</strong>：能扎下来深度共创，不是来给idea就走</li>
+<li><strong>Booker</strong>（北师大博士、泉州人、在蟳埔做田野）——编剧第一优先候选人</li>
+<li><strong>阿娟</strong>（月亮装置艺术家、跑路艺术小组、伦敦经济学→美国纯艺）——视觉/装置方向</li>
+</ul>
+
+<hr>
+
+<h2 id="关键决策">关键决策</h2>
+
+<table>
+  <thead><tr><th>问题</th><th>6/11 方向</th><th>6/14 确认</th></tr></thead>
+  <tbody>
+    <tr><td>叙事格式</td><td>单元剧 or 连续剧</td><td>✅ 单元剧，爱死机式开放</td></tr>
+    <tr><td>妈祖出场方式</td><td>显灵 or 留白</td><td>⚠️ 待定，倾向留白</td></tr>
+    <tr><td>每集时长</td><td>3-5分钟</td><td>✅ 3分钟</td></tr>
+    <tr><td>素材来源</td><td>传说+原创</td><td>✅ 真实口述优先</td></tr>
+    <tr><td>视觉参考</td><td>王家卫/国风</td><td>✅ 纪录片质感+诗意</td></tr>
+    <tr><td>语言</td><td>闽南语+普通话</td><td>✅ 闽南语片段+普通话主线</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 id="互动体验">互动体验</h2>
+
+<p>我们在会议记录页面中嵌入了<a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" target="_blank">「妈祖听海」</a>互动——读者可以向妈祖"说一句话"，系统会生成独特的回应。这是圣杯容错哲学的数字化尝试。</p>
+
+<p>此外，<a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" target="_blank">6/14 页面</a>包含完整的阅读交互：进度条、章节动画、底部导航栏、阅读完成彩蛋。</p>
+
+<hr>
+
+<blockquote>
+<p>「难的不是技术，是产品和内容。」——布布</p>
+<p>「这东西不是我的，是社会的。大家一起来做。」——布布</p>
+</blockquote>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.1 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

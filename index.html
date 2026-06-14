@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>妈祖AI短剧 · 背景知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="hero">
+    <h1>妈祖AI国风短剧</h1>
+    <p class="hero-subtitle">背景知识库</p>
+    <p class="hero-desc">35篇 · 8卷 · 从历史传说到AI生产管线</p>
+    <p class="hero-desc">指导单位：妈祖文化协会 · 莆田文旅</p>
+    <div class="hero-quote">「人需要被接住。」</div>
+  </div>
+  
+  <div class="volume-grid">
+    <div class="volume-card">
+      <h2>总览</h2>
+      <ul>
+                <li><a href="00-总览.html">00 · 总览</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷一 · 妈祖本身</h2>
+      <ul>
+                <li><a href="01-历史起源.html">01 · 历史起源</a></li>
+        <li><a href="02-信仰体系.html">02 · 信仰体系</a></li>
+        <li><a href="03-非遗地位.html">03 · 非遗地位</a></li>
+        <li><a href="04-传说故事.html">04 · 传说故事</a></li>
+        <li><a href="05-仪式与习俗.html">05 · 仪式与习俗</a></li>
+        <li><a href="06-人物谱系.html">06 · 人物谱系</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷二 · 文化土壤</h2>
+      <ul>
+                <li><a href="07-闽南文化背景.html">07 · 闽南文化背景</a></li>
+        <li><a href="08-方言与语言.html">08 · 方言与语言</a></li>
+        <li><a href="09-视觉符号体系.html">09 · 视觉符号体系</a></li>
+        <li><a href="10-音乐与声音.html">10 · 音乐与声音</a></li>
+        <li><a href="11-全球传播.html">11 · 全球传播</a></li>
+        <li><a href="12-两岸意义.html">12 · 两岸意义</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷三 · 创作方法论</h2>
+      <ul>
+                <li><a href="13-改编原则.html">13 · 改编原则：信仰类IP的核心红线与创作边界</a></li>
+        <li><a href="14-叙事策略.html">14 · 叙事策略：从民间传说到国风短剧</a></li>
+        <li><a href="15-人物塑造.html">15 · 人物塑造：妈祖的四个面向与配角群像</a></li>
+        <li><a href="16-情感锚点.html">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a></li>
+        <li><a href="17-场景考古.html">17 · 场景考古：宋元闽南日常生活的视觉重建</a></li>
+        <li><a href="18-对白写作.html">18 · 对白写作：古装但不古语——国风短剧的台词法则</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷四 · 标杆作品</h2>
+      <ul>
+                <li><a href="19-对标作品分析.html">19 · 对标作品分析：三部改变叙事认知的标杆</a></li>
+        <li><a href="20-非遗影视案例库.html">20 · 非遗影视案例库：五部作品的技法拆解</a></li>
+        <li><a href="21-海外参考.html">21 · 海外参考：信仰叙事与海洋文化的国际经验</a></li>
+        <li><a href="22-失败案例.html">22 · 失败案例：文化改编的六种死法及避坑策略</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷五 · AI管线</h2>
+      <ul>
+                <li><a href="23-AI短剧工作流.html">23 · AI短剧工作流</a></li>
+        <li><a href="24-提示词工程.html">24 · 提示词工程</a></li>
+        <li><a href="25-角色一致性.html">25 · 角色一致性</a></li>
+        <li><a href="26-声音管线.html">26 · 声音管线</a></li>
+        <li><a href="27-后期工作流.html">27 · 后期工作流</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷六 · 创作入口</h2>
+      <ul>
+                <li><a href="28-故事种子.html">28 · 故事种子</a></li>
+        <li><a href="29-意象库.html">29 · 意象库</a></li>
+        <li><a href="30-问题与留白.html">30 · 问题与留白</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷七 · 基础设施</h2>
+      <ul>
+                <li><a href="31-术语表.html">31 · 术语表</a></li>
+        <li><a href="32-参考资源.html">32 · 参考资源</a></li>
+        <li><a href="33-协作公约.html">33 · 协作公约</a></li>
+      </ul>
+    </div>
+    <div class="volume-card">
+      <h2>卷八 · 会议记录</h2>
+      <ul>
+                <li><a href="34-会议纪要.html">34 · 会议纪要</a></li>
+        <li><a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" target="_blank">↗ 6/11 三场会议</a></li>
+        <li><a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" target="_blank">↗ 6/14 共创会议</a></li>
+        <li><a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" target="_blank">↗ 妈祖听海</a></li>
+      </ul>
+    </div>
+
+  </div>
+  
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.1 · 2026年6月</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

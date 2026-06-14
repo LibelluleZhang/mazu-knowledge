@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>17 · 场景考古：宋元闽南日常生活的视觉重建 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link active">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷三 · 创作方法论
+  </div>
+  <div class="article-summary">**摘要**：一部古装剧的时代质感，80%来自细节。本文为编剧和美术团队提供宋元时期莆田/闽南的衣食住行、市井生活和航海技术考证，用细节建立观众的信任。</div>
+  <article class="article">
+<h1 id="17-场景考古宋元闽南日常生活的视觉重建">17 · 场景考古：宋元闽南日常生活的视觉重建</h1>
+
+<blockquote>
+<p><strong>摘要</strong>：一部古装剧的时代质感，80%来自细节。本文为编剧和美术团队提供宋元时期莆田/闽南的衣食住行、市井生活和航海技术考证，用细节建立观众的信任。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一场景考古的核心原则">一、场景考古的核心原则</h2>
+
+<p><strong>不是还原历史——是"还原一种可信的生活"。</strong></p>
+
+<p>历史考据是工具，不是目的。目标是在屏幕上构建一个"让观众愿意相信这是宋代闽南"的视觉世界。这需要三条原则：</p>
+
+<li><strong>精确在感觉，而非数据</strong>——知道福建宋代用红砖比知道红砖尺寸更重要</li>
+<li><strong>细节为叙事服务</strong>——每个考据细节都应该能进入镜头，成为人物活动的背景</li>
+<li><strong>大胆用典型，小心忌穿越</strong>——可以用最具代表性的，但绝对不能出现明代以后的元素</li>
+
+<hr>
+
+<h2 id="二衣宋代闽南服饰体系">二、衣——宋代闽南服饰体系</h2>
+
+<h3 id="林默的日常着装">林默的日常着装</h3>
+
+<p><strong>主色调</strong>：青、蓝、赭——渔家女的实用色系</p>
+
+<p><strong>具体构成</strong>：</p>
+<li><strong>上衣</strong>：窄袖短襦（衫），便于活动。宋代女子日常穿窄袖，非宽袍大袖</li>
+<li><strong>下裳</strong>：长裙，裙摆可能略短（便于涉水）。裙色深沉——浅色不实用</li>
+<li><strong>材质</strong>：苎麻或粗棉。富人家用丝绸，渔民家用粗麻</li>
+<li><strong>发式</strong>：少女时期梳双鬟或简单束发，不加过多头饰。成年后可簪木簪/素钗</li>
+<li><strong>赤脚</strong>：在渔村场景中，赤脚是常态。脚底应该有茧——化妆细节</li>
+
+<p><strong>关键视觉特征</strong>：</p>
+<li>袖口是卷起来的——不是"穿得好看"，而是"穿来干活"</li>
+<li>裙角沾着海水和泥沙——服装做旧是时代感的生命线</li>
+<li>冬天加一件粗布短袄，色泽暗淡</li>
+
+<h3 id="其他人的服装">其他人的服装</h3>
+
+<table>
+<tr><th>角色</th><th>典型着装</th><th>辨识特征</th></tr>
+<tr><td>林愿（父亲，乡绅）</td><td>圆领袍衫，戴幞头</td><td>比渔民体面但不是绫罗绸缎</td></tr>
+<tr><td>王氏（母亲）</td><td>对襟褙子，布裙</td><td>朴素但整洁，有补丁但不破</td></tr>
+<tr><td>渔民（男）</td><td>短褐（粗布短衣），赤脚或麻鞋</td><td>肤色黝黑，手臂肌肉明显</td></tr>
+<tr><td>商贾</td><td>袍衫质地较好，可能戴东坡巾</td><td>但也经海风侵蚀</td></tr>
+<tr><td>孩童</td><td>肚兜、短裤，或大人旧衣改小</td><td>经常光着上身在海边跑</td></tr>
+</table>
+
+<h3 id="服饰避雷清单">服饰避雷清单</h3>
+
+<li>❌ 福建宋代不用满清的马褂/旗袍元素</li>
+<li>❌ 女性不上重彩妆（唐代风格浓艳但宋代趋于淡雅）</li>
+<li>❌ 渔民不穿白色——海上风浪加日晒，白色不持久</li>
+<li>❌ 普通人家无明显刺绣花纹——那是富贵人家的专属</li>
+<li>❌ 头饰不过于繁复——尤其是渔家场景</li>
+
+<hr>
+
+<h2 id="三食闽南海边的味道">三、食——闽南海边的味道</h2>
+
+<h3 id="日常饮食可用于场景细节">日常饮食（可用于场景细节）</h3>
+
+<p><strong>主食</strong>：</p>
+<li>稻米为主，辅以薯类</li>
+<li>粥是最常见的日常食物——渔民出海回来，一碗热粥</li>
+<li>地瓜在明代才传入中国——<strong>宋代不能出现</strong>（这是最常见的穿越错误）</li>
+
+<p><strong>海产</strong>：</p>
+<li>鱼饭（鱼和米同煮）、鱼羹、杂鱼汤</li>
+<li>海蛎、蛤蜊、紫菜</li>
+<li>鱼干是重要的储存食物</li>
+
+<p><strong>特色</strong>：</p>
+<li>宋代福建已有初步的"功夫茶"雏形（建州茶），但渔村场景应以粗茶为主</li>
+<li>米酒、红曲酒（福建传统酿造）</li>
+<li>姜——在沿海饮食中既是调味也是驱寒</li>
+
+<h3 id="饮食场景的叙事用法">饮食场景的叙事用法</h3>
+
+<li>一碗热粥可以是救助落水者后的温情时刻</li>
+<li>林默给父亲泡茶——日常中的父女关系</li>
+<li>鱼干挂在屋檐下——空镜头建立渔村环境</li>
+<li>祭典上的供品——不需要解释，只需要呈现</li>
+
+<hr>
+
+<h2 id="四住红砖厝与渔村建筑">四、住——红砖厝与渔村建筑</h2>
+
+<h3 id="闽南建筑的视觉基因">闽南建筑的视觉基因</h3>
+
+<p>福建沿海最具辨识度的建筑符号：</p>
+
+<p><strong>红砖厝</strong>（cuò，闽南语"房子"）：</p>
+<li>红砖红瓦是闽南建筑的标志性特征</li>
+<li>但宋代福建红砖建筑是否已经普及，学界有争议</li>
+<li><strong>折中方案</strong>：富裕人家/庙宇使用红砖元素，普通渔家用土坯/木结构/牡蛎壳墙</li>
+<li>牡蛎壳墙（蚵壳厝）是福建沿海极其独特且历史悠久的建筑形式——视觉冲击力强，真实存在</li>
+
+<p><strong>建筑细节</strong>：</p>
+<li>燕尾脊——闽南建筑标志性的翘角屋脊</li>
+<li>天井——福建民居常见的内院空间</li>
+<li>门槛较高——防潮防洪</li>
+<li>木雕窗棂——质朴但讲究</li>
+
+<h3 id="林默家的场景设定建议">林默家的场景设定建议</h3>
+
+<pre><code>
+林家宅院（参考尺度）：
+- 一个天井小院，三面房屋
+- 正堂：供祖先牌位，不富丽但有尊严
+- 东厢：林默的房间——一床、一桌、一窗（面向海）
+- 西厢：父母的房间及厨房
+- 院中有晒鱼干的竹架、一口井
+- 墙根下长着青苔
+- 堂前有供桌——这是妈祖信仰的原点
+</code></pre>
+
+<hr>
+
+<h2 id="五行航海技术与海洋生活">五、行——航海技术与海洋生活</h2>
+
+<h3 id="宋代福建的航海世界">宋代福建的航海世界</h3>
+
+<p>福建是宋代最重要的航海区域之一，泉州港是当时世界最大港口。</p>
+
+<p><strong>船只类型</strong>：</p>
+<li>福船——福建建造的海船，尖底、吃水深、抗风浪能力强</li>
+<li>近海渔船——小型木船，桨帆并用</li>
+<li>宋代已使用指南针（水罗盘）用于航海</li>
+
+<p><strong>航海细节（可用于剧本）</strong>：</p>
+<li>渔民出海前看风向和云层——这是林默继承的经验</li>
+<li>潮汐变化是渔民的时间表</li>
+<li>夜间靠星象和海流辨识方向</li>
+<li>台风季（农历六到八月）是情节的天然危机背景</li>
+
+<h3 id="渔村的生活节奏">渔村的生活节奏</h3>
+
+<pre><code>
+凌晨：  渔船出海（潮水合适）
+上午：  妇女补网、晒鱼、赶小海
+正午：  最炎热，村中安静
+下午：  渔船陆续回港，码头热闹
+傍晚：  渔获交易、整理渔具
+入夜：  油灯下织网、聊天
+深夜：  潮声和海风，偶尔几声狗叫
+</code></pre>
+
+<p>这种节奏本身就充满了叙事可能性——不同的时辰天然适合不同的情绪和情节。</p>
+
+<hr>
+
+<h2 id="六市井与节庆">六、市井与节庆</h2>
+
+<h3 id="市井场景">市井场景</h3>
+
+<li>码头鱼市——清晨最热闹，讨价还价声，鱼腥味</li>
+<li>集市——兼卖农具、布料、粗陶器、药材</li>
+<li>茶摊——渔民间交换信息的场所</li>
+<li>渡口——迎来送往，天然的情感节点</li>
+
+<h3 id="节庆元素">节庆元素</h3>
+
+<li><strong>春节/元宵</strong>：红灯笼、鞭炮（宋代已有）、社火</li>
+<li><strong>端午</strong>：龙舟、粽子、驱邪仪式——在海边尤其重要</li>
+<li><strong>中秋</strong>：拜月、渔家团聚</li>
+<li><strong>妈祖诞辰（农历三月二十三）</strong>：在后世剧本中可以出现，但林默在世时不可能有这个节日——这是常识红线</li>
+<li><strong>祭海</strong>：渔民出海前的传统仪式——非常有视觉和情感价值的场景</li>
+
+<hr>
+
+<h2 id="七场景考古实操清单">七、场景考古实操清单</h2>
+
+<p>每个场景开写前，编剧应能回答：</p>
+
+<li>[ ] 这个场景发生在什么时辰？光线是怎样的？</li>
+<li>[ ] 人物身上穿的是什么？这件衣服穿了几天？干净还是脏？</li>
+<li>[ ] 这个场景里有什么气味？海腥味？饭香？香火味？</li>
+<li>[ ] 有什么声音？潮声？风声？织网时绳子摩擦的声音？</li>
+<li>[ ] 如果有人坐下来，坐的是石头、木头还是地上？</li>
+<li>[ ] 场景中的光从哪里来？太阳？油灯？月光？</li>
+<li>[ ] 有没有"说明时间"的物件（比如晾着的渔网，刚被打湿的程度）？</li>
+
+<hr>
+
+<h2 id="延伸阅读">延伸阅读</h2>
+
+<li><a href="13-改编原则.html" class="wiki-link">13-改编原则</a> — "不失真"红线的具体落地</li>
+<li><a href="14-叙事策略.html" class="wiki-link">14-叙事策略</a> — 如何运用日常场景建立情感</li>
+<li><a href="20-非遗影视案例库.html" class="wiki-link">20-非遗影视案例库</a> — 《长安十二时辰》的唐代日常还原经验</li>
+
+<hr>
+
+<p><em>参考来源：《福建民居》（戴志坚）、《宋代衣食住行》（徐吉军）、《中国航海史（古代册）》、《闽南建筑》（曹春平）、泉州海外交通史博物馆、中国传统色色谱（蓝色系/赭色系）</em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<li><a href="https://www.qzhjg.com" target="_blank" class="ext-link">泉州海外交通史博物馆</a> — 宋代泉州港全球最大港口，福船模型、航海罗盘、海外贸易文物第一手实物资料</li>
+<li><a href="https://book.douban.com/subject/2587639/" target="_blank" class="ext-link">《宋代衣食住行》徐吉军· 豆瓣</a> — 宋代日常生活的考据圣经：衣冠服饰、饮食器物、市井百态</li>
+<li><a href="https://book.douban.com/subject/2042656/" target="_blank" class="ext-link">《闽南传统建筑》曹春平· 豆瓣</a> — 红砖厝、燕尾脊、蚵壳墙的学术专著，建筑细节可直接入镜</li>
+<li><a href="https://www.zhongguose.com" target="_blank" class="ext-link">中国传统色色谱</a> — 蓝色系（靛青/月白/绀青）/赭色系（赭石/檀色/驼色）在线工具，服饰美术取色依据</li>
+<li><a href="https://movie.douban.com/subject/30394183/" target="_blank" class="ext-link">《长安十二时辰》豆瓣</a> — "过日子"建立时代质感的标杆：水盆羊肉怎么做、街上怎么叫卖、官员怎么吃点心</li>
+<li><a href="https://movie.douban.com/subject/26256787/" target="_blank" class="ext-link">《大鱼海棠》豆瓣</a> — 福建土楼空间美学+海洋世界观，红+青的色彩体系与妈祖文化母体重合</li>
+<li><a href="https://kns.cnki.net" target="_blank" class="ext-link">《中国航海史（古代册）》· 知网</a> — 福船形制、宋代水罗盘技术、闽南海域航海知识学术依据</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

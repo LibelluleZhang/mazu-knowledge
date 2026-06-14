@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11 · 全球传播 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link active">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷二 · 文化土壤
+  </div>
+  <div class="article-summary">一句话摘要：妈祖信仰以湄洲祖庙为原点，经千年传播形成了"全球信众约3-4亿、分灵庙超5000座、覆盖49个国家和地区"的信仰网络；妈祖不仅是"海上保护神"，更是世界华人文化认同的核心符号之一。</div>
+  <article class="article">
+<h1 id="11-全球传播">11 · 全球传播</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖信仰以湄洲祖庙为原点，经千年传播形成了"全球信众约3-4亿、分灵庙超5000座、覆盖49个国家和地区"的信仰网络；妈祖不仅是"海上保护神"，更是世界华人文化认同的核心符号之一。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一传播规模总览">一、传播规模总览</h2>
+
+<h3 id="11-核心数据">1.1 核心数据</h3>
+
+<table>
+<tr><th>指标</th><th>数据</th><th>备注</th></tr>
+<tr><td>全球信众</td><td>约3-4亿人</td><td>涵盖两岸及全球华人社区</td></tr>
+<tr><td>分灵庙/天后宫</td><td>超过5000座</td><td>覆盖49个国家和地区【截至2024年统计】</td></tr>
+<tr><td>祖庙</td><td>湄洲妈祖祖庙（福建莆田湄洲岛）</td><td>唯一公认的"天下妈祖祖庙"</td></tr>
+</table>
+
+<blockquote>
+<p>创作提示："3亿信众"是一个有冲击力的数字。想象一下——每20个地球人中就有一个人在某种程度上"认识"妈祖。这个基数对于短剧IP的全球传播是巨大的优势。</p>
+</blockquote>
+
+<h3 id="12-传播的历史脉络">1.2 传播的历史脉络</h3>
+
+<p>妈祖信仰的全球传播与<strong>华人移民史</strong>高度重合：</p>
+
+<pre><code>
+宋：莆田湄洲（诞生）
+    ↓
+宋元：福建沿海 → 广东、浙江、江苏（海上贸易网络）
+    ↓
+元明：中国沿海 → 东南亚（南海贸易+移民）
+    ↓
+明清：台湾（大规模垦殖移民）
+    ↓
+近代：日本、美洲、澳洲（劳工移民+新移民）
+    ↓
+当代：全球华人社区（文化自觉+非遗推动）
+</code></pre>
+
+<hr>
+
+<h2 id="二区域分布详述">二、区域分布详述</h2>
+
+<h3 id="21-台湾信众最密集地区">2.1 台湾（信众最密集地区）</h3>
+
+<li><strong>庙宇数量</strong>：约1000余座，密度全球最高</li>
+<li><strong>信众比例</strong>：约70%台湾民众参与妈祖信仰活动（广义信众）</li>
+<li><strong>代表庙宇</strong>：大甲镇澜宫、北港朝天宫、新港奉天宫、白沙屯拱天宫、鹿港天后宫</li>
+<li><strong>特色活动</strong>：大甲妈祖绕境（世界级），白沙屯妈祖进香（路线不固定、全凭神轿指引），详见 <a href="05-仪式与习俗.html" class="wiki-link">05-仪式与习俗</a></li>
+
+<h3 id="22-东南亚">2.2 东南亚</h3>
+
+<table>
+<tr><th>国家</th><th>代表庙宇</th><th>背景</th></tr>
+<tr><td>马来西亚</td><td>吉隆坡天后宫（乐圣岭）、马六甲青云亭、槟城海南会馆天后宫</td><td>19世纪闽南/潮汕劳工移民带入</td></tr>
+<tr><td>新加坡</td><td>天福宫（直落亚逸街）</td><td>建于1840年，新加坡最古老华人庙宇之一</td></tr>
+<tr><td>印尼</td><td>雅加达金德院、棉兰天后宫</td><td>历经排华政策后部分恢复</td></tr>
+<tr><td>菲律宾</td><td>马尼拉妈祖庙（华人区）</td><td>闽南移民社区核心庙宇</td></tr>
+<tr><td>泰国</td><td>曼谷天后圣母宫</td><td>潮汕移民带入，与本地佛教文化融合</td></tr>
+<tr><td>越南</td><td>胡志明市穗城会馆天后宫</td><td>广东移民社区信仰中心</td></tr>
+<tr><td>缅甸</td><td>仰光庆福宫</td><td>福建移民所建</td></tr>
+</table>
+
+<blockquote>
+<p>创作提示：东南亚的妈祖庙往往是"会馆+庙宇"的复合体——广东会馆、福建会馆、海南会馆……每座庙后面都是一段移民史。这是一个极好的"单元剧"框架：一集讲一座庙、一个家族、一段跨越几代人的故事。</p>
+</blockquote>
+
+<h3 id="23-日本">2.3 日本</h3>
+
+<li><strong>代表庙宇</strong>：横滨中华街妈祖庙、长崎崇福寺妈祖堂、神户关帝庙（兼祀妈祖）、那霸天后宫（冲绳）</li>
+<li><strong>历史渊源</strong>：明代琉球王国（今冲绳）与中国朝贡贸易频繁，妈祖信仰经福州传入琉球。长崎的妈祖信仰则随17世纪中国商人传入。</li>
+<li><strong>特色</strong>：日本的妈祖信仰与本地神道教、佛教有融合现象，部分妈祖像被置于佛寺中供奉。</li>
+
+<h3 id="24-美洲">2.4 美洲</h3>
+
+<table>
+<tr><th>国家</th><th>代表庙宇</th><th>背景</th></tr>
+<tr><td>美国</td><td>旧金山天后宫、洛杉矶天后宫、纽约妈祖庙</td><td>19世纪华工+20世纪新移民</td></tr>
+<tr><td>巴西</td><td>圣保罗天后宫</td><td>20世纪末福建新移民所建</td></tr>
+<tr><td>加拿大</td><td>温哥华妈祖庙</td><td>华人社区文化地标</td></tr>
+<tr><td>阿根廷</td><td>布宜诺斯艾利斯妈祖庙</td><td>福建新移民社区</td></tr>
+</table>
+
+<h3 id="25-其他地区">2.5 其他地区</h3>
+
+<li><strong>澳大利亚</strong>：悉尼天后宫、墨尔本妈祖庙</li>
+<li><strong>欧洲</strong>：法国巴黎13区妈祖庙、英国伦敦华人社区妈祖祭坛</li>
+<li><strong>非洲</strong>：南非约翰内斯堡华人社区妈祖信仰（规模较小）</li>
+<li><strong>澳门</strong>：妈阁庙（Macau名称的来源——葡萄牙人登陆时问地名，当地人答"妈阁"，遂名Macau）——这是妈祖在地名学上最著名的痕迹。</li>
+
+<hr>
+
+<h2 id="三当代传播的新形态">三、当代传播的新形态</h2>
+
+<h3 id="31-数字化传播">3.1 数字化传播</h3>
+
+<li><strong>云进香/云祭拜</strong>：2020年后，湄洲祖庙和台湾多家庙宇推出线上祭拜服务</li>
+<li><strong>妈祖文化App</strong>：部分庙宇开发专属App，提供线上掷筊、电子签诗、香火捐赠功能</li>
+<li><strong>社交媒体</strong>：妈祖绕境在TikTok/抖音上的短视频传播，吸引了大量年轻受众</li>
+
+<h3 id="32-文创产业化">3.2 文创产业化</h3>
+
+<li>妈祖IP文创产品：Q版妈祖公仔、手办、潮服、手机壳等</li>
+<li>妈祖文化主题游戏和动画</li>
+<li>妈祖文化研学旅游</li>
+
+<h3 id="33-学术与文化交流">3.3 学术与文化交流</h3>
+
+<li>国际妈祖文化学术研讨会（定期在湄洲岛举办）</li>
+<li>世界妈祖文化论坛</li>
+<li>两岸妈祖文化交流活动</li>
+
+<hr>
+
+<h2 id="四创作视角妈祖全球化对短剧的启示">四、创作视角：妈祖全球化对短剧的启示</h2>
+
+<li><strong>"每个庙都是一个故事"</strong>：吉隆坡天后宫、马尼拉妈祖庙……每座海外庙宇都是一部跨越百年的移民家族史诗</li>
+<li><strong>"同一位妈祖，不同的面孔"</strong>：黑面妈祖（台湾）、金面妈祖（东南亚部分庙宇）、粉面妈祖（大陆新塑）——妈祖形象的在地化适配本身就是有趣的叙事</li>
+<li><strong>"从边缘到主流"</strong>：妈祖从闽南渔村的"地方神"变成"世界文化遗产"——这个叙事本身就是一部励志剧</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/庙宇资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AA%BD%E7%A5%96#%E5%85%A8%E7%90%83%E5%82%B3%E6%92%AD" target="_blank" class="ext-link">妈祖 - 维基百科（全球传播）</a> — 妈祖全球庙宇分布列表</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E7%A6%8F%E5%AE%AB" target="_blank" class="ext-link">新加坡天福宫 - 维基百科</a> — 新加坡最古老华人庙宇之一，1840年建成</li>
+<li><a href="https://baike.baidu.com/item/%E5%90%89%E9%9A%86%E5%9D%A1%E5%A4%A9%E5%90%8E%E5%AE%AB" target="_blank" class="ext-link">吉隆坡天后宫 - 百度百科</a> — 马来西亚最具规模的妈祖庙</li>
+<li><a href="https://baike.baidu.com/item/%E5%AA%BD%E9%96%A3%E5%BB%9F" target="_blank" class="ext-link">澳门妈阁庙 - 百度百科</a> — Macau地名由来的庙宇，澳门历史城区世界遗产组成部分</li>
+
+<p><strong>学术/政策文献</strong></p>
+<li>林美容《妈祖信仰与台湾社会》（台湾博扬文化，2006年）— 台湾妈祖信仰密度分析</li>
+<li>世界妈祖文化论坛历年论文集 — 含全球妈祖庙宇统计数据和传播路径分析</li>
+<li>王见川等编《中国民间信仰·妈祖卷》（台湾花木兰文化出版社，2012年）— 汇集妈祖信仰海外传播的多篇论文</li>
+
+<p><strong>文化地标网站</strong></p>
+<li><a href="https://www.culturalheritage.mo/" target="_blank" class="ext-link">澳门文化局 - 妈阁庙</a> — 澳门政府文化遗产保护网站，含妈阁庙历史介绍</li>
+<li>新加坡国家文物局(NHB) - 天福宫 — 官方遗产保护页面</li>
+
+<p><strong>媒体报道/论坛</strong></p>
+<li>世界妈祖文化论坛（湄洲岛定期举办）— 新华网、人民网历年均有专题报道，"全球5000座分灵庙"数据即出自该论坛</li>
+<li>人民日报海外版《妈祖文化海外传播》系列报道（2016-2024年）</li>
+
+<p><strong>数据出处</strong></p>
+<li>"全球信众约3-4亿人"据世界妈祖文化论坛及湄洲妈祖祖庙官方口径</li>
+<li>"覆盖49个国家和地区"据湄洲妈祖祖庙2024年对外公开统计</li>
+<li>台湾妈祖庙约1000座据台湾内政部《寺庙统计年报》</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

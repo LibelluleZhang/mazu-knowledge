@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>03 · 非遗地位 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link active">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷一 · 妈祖本身
+  </div>
+  <div class="article-summary">一句话摘要：2009年，"妈祖信俗"入选联合国教科文组织人类非物质文化遗产代表作名录，是中国首个信俗类世界非遗；同时，"妈祖祭典"被列入首批国家级非物质文化遗产名录，妈祖文化生态保护实验区亦获国家批准设立，标志着妈祖文化在当代获得了最高层级的制度性保护与认可。</div>
+  <article class="article">
+<h1 id="03-非遗地位">03 · 非遗地位</h1>
+
+<blockquote>
+<p>一句话摘要：2009年，"妈祖信俗"入选联合国教科文组织人类非物质文化遗产代表作名录，是中国首个信俗类世界非遗；同时，"妈祖祭典"被列入首批国家级非物质文化遗产名录，妈祖文化生态保护实验区亦获国家批准设立，标志着妈祖文化在当代获得了最高层级的制度性保护与认可。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一unesco人类非物质文化遗产代表作名录">一、UNESCO人类非物质文化遗产代表作名录</h2>
+
+<h3 id="11-入选过程">1.1 入选过程</h3>
+
+<li><strong>申报名称</strong>：Mazu Belief and Customs（妈祖信俗）</li>
+<li><strong>入选时间</strong>：2009年9月30日，在阿联酋阿布扎比召开的UNESCO保护非物质文化遗产政府间委员会第四次会议上通过</li>
+<li><strong>申报主体</strong>：中华人民共和国（由中国政府代表提出）</li>
+<li><strong>遗产类别</strong>：社会习俗、仪式与节庆活动</li>
+
+<h3 id="12-unesco评审认定">1.2 UNESCO评审认定</h3>
+
+<p>UNESCO在决议中认定妈祖信俗具有以下突出价值：</p>
+
+<li><strong>作为海洋文化的集中体现</strong>：妈祖信俗是航海者集体记忆和身份认同的核心载体</li>
+<li><strong>活态传承</strong>：千年传承不间断，至今仍是全球数亿信众的日常生活信仰实践</li>
+<li><strong>文化多样性</strong>：融合了儒释道三家元素，体现中华文化中和而不同的特质</li>
+<li><strong>社区凝聚力</strong>：妈祖信俗在维系华人社区（尤其是海外华人社区）的文化认同方面发挥着不可替代的作用</li>
+
+<h3 id="13-中国在unesco非遗名录中的妈祖相关项目">1.3 中国在UNESCO非遗名录中的妈祖相关项目</h3>
+
+<p>截至2024年，中国共有43个项目列入UNESCO非遗名录，妈祖信俗是其中<strong>唯一的信俗类项目</strong>，具有特殊地位。</p>
+
+<blockquote>
+<p>创作提示：UNESCO的认定为妈祖IP提供了"世界级"的文化背书。在短剧宣发中，"世界非遗"是一个强有力的叙事标签。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二国家级非物质文化遗产">二、国家级非物质文化遗产</h2>
+
+<h3 id="21-妈祖祭典首批国家级非遗">2.1 "妈祖祭典"——首批国家级非遗</h3>
+
+<li><strong>入选时间</strong>：2006年，列入第一批国家级非物质文化遗产名录（编号：Ⅹ-36）</li>
+<li><strong>类别</strong>：民俗</li>
+<li><strong>核心内容</strong>：湄洲妈祖祖庙每年农历三月廿三（妈祖诞辰日）和九月初九（妈祖升天日）举行的大型祭典仪式。祭典参照古代"三献礼"仪轨，包括迎神、读祝文、三献礼、送神等环节，兼具庄严性与民间活力。</li>
+
+<h3 id="22-妈祖传说">2.2 "妈祖传说"</h3>
+
+<li><strong>入选时间</strong>：2011年，列入第三批国家级非物质文化遗产名录</li>
+<li><strong>核心内容</strong>：妈祖生平传说、海上救难传说、显灵济世传说等口头文学传统。详见 <a href="04-传说故事.html" class="wiki-link">04-传说故事</a>。</li>
+
+<h3 id="23-其他相关非遗项目">2.3 其他相关非遗项目</h3>
+
+<table>
+<tr><th>非遗项目</th><th>级别</th><th>与妈祖的关系</th></tr>
+<tr><td>湄洲女头饰服饰</td><td>国家级</td><td>妈祖故里女子的传统装扮，红蓝黑配色+帆船型发髻</td></tr>
+<tr><td>莆仙戏</td><td>国家级</td><td>在妈祖祭祀中大量演出酬神</td></tr>
+<tr><td>大甲妈祖绕境进香</td><td>台湾地区重要民俗</td><td>连续9天8夜的徒步绕境活动</td></tr>
+<tr><td>白沙屯妈祖进香</td><td>台湾地区重要民俗</td><td>路线不固定、全凭神轿指引的特色进香</td></tr>
+</table>
+
+<hr>
+
+<h2 id="三妈祖文化生态保护实验区">三、妈祖文化生态保护实验区</h2>
+
+<li><strong>设立时间</strong>：2010年，文化部批准设立</li>
+<li><strong>区域范围</strong>：以福建省莆田市湄洲岛为核心，涵盖莆田市全域</li>
+<li><strong>意义</strong>：这是中国首个以民间信仰为主题的文化生态保护区，旨在对妈祖文化的自然生态、人文环境和非遗项目进行整体性保护。</li>
+
+<hr>
+
+<h2 id="四非遗保护的挑战与创作空间">四、非遗保护的挑战与创作空间</h2>
+
+<h3 id="41-现实挑战">4.1 现实挑战</h3>
+
+<li><strong>年轻一代信仰流失</strong>：城市化进程中，沿海渔村的传统生活形态正在消失</li>
+<li><strong>过度商业化</strong>：部分庙宇和节庆活动出现"景区化""表演化"趋势</li>
+<li><strong>文化正统性争议</strong>：两岸妈祖庙宇之间在"祖庙"地位上存在一定竞争</li>
+
+<h3 id="42-短剧创作的可能切入">4.2 短剧创作的可能切入</h3>
+
+<li><strong>"非遗传承人"题材</strong>：年轻一代如何在现代社会中守护传统仪式</li>
+<li><strong>"妈祖信俗申遗"幕后故事</strong>：地方文化工作者推动国际认可的过程</li>
+<li><strong>"全球化的香火"</strong>：不同国家华人社区如何传承妈祖信俗</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>UNESCO官方</strong></p>
+<li><a href="https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227" target="_blank" class="ext-link">Mazu belief and customs - UNESCO ICH</a> — UNESCO非遗官网妈祖信俗专页，含决议文书全文、照片、视频</li>
+<li><a href="https://ich.unesco.org/en/decisions/4.COM/13.18" target="_blank" class="ext-link">UNESCO Decision 4.COM 13.18</a> — 2009年阿布扎比会议的正式通过决议</li>
+
+<p><strong>中国非遗</strong></p>
+<li><a href="https://www.ihchina.cn/project_details/12835/" target="_blank" class="ext-link">中国非物质文化遗产网 - 妈祖祭典</a> — 国家级非遗编号Ⅹ-36的官方介绍页面</li>
+<li><a href="https://www.ihchina.cn/" target="_blank" class="ext-link">中国非物质文化遗产网 - 妈祖传说</a> — 第三批国家级非遗，编号Ⅰ-91，含申报地区和保护单位信息</li>
+
+<p><strong>学术/政策文献</strong></p>
+<li>《国务院关于公布第一批国家级非物质文化遗产名录的通知》（国发〔2006〕18号）— 中国政府网可查原文</li>
+<li>文化部《关于批准设立湄洲妈祖文化生态保护实验区的复函》（2010年）— 首个以民间信仰为主题的文化生态保护区批复文件</li>
+<li>田青《非物质文化遗产保护中的妈祖信俗》（《中国非物质文化遗产》期刊，2010年）— 中国艺术研究院研究员，申遗亲历者的学术回顾</li>
+
+<p><strong>纪录片/报道</strong></p>
+<li>CCTV《探索发现》栏目"妈祖信俗"专题（2009年）— 申遗成功前后的跟踪拍摄</li>
+<li>新华社《妈祖信俗成功入选人类非遗名录》（2009年9月30日电）— 申遗成功的即时新闻报道</li>
+
+<p><strong>数据出处</strong></p>
+<li>"43个项目列入UNESCO非遗名录"数据据中国非物质文化遗产网截至2024年统计</li>
+<li>"首个信俗类世界非遗"据UNESCO非遗名录分类检索结果</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

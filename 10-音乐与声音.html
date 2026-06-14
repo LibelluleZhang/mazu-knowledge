@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 · 音乐与声音 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link active">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷二 · 文化土壤
+  </div>
+  <div class="article-summary">一句话摘要：妈祖文化的声音谱系涵盖三个层域——**仪式音乐**（南音、莆仙戏、祭祀鼓乐）、**劳动声音**（渔歌号子、竹篙击水）和**环境音景**（海浪、风声、香火燃烧声）；这些声音素材是短剧音频设计和氛围构建的核心资源库。</div>
+  <article class="article">
+<h1 id="10-音乐与声音">10 · 音乐与声音</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖文化的声音谱系涵盖三个层域——<strong>仪式音乐</strong>（南音、莆仙戏、祭祀鼓乐）、<strong>劳动声音</strong>（渔歌号子、竹篙击水）和<strong>环境音景</strong>（海浪、风声、香火燃烧声）；这些声音素材是短剧音频设计和氛围构建的核心资源库。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一仪式音乐">一、仪式音乐</h2>
+
+<h3 id="11-南音南管">1.1 南音（南管）</h3>
+
+<li><strong>起源</strong>：源于唐代宫廷音乐，宋元时期随中原移民传入闽南，被誉为"中国音乐的活化石"</li>
+<li><strong>与妈祖的关系</strong>：南音是妈祖祭祀典礼中的核心音乐形式之一。妈祖诞辰祭典和升天祭典中，南音乐团在庙前"排场"演奏，曲目多为颂扬妈祖功德的内容</li>
+<li><strong>乐器编制</strong>：</li>
+<li><strong>上四管</strong>：琵琶（南琶，横抱）、洞箫（尺八式竖吹）、三弦、二弦</li>
+<li><strong>下四管</strong>：响盏、叫锣、木鱼、双铃</li>
+<li><strong>音乐特征</strong>：</li>
+<li>节奏缓慢、旋律悠长——营造"静谧中的神圣感"</li>
+<li>唱腔以闽南语演唱，咬字细腻，多用装饰音</li>
+<li>曲目如《出庭前》《梅花操》等古典套曲</li>
+
+<h3 id="12-莆仙戏">1.2 莆仙戏</h3>
+
+<li><strong>地位</strong>：福建省五大戏曲剧种之一，与妈祖信仰深度绑定。妈祖庙前"酬神戏"的传统形式即莆仙戏。</li>
+<li><strong>音乐特征</strong>：</li>
+<li>唱腔包括"正生""正旦""贴生""贴旦"等角色声腔，各有特色</li>
+<li><strong>锣鼓经</strong>丰富，不同鼓点对应不同的仪式环节——迎神、献礼、送神各有专用鼓点</li>
+<li>伴奏乐器：笛子（主奏）、大鼓、大锣、小锣、钹、唢呐</li>
+<li><strong>与短剧的关系</strong>：莆仙戏可以以"戏中戏"的形式出现在短剧中——例如一场妈祖庙前的酬神戏演出，台上演员与台下角色形成互文。</li>
+
+<h3 id="13-祭祀鼓乐">1.3 祭祀鼓乐</h3>
+
+<p>妈祖祭典中的鼓乐具有严格的仪式程序：</p>
+
+<table>
+<tr><th>环节</th><th>音乐</th><th>特征</th></tr>
+<tr><td>迎神</td><td>大锣大鼓齐鸣</td><td>宣告神明降临——声音的"突破"感</td></tr>
+<tr><td>初献</td><td>丝竹乐（南音风格）</td><td>悠缓庄严</td></tr>
+<tr><td>亚献</td><td>加入唢呐</td><td>情绪上扬</td></tr>
+<tr><td>终献</td><td>全套乐器合奏</td><td>高潮——庆典感</td></tr>
+<tr><td>送神</td><td>鼓乐渐弱</td><td>神明离场的"消散"感</td></tr>
+</table>
+
+<hr>
+
+<h2 id="二劳动声音渔歌与号子">二、劳动声音：渔歌与号子</h2>
+
+<h3 id="21-闽南渔歌">2.1 闽南渔歌</h3>
+
+<li><strong>性质</strong>：渔民在海上劳作时传唱的民间歌谣，非正式表演，属于"劳作中的声音"</li>
+<li><strong>形式</strong>：多为对唱或一领众和。内容涉及海上生活、爱情、祈福</li>
+<li><strong>妈祖相关渔歌特征</strong>：</li>
+<li>歌词中频繁出现"妈祖保庇"等祈福语</li>
+<li>出海前唱"求妈祖"——悲凉、祈求</li>
+<li>平安归来唱"谢妈祖"——喜悦、感恩</li>
+<li><strong>音乐特征</strong>：</li>
+<li>旋律简单重复，便于在风浪中传唱</li>
+<li>音域不宽，以真声演唱为主</li>
+<li>节奏与划桨/拉网的劳动节奏同步</li>
+
+<h3 id="22-竹篙击水">2.2 竹篙击水</h3>
+
+<li><strong>来源</strong>：妈祖传说中"挂席泛槎"——以竹篙为篙，立于草席之上渡海（<a href="04-传说故事.html" class="wiki-link">04-传说故事</a>）</li>
+<li><strong>声音质感</strong>：竹篙入水——闷响（"噗——"）；竹篙出水——清脆滴水声。这个声音可以成为短剧中的一个"声音母题"，每次出现都暗示妈祖的到来或离开。</li>
+
+<h3 id="23-拉网号子">2.3 拉网号子</h3>
+
+<li>闽南沿海渔民在集体拉网时喊的号子，一领众和，强节奏、短乐句</li>
+<li>声音粗粝有力，不同于精致的仪式音乐——这是"劳动者的妈祖"，而非"庙堂中的妈祖"</li>
+
+<hr>
+
+<h2 id="三环境音景soundscape素材库">三、环境音景（Soundscape）素材库</h2>
+
+<h3 id="31-自然声音">3.1 自然声音</h3>
+
+<table>
+<tr><th>素材</th><th>声音特征</th><th>使用场景</th></tr>
+<tr><td>**海浪**</td><td>持续性白噪音，从轻柔"哗——"到暴烈"轰！"</td><td>贯穿全片的基础音轨</td></tr>
+<tr><td>**海风**</td><td>中高频呼啸声，可轻柔可尖锐</td><td>悬崖场景、海上风暴场景</td></tr>
+<tr><td>**雷声**</td><td>低频轰鸣 → 高频炸裂</td><td>风暴/灾难场景</td></tr>
+<tr><td>**雨声**</td><td>中频密集打击声</td><td>祈雨传说场景</td></tr>
+</table>
+
+<h3 id="32-人文声音">3.2 人文声音</h3>
+
+<table>
+<tr><th>素材</th><th>声音特征</th><th>使用场景</th></tr>
+<tr><td>**香火燃烧**</td><td>极细碎的"噼啪"声 + 烟雾流动的"簌簌"感</td><td>庙内独处/祈祷场景</td></tr>
+<tr><td>**掷筊**</td><td>两个木块落地的清脆"啪嗒"</td><td>角色掷筊向妈祖请示的关键时刻</td></tr>
+<tr><td>**钟声**</td><td>低沉悠长的铜钟声，"当——"</td><td>仪式开始/时间过渡</td></tr>
+<tr><td>**鼓声**</td><td>从密集鼓点到单声重击</td><td>绕境/祭典场景</td></tr>
+<tr><td>**诵经/祝祷**</td><td>多人齐诵的低沉混响，语速均匀</td><td>祭典/庙内常规场景</td></tr>
+<tr><td>**鞭炮**</td><td>密集而响亮的爆竹声</td><td>绕境起驾/妈祖诞辰</td></tr>
+</table>
+
+<hr>
+
+<h2 id="四短剧声音设计建议">四、短剧声音设计建议</h2>
+
+<h3 id="41-声音母题leitmotif">4.1 声音母题（Leitmotif）</h3>
+
+<p>为妈祖角色设计一个专属的声音母题：</p>
+<li><strong>南音琵琶的一个特定乐句</strong>：每次妈祖出场/显灵时，这个乐句出现</li>
+<li><strong>红灯出现 + 这个声音母题</strong> = 观众条件反射地知道"妈祖来了"</li>
+
+<h3 id="42-声音的情绪梯度">4.2 声音的情绪梯度</h3>
+
+<table>
+<tr><th>情绪</th><th>配乐方案</th></tr>
+<tr><td>庄严/神圣</td><td>南音琵琶+洞箫，慢板，单音延长</td></tr>
+<tr><td>紧张/危险</td><td>渔歌号子的节奏+风暴环境音，鼓点渐快</td></tr>
+<tr><td>悲伤/悼念</td><td>莆仙戏的哭腔片段（女声）+ 低沉的钟声</td></tr>
+<tr><td>希望/平安</td><td>南音丝竹乐快板 + 海浪的柔和变奏</td></tr>
+</table>
+
+<h3 id="43-声音转场技巧">4.3 声音转场技巧</h3>
+
+<li><strong>钟声→海浪</strong>：从庙内时空切换到海上时空</li>
+<li><strong>香火燃烧声→风声</strong>：从静谧的祈祷切换到户外的危险</li>
+<li><strong>掷筊落地声→黑屏</strong>：掷筊结果作为"悬疑钩子"，不立即揭示而切到下一场</li>
+
+<hr>
+
+<h2 id="五推荐参考录音视频资料">五、推荐参考录音/视频资料</h2>
+
+<table>
+<tr><th>资源</th><th>内容</th></tr>
+<tr><td>湄洲妈祖祖庙祭典录音</td><td>完整仪式音轨，含南音演奏和诵经</td></tr>
+<tr><td>台湾大甲妈祖绕境纪录片</td><td>绕境全程环境音——鞭炮、鼓乐、信众呼喊</td></tr>
+<tr><td>南音《出庭前》录音</td><td>经典南音套曲，可作为配乐采样素材</td></tr>
+<tr><td>闽南渔歌田野录音</td><td>渔民原生态演唱，声音粗粝真实</td></tr>
+</table>
+
+<blockquote>
+<p>注意：部分资料可能需要版权许可才能用于商业短剧配乐。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/音乐资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8D%97%E9%9F%B3" target="_blank" class="ext-link">南音 - 维基百科</a> — 南音的历史、乐器编制、代表曲目，含"中国音乐活化石"由来</li>
+<li><a href="https://baike.baidu.com/item/%E8%8E%86%E4%BB%99%E6%88%8F" target="_blank" class="ext-link">莆仙戏 - 维基百科/百度百科</a> — 莆仙戏的声腔系统和锣鼓经介绍</li>
+<li><a href="https://ich.unesco.org/en/RL/nanyin-00199" target="_blank" class="ext-link">Nanguan music - UNESCO ICH</a> — 南音入选UNESCO人类非遗代表作名录，编号00199，含音频样本</li>
+
+<p><strong>学术著作</strong></p>
+<li>王耀华《福建传统音乐》（福建教育出版社，2000年）— 福建师范大学音乐学院教授的权威著作，系统涵盖南音、莆仙戏、闽南民歌</li>
+<li>王樱芬《南音音乐》（台湾艺术大学出版，2004年）— 南音结构分析，含工尺谱解读</li>
+<li>吕锤宽《台湾传统音乐概论》（五南图书，2007年）— 含妈祖祭祀音乐章节</li>
+
+<p><strong>在线音频资源</strong></p>
+<li>泉州南音乐团官方录音 — 可在网易云音乐、QQ音乐搜索"南音""泉州南音乐团"获取《出庭前》《梅花操》等经典曲目</li>
+<li>闽南渔歌田野录音 — 中国音乐学院"民间音乐档案库"有数字化录音，部分在B站可搜到"闽南渔歌"</li>
+<li>大甲妈祖绕境环境音 — YouTube/B站搜索"大甲妈祖绕境"可获取绕境现场的声音素材（需注意版权使用限制）</li>
+
+<p><strong>纪录片/影像</strong></p>
+<li>CCTV纪录片《中国音乐档案·南音》（2010年）— 南音的历史和演奏记录</li>
+<li>台湾公视《听台湾》系列 — 含妈祖绕境的声音景观（Soundscape）专题</li>
+<li>电影《最好的时光》（2005年，侯孝贤导演）中"自由梦"段落 — 南音在电影中的使用范例</li>
+
+<p><strong>声音素材获取</strong></p>
+<li>Freesound.org 搜索 "temple bells" "incense" "ocean waves Taiwan" 获取免版税庙宇环境音</li>
+<li>湄洲妈祖祖庙祭典录音 — 祖庙官网及官方社交媒体有祭典全程视频，音频可提取参考（商用需授权）</li>
+
+<p><strong>数据出处</strong></p>
+<li>南音"中国音乐活化石"美誉据王耀华《福建传统音乐》序言及UNESCO南音非遗认定评语原文</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

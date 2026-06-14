@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>06 · 人物谱系 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link active">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷一 · 妈祖本身
+  </div>
+  <div class="article-summary">一句话摘要：妈祖信仰围绕林默娘本人，延伸出一个完整的人物谱系——驾前护法（千里眼、顺风耳）、护航总管（晏公）、助手（嘉应、嘉佑）、家族（林氏）以及历史上关键的推动者（郑和、施琅等），形成了妈祖文化的"人物宇宙"。</div>
+  <article class="article">
+<h1 id="06-人物谱系">06 · 人物谱系</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖信仰围绕林默娘本人，延伸出一个完整的人物谱系——驾前护法（千里眼、顺风耳）、护航总管（晏公）、助手（嘉应、嘉佑）、家族（林氏）以及历史上关键的推动者（郑和、施琅等），形成了妈祖文化的"人物宇宙"。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一林默娘本人">一、林默娘本人</h2>
+
+<p>详见 <a href="01-历史起源.html" class="wiki-link">01-历史起源</a>。此处补充几个创作维度：</p>
+
+<li><strong>年龄锚点</strong>：16岁得神通，28岁升天——她的"事业期"只有12年。这12年如何度过？昼夜不分的瞭望？无数次救援中的力竭与坚持？从少女到"神的候选人"的内心路程？</li>
+<li><strong>终身未嫁的解读</strong>：在宋代理学兴起的背景下，女性的终极使命是婚姻。默娘选择不嫁——这在当时是"出格"的。她的选择是使命驱使还是个人信念？在短剧中，这可以成为一个有足够张力的叙事点。</li>
+<li><strong>名字的力量</strong>："默"——从不出声的婴儿，到望海引航的少女，再到回应万千信众祈祷的神。"沉默"到"被听见"的转变，本身就是一个完整的叙事弧。</li>
+
+<hr>
+
+<h2 id="二驾前护法千里眼与顺风耳">二、驾前护法：千里眼与顺风耳</h2>
+
+<h3 id="21-来历">2.1 来历</h3>
+
+<p>详见 <a href="04-传说故事.html" class="wiki-link">04-传说故事</a> 中"收二怪"。桃花山二怪被妈祖收服后，成为妈祖驾前最忠诚的护法。</p>
+
+<h3 id="22-形象描述">2.2 形象描述</h3>
+
+<li><strong>千里眼</strong>：青面獠牙，双目突出如铜铃（突出"视"的能力），手持方天画戟或长斧；常立于妈祖像左侧。体态魁梧，代表"远眺"。</li>
+<li><strong>顺风耳</strong>：红面怒目，双耳奇大（突出"听"的能力），手持斧头或长枪；常立于妈祖像右侧。体态精瘦，代表"聆听"。</li>
+
+<h3 id="23-神职">2.3 神职</h3>
+
+<li>千里眼负责"看"——在妈祖出巡时观察海面和陆地上的险情</li>
+<li>顺风耳负责"听"——在妈祖庙中"聆听"来自四面八方的信众祈祷与求救</li>
+<li>两者配合形成"全知"能力，是妈祖神力的延伸</li>
+
+<h3 id="24-创作建议">2.4 创作建议</h3>
+
+<li><strong>角色关系</strong>：千里眼和顺风耳是一对兄弟，可以作为短剧中的"喜剧搭档"——一个急性子（千里眼看到了危险）、一个慢性子（顺风耳还在"听"）</li>
+<li><strong>角色弧</strong>：从"被收服的妖怪"到"心甘情愿的护法"，这中间的情感转变是一段可深挖的兄弟/师徒故事</li>
+<li><strong>能力设定</strong>：在当代短剧中，千里眼的能力可以"升级"为能看透人心的洞察力，顺风耳的能力可以升级为能听到"无声的呼救"（如网络暴力受害者）</li>
+
+<hr>
+
+<h2 id="三护航总管晏公">三、护航总管：晏公</h2>
+
+<h3 id="31-来历">3.1 来历</h3>
+
+<p>水怪晏公被妈祖收服后，被封为妈祖驾前的"护航总管"，负责统管海上事务。详见 <a href="04-传说故事.html" class="wiki-link">04-传说故事</a>。</p>
+
+<h3 id="32-形象">3.2 形象</h3>
+
+<p>晏公的形象在不同庙宇中有差异：</p>
+<li>部分沿海庙宇将其塑造成武将形象，手持船桨或铁锚</li>
+<li>另一些庙宇中，晏公以文官形象出现，手持笏板</li>
+<li>共同特征：面色黝黑（象征海上风浪），穿水族纹饰袍服</li>
+
+<h3 id="33-与郑和的关系">3.3 与郑和的关系</h3>
+
+<p>相传明永乐年间，郑和下西洋时曾向妈祖祈祷，并在船队中供奉妈祖神像。部分文献记载，郑和将晏公也列入了祭拜对象——某种意义上，晏公在明代被赋予了"海军护航神"的新身份。【待考证：晏公与郑和的直接关联在学术上存在争议】</p>
+
+<hr>
+
+<h2 id="四助手嘉应与嘉佑">四、助手：嘉应与嘉佑</h2>
+
+<li><strong>嘉应、嘉佑</strong>：妈祖驾前的两位"童神"（少年助手），负责传达妈祖旨意、处理日常事务</li>
+<li><strong>形象</strong>：两名眉清目秀的少年，一持拂尘一捧香炉</li>
+<li><strong>在信仰实践中</strong>：嘉应嘉佑的"出镜率"不如千里眼顺风耳，部分庙宇甚至不单独供奉</li>
+
+<blockquote>
+<p>创作提示：如果你想给妈祖身边增加"年轻化"的角色，嘉应嘉佑是很好的选择——两个小徒弟跟在妈祖身边学习，他们的人性化视角可以成为观众的代入点。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="五林氏家族">五、林氏家族</h2>
+
+<h3 id="51-父亲林愿一说林惟悫">5.1 父亲林愿（一说林惟悫）</h3>
+
+<li>曾任宋初"都巡检"（负责地方治安和海上巡防的武官）【待考证：具体官职名称在不同文献中有差异】</li>
+<li>默娘救海难的动机，可能与父亲的海上职责有关——父亲守护海上治安，女儿守护海上生命</li>
+
+<h3 id="52-母亲王氏">5.2 母亲王氏</h3>
+
+<li>文献记载极少，仅在默娘出生和童年叙事中出现</li>
+<li>在机上救亲传说中，是母亲的一声呼唤导致默娘"失口"让兄长坠海——这个细节值得玩味</li>
+
+<h3 id="53-兄长">5.3 兄长</h3>
+
+<li>在机上救亲传说中溺亡。默娘对此终身遗憾。</li>
+<li>兄长的死亡是默娘人生中唯一公开记载的"失败"救援，构成了她的情感底色。</li>
+
+<h3 id="54-林氏一族">5.4 林氏一族</h3>
+
+<li>莆田林氏为当地大姓，历史上出过多位进士。林默娘出身于官宦家庭（而非贫苦渔民），这一背景与她后来获得朝廷关注有一定关联。</li>
+
+<hr>
+
+<h2 id="六历史关键推动者">六、历史关键推动者</h2>
+
+<h3 id="61-郑和13711433">6.1 郑和（1371—1433）</h3>
+
+<li>七下西洋，每次出航前均至妈祖庙（太仓浏河天妃宫、长乐天妃宫等）祭拜</li>
+<li>船队中供奉妈祖神像，并在返航后奏报妈祖护佑之功</li>
+<li>推动了明成祖永乐年间的妈祖加封</li>
+
+<h3 id="62-施琅16211696">6.2 施琅（1621—1696）</h3>
+
+<li>清康熙年间率水师平台（1683年攻取台湾），奏称妈祖显灵助战</li>
+<li>平台后奏请康熙帝晋封妈祖为"天后"，获准</li>
+<li>在台南、澎湖等地大力推广妈祖信仰</li>
+
+<h3 id="63-路允迪">6.3 路允迪</h3>
+
+<li>北宋宣和五年（1123年），给事中路允迪奉使高丽，途中遇风暴，船上众人见妈祖显灵于桅顶，得以脱险</li>
+<li>路允迪返朝后奏报此事，促成妈祖首次获得朝廷封号（"顺济夫人"）</li>
+<li>这是妈祖从民间信仰进入官方视野的"第一次关键点击"</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/人物资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AA%BD%E7%A5%96#%E7%A5%9E%E7%A5%87%E7%B3%BB%E7%B5%B1" target="_blank" class="ext-link">妈祖 - 维基百科（驾前护法）</a> — 千里眼顺风耳、晏公的人物介绍</li>
+<li><a href="https://baike.baidu.com/item/%E5%8D%83%E9%87%8C%E7%9C%BC%E4%B8%8E%E9%A1%BA%E9%A3%8E%E8%80%B3" target="_blank" class="ext-link">千里眼与顺风耳 - 百度百科</a> — 二神在中国民间信仰中的完整谱系</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%84%AD%E5%92%8C" target="_blank" class="ext-link">郑和 - 维基百科</a> — 郑和下西洋与妈祖祭祀的关联记载</li>
+
+<p><strong>学术著作</strong></p>
+<li>蔡相煇《郑和与妈祖》（台湾学生书局，2002年）— 系统考证郑和七下西洋与妈祖信仰的关系，含《明史·郑和传》相关段落解读</li>
+<li>徐晓望《施琅与妈祖信仰》（《福建论坛》期刊论文，2003年）— 施琅平台后奏请加封的历史细节研究</li>
+<li>石万寿《台湾的妈祖信仰》（台原出版社，2000年）— 对嘉应嘉佑、晏公等配祀神的考据</li>
+
+<p><strong>原始文献（在线可查）</strong></p>
+<li>《明史·郑和传》— 中国哲学书电子化计划(ctext.org)可查原文</li>
+<li>《清史稿·施琅传》— 中华书局点校本，国学网站可查</li>
+<li>《天妃显圣录》— 路允迪使高丽的原始记载</li>
+
+<p><strong>纪录片/影像</strong></p>
+<li>CCTV纪录片《郑和下西洋》（2005年）— 含郑和祭拜妈祖的还原场景</li>
+<li>庙宇神像图库 — 湄洲祖庙、大甲镇澜宫、北港朝天宫官方Facebook/Instagram均有千里眼顺风耳等配祀神的高清照片</li>
+
+<p><strong>数据出处</strong></p>
+<li>林默娘终生时间线据《天妃显圣录》《天后志》交叉比对</li>
+<li>路允迪使高丽事件据《宋史·高丽传》及《天妃显圣录》</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

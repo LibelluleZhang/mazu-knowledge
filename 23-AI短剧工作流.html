@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>23 · AI短剧工作流 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link active">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷五 · AI管线
+  </div>
+  <div class="article-summary">从创意到成片的完整生产链路，每一步的工具选择、质量标准与「人机分工」边界。</div>
+  <article class="article">
+<h1 id="23-ai短剧工作流">23 · AI短剧工作流</h1>
+
+<blockquote>
+<p>从创意到成片的完整生产链路，每一步的工具选择、质量标准与「人机分工」边界。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一总览七步管线">一、总览：七步管线</h2>
+
+<pre><code>
+创意选题 → 大纲架构 → 分集剧本 → 分镜脚本 → AI视觉生成 → 声音制作 → 后期合成
+   ↓          ↓          ↓           ↓            ↓            ↓          ↓
+ 编剧组     编剧组     编剧组    导演+美术    AI生成组    音频组    后期组
+</code></pre>
+
+<p>每一步都有人工审核闸口（gate），不合格退回上一步。</p>
+
+<hr>
+
+<h2 id="二各环节详述">二、各环节详述</h2>
+
+<h3 id="step-1创意选题05天集">Step 1：创意选题（0.5天/集）</h3>
+<li><strong>输入</strong>：<a href="28-故事种子.html" class="wiki-link">28-故事种子</a>、<a href="29-意象库.html" class="wiki-link">29-意象库</a></li>
+<li><strong>产出</strong>：一句话梗概 + 情感类型 + 建议集数</li>
+<li><strong>工具</strong>：人工讨论，Hermes Agent辅助查阅知识库</li>
+<li><strong>Gate标准</strong>：是否具有妈祖文化内核？是否适合3-5分钟体量？</li>
+
+<h3 id="step-2大纲架构1天集">Step 2：大纲架构（1天/集）</h3>
+<li><strong>产出</strong>：三幕结构/起承转合大纲，含关键情节点</li>
+<li><strong>工具</strong>：Claude/ChatGPT辅助扩写，人工修整</li>
+<li><strong>注意</strong>：此时就要标注「AI擅长场景」和「AI困难场景」</li>
+
+<h3 id="step-3分集剧本1-2天集">Step 3：分集剧本（1-2天/集）</h3>
+<li><strong>产出</strong>：完整对白+场景描述+动作指示</li>
+<li><strong>Gate标准</strong>：对白是否符合人物设定？情感线是否完整？</li>
+<li><strong>特殊要求</strong>：每个场景标注「镜头难度等级」A/B/C</li>
+
+<h3 id="step-4分镜脚本1天集">Step 4：分镜脚本（1天/集）</h3>
+<li><strong>产出</strong>：镜头号+景别+运镜+画面描述+时长+参考图索引</li>
+<li><strong>工具</strong>：Storyboarder / 手绘 + <a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a></li>
+<li><strong>关键动作</strong>：为每个镜头预填AI提示词草稿</li>
+
+<h3 id="step-5ai视觉生成2-3天集核心环节">Step 5：AI视觉生成（2-3天/集）——核心环节</h3>
+<li><strong>工具链</strong>：Seedance 1.5（文生视频）为主，ComfyUI（图生视频/ControlNet辅助）</li>
+<li><strong>策略</strong>：见下方「AI能做什么/不能做什么」</li>
+<li><strong>并行策略</strong>：多个镜头同时跑，3-5台机器并行生成</li>
+
+<h3 id="step-6声音制作1-2天集">Step 6：声音制作（1-2天/集）</h3>
+<li><strong>配音</strong>：<a href="26-声音管线.html" class="wiki-link">26-声音管线</a> TTS + 人工润色</li>
+<li><strong>音效</strong>：AI生成环境音 + 素材库</li>
+<li><strong>配乐</strong>：南音采样+电子融合</li>
+
+<h3 id="step-7后期合成2天集">Step 7：后期合成（2天/集）</h3>
+<li><strong>剪辑</strong>：DaVinci Resolve / 剪映专业版</li>
+<li><strong>调色</strong>：<a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a> 统一LUT</li>
+<li><strong>字幕</strong>：中文+英文双字幕</li>
+<li><strong>输出</strong>：9:16竖屏（抖音）+ 16:9横屏（B站/YouTube）</li>
+
+<hr>
+
+<h2 id="三ai能做什么-vs-不能做什么核心">三、AI能做什么 vs 不能做什么（核心！！）</h2>
+
+<h3 id="ai擅长的pass率-70">AI擅长的（pass率 > 70%）</h3>
+<table>
+<tr><th>类型</th><th>示例</th><th>建议策略</th></tr>
+<tr><td>氛围空镜</td><td>海浪拍岸、香火缭绕、晨雾中的妈祖庙</td><td>直接生成，多出备选</td></tr>
+<tr><td>环境大全</td><td>湄洲岛全景、渔港码头、红砖厝群落</td><td>Seedance 文生视频</td></tr>
+<tr><td>意象符号</td><td>凤冠特写（非佩戴状态）、灯笼、渔网、竹篙</td><td>图生视频+参考图</td></tr>
+<tr><td>慢节奏抒情</td><td>人物背影走向远方、风吹衣袂、退潮滩涂</td><td>AI强项，放手生成</td></tr>
+<tr><td>祭祀场景</td><td>香炉、供品、烛火、烟雾</td><td>多层叠加更佳</td></tr>
+</table>
+
+<h3 id="ai做不好的pass率-30需人工补救">AI做不好的（pass率 < 30%，需人工补救）</h3>
+<table>
+<tr><th>类型</th><th>为什么做不好</th><th>解决方案</th></tr>
+<tr><td>面部特写</td><td>表情僵硬、五官变形、眼神空洞</td><td>实拍演员面部 + AI换背景合成</td></tr>
+<tr><td>嘴唇同步</td><td>AI视频口型与对白无法匹配</td><td>用MuseTalk/Wav2Lip做口型驱动，或避开正面说话镜头</td></tr>
+<tr><td>复杂动作</td><td>跪拜、舞蹈、武打</td><td>实拍动作 + AI背景替换；或用剪影/逆光规避</td></tr>
+<tr><td>产品精确还原</td><td>妈祖像造型、特定庙宇建筑</td><td>提供多角度参考图，或3D建模渲染+AIGC风格化</td></tr>
+<tr><td>文字稳定性</td><td>匾额、对联文字变形</td><td>后期叠加文字图层</td></tr>
+<tr><td>多人互动</td><td>两个角色同框时空间关系混乱</td><td>单角色生成后合成，或实拍群戏</td></tr>
+</table>
+
+<hr>
+
+<h2 id="四并行排期建议月内120分钟目标">四、并行排期建议（月内120分钟目标）</h2>
+
+<p>假设25人团队，平均每集4分钟，需完成30集。</p>
+
+<li><strong>周1-2</strong>：完成全部剧本（编剧组6人同步推进）</li>
+<li><strong>周2-3</strong>：AI生成主力期（AI组8人+美术3人），同时启动声音制作</li>
+<li><strong>周3-4</strong>：后期冲刺（后期组5人+导演），滚动交付</li>
+<table>
+<tr><td>- **全程**：1人负责[[33-协作公约</td><td>知识库维护]]，收集每次生成的参数和结果</td></tr>
+</table>
+
+<hr>
+
+<h2 id="五质量闸口清单">五、质量闸口清单</h2>
+
+<p>每个环节交付时逐项打勾：</p>
+<li>[ ] 剧本：是否通过导演审核？</li>
+<li>[ ] 分镜：每个镜头的提示词是否已填写？</li>
+<li>[ ] AI生成：是否按<a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a>参数执行？</li>
+<li>[ ] 角色一致性：是否参照<a href="25-角色一致性.html" class="wiki-link">25-角色一致性</a>检查？</li>
+<li>[ ] 声音：对白清晰度、音效层次是否达标？</li>
+<li>[ ] 成片：双版本输出是否完成？</li>
+
+<hr>
+
+<p><em>相关文档：<a href="24-提示词工程.html" class="wiki-link">24-提示词工程</a> · <a href="25-角色一致性.html" class="wiki-link">25-角色一致性</a> · <a href="26-声音管线.html" class="wiki-link">26-声音管线</a> · <a href="27-后期工作流.html" class="wiki-link">27-后期工作流</a> · <a href="28-故事种子.html" class="wiki-link">28-故事种子</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="核心ai视频工具">核心AI视频工具</h3>
+<li><a href="https://www.seedance.com" target="_blank" class="ext-link">Seedance 1.5</a> — 文生视频主引擎，支持24fps/1280×720输出，一句话生成多版本备选</li>
+<li><a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" class="ext-link">ComfyUI</a> — 开源AI视觉工作流引擎，ControlNet/IP-Adapter/LoRA节点化管线</li>
+<li><a href="https://github.com/TMElyralab/MuseTalk" target="_blank" class="ext-link">MuseTalk</a> — 腾讯音乐开源口型驱动，输入视频+音频即可生成对白同步，推荐weight=0.7</li>
+<li><a href="https://github.com/Rudrabha/Wav2Lip" target="_blank" class="ext-link">Wav2Lip</a> — 学术级口型同步，手动修复AI角色正面说话镜头的兜底方案</li>
+
+<h3 id="工作流工具">工作流工具</h3>
+<li><a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" class="ext-link">DaVinci Resolve</a> — 免费专业级剪辑+调色（Studio版$295），推荐19.0+版本</li>
+<li><a href="https://www.capcut.cn" target="_blank" class="ext-link">剪映专业版</a> — 国内AI短剧首选剪辑工具，自动语音识别+双语字幕+AI调色</li>
+<li><a href="https://wonderunit.com/storyboarder/" target="_blank" class="ext-link">Storyboarder</a> — 开源分镜工具，支持镜头号/景别/运镜标注+AI提示词预填</li>
+
+<h3 id="生产参考">生产参考</h3>
+<li><a href="https://www.aifilmacademy.com" target="_blank" class="ext-link">AI Film Academy</a> — AI短片制作社区，案例研究+工作流分享+参数调优</li>
+<li><a href="https://runwayml.com" target="_blank" class="ext-link">Runway Gen-3</a> — Seedance之外的第二选择，Gen-3 Alpha在人物表情和动作上有优势</li>
+<li><a href="https://pika.art" target="_blank" class="ext-link">Pika Labs</a> — 竖屏短剧AI视频备选方案，社交平台原生9:16比例支持更好</li>
+<li><a href="https://wonderdynamics.com" target="_blank" class="ext-link">Wonder Dynamics</a> — AI角色替换工具，实拍演员+AI背景合成的桥梁方案</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

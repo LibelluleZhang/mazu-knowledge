@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>32 · 参考资源 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link active">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷七 · 基础设施
+  </div>
+  <div class="article-summary">不是读完才能开工的书单，而是「随时可以翻、翻到哪页都有用」的资源地图。按需取用。</div>
+  <article class="article">
+<h1 id="32-参考资源">32 · 参考资源</h1>
+
+<blockquote>
+<p>不是读完才能开工的书单，而是「随时可以翻、翻到哪页都有用」的资源地图。按需取用。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一书籍">一、书籍</h2>
+
+<h3 id="学术研究打底用">学术研究（打底用）</h3>
+<li><strong>《妈祖信仰研究》</strong> 李露露 著 — 国内妈祖研究经典入门，全面但偏学术</li>
+<li><strong>《妈祖文化研究》</strong> 林国平 主编 — 福建师范大学出品，体系化强</li>
+<li><strong>《天后圣母事迹图志》</strong> 清代绘本 — 妈祖生平的图像叙事，直接可作分镜参考</li>
+<li><strong>《海洋亚洲与华人世界》</strong> 王赓武 著 — 理解妈祖信仰在海洋贸易中的位置</li>
+<li><strong>《仪式、信仰与社会：闽南民间信仰研究》</strong> — 理解「掷筊」「绕境」等仪式的社会意义</li>
+
+<h3 id="文学作品找语感">文学作品（找语感）</h3>
+<li><strong>《大海停止之处》</strong> 杨炼 — 海洋意象诗歌，语言可以化用到旁白中</li>
+<li><strong>《讨海人》</strong> 廖鸿基 — 台湾海洋文学代表作，渔民的日常与灵魂</li>
+<li><strong>《海浪的记忆》</strong> 夏曼·蓝波安 — 达悟族海洋书写，提供另一种「人与海」的视角</li>
+<li><strong>《城南旧事》</strong> 林海音 — 不谈妈祖，但「旧日记忆」的叙事语调极适合参考</li>
+
+<h3 id="视觉参考画面感">视觉参考（画面感）</h3>
+<li><strong>《闽南传统建筑》</strong> 曹春平 — 红砖厝、燕尾脊、石雕细节</li>
+<li><strong>《福建海洋文化》</strong> 图册 — 渔船形制、渔具、码头生活场景</li>
+<li><strong>《中国民间诸神》</strong> 图册 — 神像造型、法器、服饰参考</li>
+
+<hr>
+
+<h2 id="二论文快速扫">二、论文（快速扫）</h2>
+
+<p>在知网/Google Scholar搜索以下关键词：</p>
+<li>「妈祖信仰传播」 — 全球分灵庙网络</li>
+<li>「妈祖与郑和下西洋」 — 官方推动与民间信仰互动</li>
+<li>「闽南语方言与信仰仪式」 — 语言与仪式的绑定关系</li>
+<li>「妈祖信仰在东南亚的在地化」 — 马来西亚/新加坡/印尼案例</li>
+<li>「AI生成中国传统文化视觉」 — 技术方向前沿</li>
+
+<p><strong>优先级</strong>：前4个关键词各读2-3篇摘要，标记可用的案例和数据。</p>
+
+<hr>
+
+<h2 id="三纪录片">三、纪录片</h2>
+
+<li><strong>《天下妈祖》</strong>（2016，央视） — 5集，从湄洲到全球。画面素材可直接参考。</li>
+<li><strong>《妈祖》</strong>（2013，BTV） — 10集，更侧重历史考据</li>
+<li><strong>《海之女神》</strong>（NHK，2010） — 日本视角看妈祖，叙事节奏值得学习</li>
+<li><strong>《大三巴到天后宫》</strong>（Discovery，澳门） — 中西信仰在澳门的交错</li>
+<li><strong>《舌尖上的中国》</strong> 海洋篇 — 不谈妈祖，但拍渔港、海产、渔民的镜头语言可直接挪用</li>
+
+<p><strong>使用方式</strong>：导演和美术组集中拉片，截图存档，建立「视觉参考板」。</p>
+
+<hr>
+
+<h2 id="四播客-音频">四、播客 / 音频</h2>
+
+<li><strong>《故事FM》</strong> — 搜索「妈祖」「渔民」「福建」关键词，有素人讲述的亲历故事</li>
+<li><strong>《忽左忽右》</strong> — 偶有涉及民间信仰和海洋文化的深度对谈</li>
+<li><strong>南音录音</strong> — 网易云/QQ音乐搜索「南音」，选取「风打梨」「因送哥嫂」等经典曲目。感受南音的节奏和情绪</li>
+
+<hr>
+
+<h2 id="五田野调查地点">五、田野调查地点</h2>
+
+<h3 id="必去第一优先级">必去（第一优先级）</h3>
+<table>
+<tr><th>地点</th><th>重点</th><th>建议时长</th></tr>
+<tr><td>湄洲岛祖庙</td><td>祖庭建筑、祭祀日常、香客众生相</td><td>2-3天</td></tr>
+<tr><td>泉州天后宫</td><td>历史最悠久天后宫，宋代遗构</td><td>1天</td></tr>
+<tr><td>湄洲岛渔港</td><td>渔民的日常，讨海人的真实生活</td><td>1天（清晨去）</td></tr>
+</table>
+
+<h3 id="选去第二优先级">选去（第二优先级）</h3>
+<table>
+<tr><th>地点</th><th>重点</th></tr>
+<tr><td>鹿港天后宫（台湾）</td><td>分灵庙代表，绕境文化</td></tr>
+<tr><td>北港朝天宫（台湾）</td><td>香火极盛，仪式规模大</td></tr>
+<tr><td>马六甲青云亭（马来西亚）</td><td>海外妈祖信仰在地化样本</td></tr>
+<tr><td>新加坡天福宫</td><td>华人移民史的活化石</td></tr>
+</table>
+
+<hr>
+
+<h2 id="六可访谈的对象类型">六、可访谈的对象类型</h2>
+
+<li><strong>庙祝/管理员</strong> — 知道庙里所有不写在香火牌上的故事</li>
+<li><strong>老渔民（60岁以上）</strong> — 讨海人的口述史，AI永远生成不了的细节</li>
+<li><strong>妈祖文化研究者</strong> — 莆田学院/福建师大相关学者</li>
+<li><strong>绕境参与者</strong> — 抬过神轿的人、跟过全程的人</li>
+<li><strong>非遗传承人</strong> — 南音艺人、造船师傅（木船）、红砖厝匠人</li>
+<li><strong>年轻信众</strong> — 「我奶奶信，所以我也信」——代际传承的真实状态</li>
+
+<p><strong>访谈原则</strong>：录音+整理文字稿。每次访谈后24小时内补充到知识库。</p>
+
+<hr>
+
+<h2 id="七线上资源">七、线上资源</h2>
+
+<li><strong>妈祖文化数据库</strong>：http://www.mazuwh.com — 莆田学院维护，文献索引</li>
+<li><strong>台湾妈祖文化研究中心</strong>：学术资源集合</li>
+<li><strong>YouTube</strong> 搜索「妈祖绕境」— 大量第一视角视频素材</li>
+<li><strong>Pinterest</strong> 搜索「Mazu」「Chinese sea goddess」— 视觉灵感板</li>
+
+<hr>
+
+<p><em>相关文档：<a href="30-问题与留白.html" class="wiki-link">30-问题与留白</a> · <a href="33-协作公约.html" class="wiki-link">33-协作公约</a> · <a href="31-术语表.html" class="wiki-link">31-术语表</a></em></p>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<h3 id="学术论文可在线访问">学术论文（可在线访问）</h3>
+<li><a href="https://kns.cnki.net/kns8/defaultresult/index?kwd=妈祖信仰+海洋文化+博士" target="_blank" class="ext-link">妈祖信仰与海洋文化研究· CNKI博士论文专题</a> — 福建师范大学/厦门大学/莆田学院的核心论文，含妈祖传播、仪式、两岸交流</li>
+<li><a href="https://scholar.google.com/scholar?q=Mazu+belief+maritime+culture" target="_blank" class="ext-link">Mazu Belief and Maritime Culture· Google Scholar</a> — 英文论文：妈祖信仰在东南亚在地化研究/比较宗教视角</li>
+<li><a href="https://www.researchgate.net/search/publication?q=Mazu+global+diaspora" target="_blank" class="ext-link">妈祖信仰的全球传播网络· ResearchGate</a> — 全球分灵庙网络的人类学/社会学研究，含地图数据和田野报告</li>
+<li><a href="https://kns.cnki.net/kns8/defaultresult/index?kwd=AU%3D林国平+妈祖" target="_blank" class="ext-link">林国平· 妈祖文化研究系列· CNKI作者页</a> — 福建师范大学妈祖文化研究中心主任，国内妈祖研究引用率最高的学者</li>
+
+<h3 id="纪录片在线观看">纪录片（在线观看）</h3>
+<li><a href="https://tv.cctv.com" target="_blank" class="ext-link">《天下妈祖》CCTV 2016· 央视网</a> — 5集纪录片，从湄洲到全球，画面素材可直接截图作视觉参考板</li>
+<li><a href="https://www.bilibili.com/video/BV1Js411f7P3/" target="_blank" class="ext-link">《妈祖》BTV 2013· 哔哩哔哩</a> — 10集纪录片，更侧重历史考据与文献解读</li>
+<li><a href="https://www.youtube.com/results?search_query=NHK+Mazu+documentary" target="_blank" class="ext-link">NHK《海之女神》2010· YouTube</a> — 日本视角看妈祖，叙事节奏/镜头语言的跨文化参照</li>
+<li><a href="https://www.youtube.com/results?search_query=妈祖绕境+第一视角" target="_blank" class="ext-link">妈祖绕境第一视角· YouTube</a> — 抬神轿/信众跪拜/鞭炮阵的真实影像，仪式场景的视觉/声音/情绪参考</li>
+<li><a href="https://tv.cctv.com" target="_blank" class="ext-link">《舌尖上的中国》海洋篇· 央视网</a> — 渔港/海产/渔民的镜头语言可与妈祖短剧共享视觉基因</li>
+
+<h3 id="播客音频">播客/音频</h3>
+<li><a href="https://storyfm.cn" target="_blank" class="ext-link">《故事FM》· 搜索"妈祖""渔民""福建"</a> — 素人讲述的亲历故事，可作故事种子原型</li>
+<li><a href="https://www.xiaoyuzhoufm.com" target="_blank" class="ext-link">《忽左忽右》· 民间信仰/海洋文化对谈</a> — 深度对谈：偶有涉及妈祖文化和闽南信仰的节目</li>
+<li><a href="https://music.163.com" target="_blank" class="ext-link">南音经典曲目· 网易云音乐</a> — 搜索"南音""风打梨""因送哥嫂"，感受南音的节奏/情绪/人声质感</li>
+
+<h3 id="田野调查地点的在线资源">田野调查地点的在线资源</h3>
+<li><a href="https://www.mz-mazu.org.cn" target="_blank" class="ext-link">湄洲岛祖庙· 官网</a> — 祖庭建筑VR全景/祭祀日程/香客众生相在线浏览</li>
+<li><a href="https://www.qztianhougong.com" target="_blank" class="ext-link">泉州天后宫· 官网</a> — 宋代遗构的数字化导览+历史沿革</li>
+<li><a href="https://www.lukang.org.tw" target="_blank" class="ext-link">鹿港天后宫· 360°虚拟导览</a> — 在线360°游览台湾重要分灵庙</li>
+<li><a href="https://artsandculture.google.com" target="_blank" class="ext-link">马六甲青云亭· Google Arts & Culture</a> — 马来西亚最古老华人庙宇的在线展览</li>
+<li><a href="https://www.thianhockkeng.com.sg" target="_blank" class="ext-link">新加坡天福宫· 官网</a> — 华人移民史活化石，在线虚拟参观</li>
+
+<h3 id="视觉灵感板">视觉灵感板</h3>
+<li><a href="https://www.pinterest.com/search/?q=Mazu+Chinese+sea+goddess" target="_blank" class="ext-link">Pinterest· Mazu Chinese Sea Goddess</a> — 无限滚动的妈祖视觉灵感板：神像/仪式/建筑/海景</li>
+<li><a href="https://www.ihchina.cn" target="_blank" class="ext-link">中国非物质文化遗产网· 妈祖信俗</a> — 官方非遗数据库，仪式/建筑/服饰/音乐的标准影像记录</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>

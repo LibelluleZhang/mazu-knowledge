@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02 · 信仰体系 — 妈祖AI短剧知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="site-title">妈祖AI短剧<br>知识库</a>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="searchSite()">
+  </div>
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-title">总览</div>
+      <a href="00-总览.html" class="nav-link">00 · 总览</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷一 · 妈祖本身</div>
+      <a href="01-历史起源.html" class="nav-link">01 · 历史起源</a>
+      <a href="02-信仰体系.html" class="nav-link active">02 · 信仰体系</a>
+      <a href="03-非遗地位.html" class="nav-link">03 · 非遗地位</a>
+      <a href="04-传说故事.html" class="nav-link">04 · 传说故事</a>
+      <a href="05-仪式与习俗.html" class="nav-link">05 · 仪式与习俗</a>
+      <a href="06-人物谱系.html" class="nav-link">06 · 人物谱系</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷二 · 文化土壤</div>
+      <a href="07-闽南文化背景.html" class="nav-link">07 · 闽南文化背景</a>
+      <a href="08-方言与语言.html" class="nav-link">08 · 方言与语言</a>
+      <a href="09-视觉符号体系.html" class="nav-link">09 · 视觉符号体系</a>
+      <a href="10-音乐与声音.html" class="nav-link">10 · 音乐与声音</a>
+      <a href="11-全球传播.html" class="nav-link">11 · 全球传播</a>
+      <a href="12-两岸意义.html" class="nav-link">12 · 两岸意义</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷三 · 创作方法论</div>
+      <a href="13-改编原则.html" class="nav-link">13 · 改编原则：信仰类IP的核心红线与创作边界</a>
+      <a href="14-叙事策略.html" class="nav-link">14 · 叙事策略：从民间传说到国风短剧</a>
+      <a href="15-人物塑造.html" class="nav-link">15 · 人物塑造：妈祖的四个面向与配角群像</a>
+      <a href="16-情感锚点.html" class="nav-link">16 · 情感锚点：「明知不能但还是做了」——信仰时刻的情感结构</a>
+      <a href="17-场景考古.html" class="nav-link">17 · 场景考古：宋元闽南日常生活的视觉重建</a>
+      <a href="18-对白写作.html" class="nav-link">18 · 对白写作：古装但不古语——国风短剧的台词法则</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷四 · 标杆作品</div>
+      <a href="19-对标作品分析.html" class="nav-link">19 · 对标作品分析：三部改变叙事认知的标杆</a>
+      <a href="20-非遗影视案例库.html" class="nav-link">20 · 非遗影视案例库：五部作品的技法拆解</a>
+      <a href="21-海外参考.html" class="nav-link">21 · 海外参考：信仰叙事与海洋文化的国际经验</a>
+      <a href="22-失败案例.html" class="nav-link">22 · 失败案例：文化改编的六种死法及避坑策略</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷五 · AI管线</div>
+      <a href="23-AI短剧工作流.html" class="nav-link">23 · AI短剧工作流</a>
+      <a href="24-提示词工程.html" class="nav-link">24 · 提示词工程</a>
+      <a href="25-角色一致性.html" class="nav-link">25 · 角色一致性</a>
+      <a href="26-声音管线.html" class="nav-link">26 · 声音管线</a>
+      <a href="27-后期工作流.html" class="nav-link">27 · 后期工作流</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷六 · 创作入口</div>
+      <a href="28-故事种子.html" class="nav-link">28 · 故事种子</a>
+      <a href="29-意象库.html" class="nav-link">29 · 意象库</a>
+      <a href="30-问题与留白.html" class="nav-link">30 · 问题与留白</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷七 · 基础设施</div>
+      <a href="31-术语表.html" class="nav-link">31 · 术语表</a>
+      <a href="32-参考资源.html" class="nav-link">32 · 参考资源</a>
+      <a href="33-协作公约.html" class="nav-link">33 · 协作公约</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-title">卷八 · 会议记录</div>
+      <a href="34-会议纪要.html" class="nav-link">34 · 会议纪要</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0611-meeting.html" class="nav-link" target="_blank">↗ 6/11 三场会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-0614-meeting.html" class="nav-link" target="_blank">↗ 6/14 共创会议</a>
+      <a href="https://libellulezhang.github.io/mazu-meeting/mazu-tinghai.html" class="nav-link" target="_blank">↗ 妈祖听海</a>
+    </div>
+  </nav>
+</aside>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<main class="content">
+  <div class="breadcrumb">
+    <a href="index.html">知识库</a> / 卷一 · 妈祖本身
+  </div>
+  <div class="article-summary">一句话摘要：妈祖从湄洲岛一隅的海上保护神出发，经宋元明清四朝朝廷加封与民间传播，演变为涵盖航海安全、生育、疾病、战争等领域的"全能神"，形成以湄洲祖庙为信仰核心、全球分灵超过5000座庙宇的庞大信仰网络。</div>
+  <article class="article">
+<h1 id="02-信仰体系">02 · 信仰体系</h1>
+
+<blockquote>
+<p>一句话摘要：妈祖从湄洲岛一隅的海上保护神出发，经宋元明清四朝朝廷加封与民间传播，演变为涵盖航海安全、生育、疾病、战争等领域的"全能神"，形成以湄洲祖庙为信仰核心、全球分灵超过5000座庙宇的庞大信仰网络。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="一神格演化从海神到全能神">一、神格演化：从海神到全能神</h2>
+
+<p>妈祖的神格并非一成不变，而是在历史中不断"扩容"：</p>
+
+<table>
+<tr><th>阶段</th><th>核心神格</th><th>扩展神格</th><th>推动因素</th></tr>
+<tr><td>北宋-南宋</td><td>海上保护神（航海安全）</td><td>祈雨、治病</td><td>渔村信仰基础</td></tr>
+<tr><td>元</td><td>漕运保护神</td><td>护航、护国</td><td>元代海运漕粮，朝廷设天妃宫于各港口</td></tr>
+<tr><td>明</td><td>航海保护神</td><td>护使、助战</td><td>郑和下西洋（七次奏报妈祖显灵）</td></tr>
+<tr><td>清</td><td>全能神</td><td>送子、驱疫、平乱</td><td>施琅平台，闽台移民将信仰带入日常生活各领域</td></tr>
+</table>
+
+<p><strong>关键扩展路径</strong>：</p>
+<li><strong>生育神</strong>：天后宫配祀"注生娘娘"，闽南地区有向妈祖"求子"的习俗</li>
+<li><strong>医药神</strong>：瘟疫流行时，信众向妈祖祈求"药签"</li>
+<li><strong>战神</strong>：清代多次海战中官员奏报妈祖显灵助阵</li>
+
+<blockquote>
+<p>创作提示：妈祖神格的"扩容"是文化融合的活案例。一个人物要同时应对"海上救人""雨中送子""瘟疫救民"，这种多面性塑造角色的好素材。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二祭祀体系">二、祭祀体系</h2>
+
+<h3 id="21-官方祭祀与民间祭祀">2.1 官方祭祀与民间祭祀</h3>
+
+<li><strong>官方祭典</strong>：由朝廷派遣官员致祭，时间固定在每年春秋二季。清雍正十一年（1733年）诏令各省府州县建天后宫并春秋致祭，妈祖正式进入国家祀典体系。</li>
+<li><strong>民间祭祀</strong>：形式灵活多样，以农历三月廿三（诞辰）和九月初九（升天日）最为隆重。进香、绕境、演戏酬神为主要活动。</li>
+
+<h3 id="22-祭祀等级">2.2 祭祀等级</h3>
+
+<p>妈祖祭祀在清代达到<strong>"群祀"</strong>级别（国家祭祀中次于"大祀""中祀"），但在福建、台湾等地的实际规格往往超越官方规定，呈现"半官方半民间"的混合形态。</p>
+
+<hr>
+
+<h2 id="三主要庙宇">三、主要庙宇</h2>
+
+<h3 id="31-湄洲妈祖祖庙福建莆田">3.1 湄洲妈祖祖庙（福建莆田）</h3>
+
+<li><strong>地位</strong>：全球妈祖信仰的"圣地"，所有分灵庙的"祖庭"。</li>
+<li><strong>历史</strong>：始建于北宋雍熙四年（987年），初为林默娘升天后乡民所立小祠。</li>
+<li><strong>核心建筑</strong>：寝殿（正殿，供奉宋代妈祖金身像）、朝天阁、升天楼、妈祖石雕像（高14.35米，象征湄洲岛面积14.35平方公里）。</li>
+<li><strong>重要活动</strong>：每年妈祖诞辰日和升天日举行盛大祭典，全球信众前来谒祖进香。</li>
+
+<h3 id="32-泉州天后宫福建泉州">3.2 泉州天后宫（福建泉州）</h3>
+
+<li><strong>地位</strong>：现存规模最大、规格最高的妈祖庙之一，始建于南宋庆元二年（1196年）。</li>
+<li><strong>历史意义</strong>：泉州为宋元时期东方第一大港，天后宫位于港口附近，是海上丝绸之路的信仰地标。</li>
+
+<h3 id="33-天津天后宫">3.3 天津天后宫</h3>
+
+<li><strong>地位</strong>：中国北方最大的妈祖庙之一，位于天津古文化街。始建于元泰定三年（1326年），因元代漕运而建。</li>
+<li><strong>特色</strong>：融合北方建筑风格，是妈祖信仰北传的重要节点。</li>
+
+<h3 id="34-大甲镇澜宫台湾台中">3.4 大甲镇澜宫（台湾台中）</h3>
+
+<li><strong>地位</strong>：台湾最具影响力的妈祖庙之一，以<strong>大甲妈祖绕境进香</strong>闻名。</li>
+<li><strong>特色</strong>：每年农历三月举行9天8夜绕境，参与人次逾百万，被誉为"世界三大宗教活动"之一。</li>
+
+<h3 id="35-北港朝天宫台湾云林">3.5 北港朝天宫（台湾云林）</h3>
+
+<li><strong>地位</strong>：台湾妈祖信仰的另一个中心，与大甲镇澜宫并称。</li>
+<li><strong>特殊关系</strong>：大甲妈祖绕境的传统目的地即为北港朝天宫（后改为新港奉天宫）。</li>
+
+<hr>
+
+<h2 id="四分灵制度">四、分灵制度</h2>
+
+<p>"分灵"是妈祖信仰的核心传播机制，也是理解妈祖文化全球化的关键：</p>
+
+<h3 id="41-什么是分灵">4.1 什么是分灵</h3>
+
+<p>分灵是指从母庙（最初是湄洲祖庙）迎请妈祖神像或其香火，到异地建立新庙供奉的制度。分灵庙与祖庙之间形成"母子庙"关系。</p>
+
+<h3 id="42-核心规则">4.2 核心规则</h3>
+
+<li><strong>刈火（割火）</strong>：分灵庙定期回到祖庙，从祖庙的香炉中取走部分香灰，带回自己庙中"合炉"，以此保持与祖庙的灵力连接。</li>
+<li><strong>谒祖进香</strong>：分灵庙定期组织信众回祖庙进香，这是维持"母子"关系的重要仪式。</li>
+<li><strong>分灵层级</strong>：湄洲祖庙 → 一级分灵庙 → 二级分灵庙 → ……形成树状传播网络。</li>
+
+<h3 id="43-全球规模">4.3 全球规模</h3>
+
+<p>据不完全统计，全球妈祖分灵庙超过<strong>5000座</strong>，分布于<strong>49个国家和地区</strong>（截至2024年数据）。其中：</p>
+<li>台湾：约1000余座</li>
+<li>中国大陆：约2000余座（福建约占一半）</li>
+<li>东南亚：马来西亚、新加坡、印尼、菲律宾、泰国、越南等</li>
+<li>其他：日本（横滨中华街、长崎等）、美国、澳大利亚、巴西、法国等</li>
+
+<blockquote>
+<p>创作提示：分灵制度可以成为极好的叙事工具。"一支香火跨越海洋"既是物理旅程，也是精神寻根。湄洲祖庙的香火被带到世界各地，每个分灵庙都是一个故事节点。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="五信仰实践的日常维度">五、信仰实践的日常维度</h2>
+
+<li><strong>家庭神龛</strong>：闽台许多家庭设妈祖神龛，每日早晚上香</li>
+<li><strong>平安符</strong>：妈祖庙的平安符在航海、出行、考试等场景中被广泛使用</li>
+<li><strong>掷筊</strong>：信众通过掷筊（圣杯）向妈祖请示，详见 <a href="05-仪式与习俗.html" class="wiki-link">05-仪式与习俗</a></li>
+<li><strong>妈祖签诗</strong>：各庙宇有专门的妈祖签诗系统，用于解答信众疑惑</li>
+
+<hr>
+
+<h2 id="参考链接">📚 参考链接</h2>
+
+<p><strong>线上百科/权威资料</strong></p>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AA%BD%E7%A5%96" target="_blank" class="ext-link">妈祖 - 维基百科</a> — 含分灵制度、全球庙宇分布的详细介绍</li>
+<li><a href="http://www.mz-mazu.org.cn/" target="_blank" class="ext-link">湄洲妈祖祖庙 - 官网</a> — 祖庙官方信息，含祭典日程、建筑介绍、分灵名录</li>
+<li><a href="https://baike.baidu.com/item/%E6%B3%89%E5%B7%9E%E5%A4%A9%E5%90%8E%E5%AE%AB" target="_blank" class="ext-link">泉州天后宫 - 百度百科</a> — 中国现存规模最大的妈祖庙详细资料</li>
+
+<p><strong>学术著作</strong></p>
+<li>林美容《妈祖信仰与台湾社会》（台湾博扬文化，2006年）— 台湾中央研究院研究员的权威著作，系统分析台湾妈祖信仰的组织结构</li>
+<li>张珣《文化妈祖：台湾妈祖信仰研究论文集》（中研院民族所，2003年）— 含分灵制度、刈火仪式的田野调查细节</li>
+<li>蔡相煇《台湾的祠祀与宗教》（台原出版社，1989年）— 台湾庙宇体系与分灵网络研究</li>
+
+<p><strong>纪录片/影像</strong></p>
+<li>Discovery频道《台湾妈祖绕境》（2008年）— 被列为"世界三大宗教活动"的出处来源</li>
+<li>公视纪录片《妈祖迺台湾》（2013年，导演任贤齐）— 台湾妈祖绕境的全程影像记录，B站可搜索</li>
+
+<p><strong>资料网站</strong></p>
+<li><a href="http://www.dajiamazu.org.tw/" target="_blank" class="ext-link">大甲镇澜宫官方网站</a> — 绕境进香日程、历史沿革、即时新闻</li>
+<li><a href="http://www.chaotian.org.tw/" target="_blank" class="ext-link">北港朝天宫官方网站</a> — 台湾另一妈祖信仰中心，含文史资料</li>
+
+<p><strong>数据出处</strong></p>
+<li>"全球超5000座分灵庙"数据据湄洲妈祖祖庙官网及世界妈祖文化论坛公开统计</li>
+<li>"49个国家和地区"数据据湄洲妈祖祖庙2024年统计公报</li>
+
+  </article>
+  <footer class="page-footer">
+    <p>妈祖AI国风短剧 · 背景知识库 · v1.0 · 2026年6月</p>
+    <p>指导单位：妈祖文化协会 · 莆田文旅</p>
+  </footer>
+</main>
+</div>
+<div id="search-results" class="search-results" style="display:none">
+  <div class="search-overlay" onclick="closeSearch()"></div>
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
+<script src="search.js"></script>
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+</script>
+</body>
+</html>
