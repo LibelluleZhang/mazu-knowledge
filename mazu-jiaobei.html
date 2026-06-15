@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>掷圣杯 · 妈祖AI国风短剧</title>
+<!-- System fonts — no external dependency -->
+<style>
+:root {
+  --bg: #FDFBF7;
+  --red: #CC3F28;
+  --gold: #D4A24E;
+  --pink: #FF6B8A;
+  --cyan: #00D4AA;
+  --purple: #A855F7;
+  --yellow: #FACC15;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', 'PingFang SC', 'Hiragino Mincho ProN', serif;
+  background: var(--bg);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Chaotic background particles */
+.bg-particles { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+.bg-particle {
+  position:absolute;
+  font-size: 1.4rem;
+  animation: float-up linear infinite;
+  opacity: 0;
+}
+@keyframes float-up {
+  0% { transform:translateY(100vh) rotate(0deg) scale(0); opacity:0; }
+  10% { opacity:0.5; }
+  90% { opacity:0.3; }
+  100% { transform:translateY(-10vh) rotate(720deg) scale(1); opacity:0; }
+}
+
+/* === MAIN === */
+.container {
+  position:relative; z-index:1;
+  width:100%; max-width:420px;
+  padding:0 20px;
+  text-align:center;
+  display:flex; flex-direction:column; align-items:center;
+}
+
+/* === TITLE === */
+.title-area { margin-bottom:8px; }
+.title-top {
+  font-size:0.75rem; color:var(--red); letter-spacing:0.25em;
+  animation: wiggle 2s ease-in-out infinite;
+}
+@keyframes wiggle {
+  0%,100% { transform:rotate(0); }
+  25% { transform:rotate(1deg); }
+  75% { transform:rotate(-1deg); }
+}
+
+/* === MAZU STAGE === */
+.mazu-stage {
+  position:relative;
+  width:180px; height:200px;
+  margin:0 auto;
+  transition: transform 0.1s ease;
+}
+
+/* Glow ring */
+.glow-ring {
+  position:absolute;
+  top:-10px; left:50%; transform:translateX(-50%);
+  width:160px; height:180px;
+  border-radius:50%;
+  background:radial-gradient(ellipse, rgba(255,107,138,0.2) 0%, transparent 70%);
+  opacity:0;
+  transition:opacity 0.3s;
+}
+.glow-ring.on { opacity:1; }
+.glow-ring.super { background:radial-gradient(ellipse, rgba(250,204,21,0.4) 0%, rgba(255,107,138,0.2) 40%, transparent 70%); }
+
+/* === CHIBI MAZU === */
+.mazu-chibi {
+  position:relative;
+  width:130px; height:170px;
+  margin:0 auto;
+  cursor:pointer;
+}
+.mazu-chibi:active { transform:scale(0.95); }
+
+/* Face */
+.mz-face {
+  position:absolute;
+  top:12px; left:50%; transform:translateX(-50%);
+  width:56px; height:60px;
+  background:#FFF5EC;
+  border-radius:28px/30px;
+  z-index:3;
+  transition:all 0.3s;
+}
+/* Hair */
+.mz-hair {
+  position:absolute;
+  top:8px; left:50%; transform:translateX(-50%);
+  width:60px; height:48px;
+  background:#2D2018;
+  border-radius:30px 30px 6px 6px;
+  z-index:2;
+}
+/* Crown */
+.mz-crown {
+  position:absolute;
+  top:-10px; left:50%; transform:translateX(-50%);
+  z-index:5;
+}
+.crown-body {
+  width:64px; height:24px;
+  background:linear-gradient(180deg, #FACC15, #D4A24E);
+  border-radius:8px 8px 3px 3px;
+  position:relative;
+  box-shadow:0 2px 8px rgba(250,204,21,0.4);
+}
+.crown-spike {
+  position:absolute;
+  top:-10px; left:50%; transform:translateX(-50%);
+  width:0; height:0;
+  border-left:8px solid transparent;
+  border-right:8px solid transparent;
+  border-bottom:14px solid #FACC15;
+  filter:drop-shadow(0 0 4px rgba(250,204,21,0.6));
+}
+.crown-gem {
+  position:absolute;
+  top:-8px; left:50%; transform:translateX(-50%);
+  width:10px; height:10px;
+  background:#FF6B8A;
+  border-radius:50%;
+  box-shadow:0 0 10px #FF6B8A;
+  animation:pulse 1s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { transform:translateX(-50%) scale(1); }
+  50% { transform:translateX(-50%) scale(1.3); }
+}
+.crown-beads {
+  position:absolute;
+  bottom:-14px; left:50%; transform:translateX(-50%);
+  display:flex; gap:8px;
+}
+.crown-bead {
+  width:6px; height:8px;
+  background:#FACC15;
+  border-radius:3px;
+  animation:bead-swing 0.6s ease-in-out infinite alternate;
+}
+.crown-bead:nth-child(2) { animation-delay:0.2s; }
+.crown-bead:nth-child(3) { animation-delay:0.4s; }
+@keyframes bead-swing {
+  0% { transform:translateY(0); }
+  100% { transform:translateY(4px); }
+}
+
+/* Eyes - BIG chibi eyes */
+.mz-eyes {
+  position:absolute;
+  top:24px; left:50%; transform:translateX(-50%);
+  z-index:4;
+  display:flex; gap:16px;
+}
+.mz-eye {
+  width:16px; height:18px;
+  background:#1a1a1a;
+  border-radius:50%;
+  position:relative;
+  animation:blink 4s ease-in-out infinite;
+}
+.mz-eye::after {
+  content:'';
+  position:absolute;
+  top:3px; left:3px;
+  width:5px; height:5px;
+  background:white;
+  border-radius:50%;
+}
+@keyframes blink {
+  0%,45%,55%,100% { transform:scaleY(1); }
+  50% { transform:scaleY(0.05); }
+}
+
+/* Blush */
+.mz-blush {
+  position:absolute;
+  top:38px;
+  width:14px; height:9px;
+  background:rgba(255,107,138,0.4);
+  border-radius:50%;
+  z-index:4;
+}
+.mz-blush-l { left:16px; }
+.mz-blush-r { right:16px; }
+
+/* Mouth */
+.mz-mouth {
+  position:absolute;
+  top:44px; left:50%; transform:translateX(-50%);
+  width:12px; height:6px;
+  border-bottom:2px solid #CC3F28;
+  border-radius:0 0 6px 6px;
+  z-index:4;
+  transition:all 0.3s;
+}
+
+/* Robe */
+.mz-robe {
+  position:absolute;
+  top:70px; left:50%; transform:translateX(-50%);
+  z-index:1;
+}
+.robe-top {
+  width:76px; height:38px;
+  background:linear-gradient(180deg, #CC3F28, #A83222);
+  border-radius:5px 5px 0 0;
+  margin:0 auto;
+  position:relative;
+}
+.robe-collar {
+  position:absolute;
+  top:2px; left:50%; transform:translateX(-50%);
+  width:34px; height:22px;
+  background:#FACC15;
+  clip-path:polygon(50% 100%, 0% 0%, 100% 0%);
+}
+.robe-body {
+  width:102px; height:62px;
+  background:linear-gradient(180deg, #A83222, #7A1F15);
+  border-radius:0 0 12px 12px;
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+}
+.robe-pattern {
+  position:absolute;
+  bottom:10px; left:50%; transform:translateX(-50%);
+  width:70px; height:12px;
+  border-bottom:2px solid rgba(250,204,21,0.4);
+  border-radius:0 0 36px 36px;
+}
+
+/* Hands */
+.mz-hands {
+  position:absolute;
+  top:110px; left:50%; transform:translateX(-50%);
+  z-index:4;
+  display:flex; align-items:center; gap:3px;
+}
+.mz-hand {
+  width:16px; height:13px;
+  background:#FFF5EC;
+  border-radius:8px;
+}
+.mz-ruyi {
+  width:42px; height:9px;
+  position:relative;
+}
+.ruyi-bar {
+  width:34px; height:5px;
+  background:#D4A24E;
+  border-radius:2px;
+  margin:2px auto 0;
+}
+.ruyi-head {
+  position:absolute;
+  right:-3px; top:-3px;
+  width:18px; height:15px;
+  border:2px solid #D4A24E;
+  border-radius:50%;
+}
+
+/* === EXPRESSIONS === */
+/* Nodding */
+.mazu-stage.nod .mazu-chibi { animation:nod 0.35s ease-in-out 5; }
+@keyframes nod {
+  0%,100% { transform:rotate(0) translateY(0); }
+  30% { transform:rotate(5deg) translateY(-4px); }
+  60% { transform:rotate(-3deg) translateY(-2px); }
+}
+/* Shaking head */
+.mazu-stage.shake .mazu-chibi { animation:shake 0.25s ease-in-out 6; }
+@keyframes shake {
+  0%,100% { transform:rotate(0); }
+  25% { transform:rotate(-10deg) scale(1.05); }
+  75% { transform:rotate(10deg) scale(1.05); }
+}
+/* Big smile */
+.mazu-stage.smile .mz-mouth {
+  width:22px; height:10px;
+  border-bottom:3px solid #CC3F28;
+  border-radius:0 0 14px 14px;
+}
+/* Surprised eyes */
+.mazu-stage.supernod .mz-eye {
+  width:20px; height:20px;
+  background:#1a1a1a;
+}
+.mazu-stage.supernod .mz-mouth {
+  width:16px; height:10px;
+  border:2px solid #CC3F28;
+  border-radius:50%;
+  background:rgba(255,107,138,0.15);
+}
+
+/* === BLOCKS === */
+.blocks-stage {
+  position:relative;
+  width:200px; height:100px;
+  margin:12px auto 0;
+  display:flex; align-items:flex-end; justify-content:center;
+  gap:30px;
+  perspective:800px;
+}
+
+.block-wrap {
+  width:48px; height:64px;
+  transform-style:preserve-3d;
+  filter:drop-shadow(0 6px 16px rgba(0,0,0,0.15));
+  transition:filter 0.3s;
+}
+
+.block-wrap.throwing {
+  animation:toss 0.9s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+
+@keyframes toss {
+  0% { transform:translateY(0) rotateX(0deg); }
+  10% { transform:translateY(-20px) rotateX(60deg); }
+  25% { transform:translateY(-160px) rotateX(480deg); }
+  50% { transform:translateY(-100px) rotateX(840deg); }
+  70% { transform:translateY(-40px) rotateX(1020deg); }
+  85% { transform:translateY(-10px) rotateX(1080deg); }
+  100% { transform:translateY(0) rotateX(var(--end-x,0deg)) rotateZ(var(--end-z,0deg)); }
+}
+
+@keyframes toss2 {
+  0% { transform:translateY(0) rotateX(0deg); }
+  15% { transform:translateY(-30px) rotateX(-90deg); }
+  30% { transform:translateY(-170px) rotateX(-540deg); }
+  55% { transform:translateY(-90px) rotateX(-900deg); }
+  75% { transform:translateY(-30px) rotateX(-1080deg); }
+  90% { transform:translateY(-5px) rotateX(-1200deg); }
+  100% { transform:translateY(0) rotateX(var(--end-x,0deg)) rotateZ(var(--end-z,0deg)); }
+}
+
+.block-face {
+  position:absolute; inset:0;
+  border-radius:48%/38%;
+  backface-visibility:hidden;
+}
+.block-face.flat {
+  background:linear-gradient(160deg, #F0E0C0, #E0CC9C, #D4BC88);
+  border:2px solid #B89860;
+  box-shadow:inset 0 2px 8px rgba(255,255,255,0.25), inset 0 -2px 6px rgba(0,0,0,0.1);
+}
+.block-face.flat::after {
+  content:''; position:absolute;
+  top:20%; left:30%;
+  width:40%; height:20%;
+  background:rgba(255,255,255,0.15);
+  border-radius:50%;
+}
+.block-face.round {
+  background:linear-gradient(160deg, #D4A862, #C49448, #B08038);
+  border:2px solid #8A6028;
+  transform:rotateY(180deg);
+  box-shadow:inset 0 -4px 12px rgba(0,0,0,0.2), inset 0 2px 6px rgba(255,255,255,0.1);
+}
+.block-face.round::after {
+  content:''; position:absolute;
+  top:15%; left:25%;
+  width:50%; height:25%;
+  background:rgba(255,255,255,0.06);
+  border-radius:50%;
+}
+
+/* === RESULT === */
+.result-area {
+  min-height:80px;
+  padding:0 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+}
+
+.result-emoji {
+  font-size:2.5rem;
+  opacity:0; transform:scale(0) rotate(-20deg);
+  transition:all 0.5s cubic-bezier(0.34,1.56,0.64,1);
+  margin-bottom:2px;
+}
+.result-emoji.show {
+  opacity:1; transform:scale(1) rotate(0deg);
+}
+
+.result-title {
+  font-size:1.6rem; font-weight:900;
+  color:var(--red); letter-spacing:0.2em;
+  opacity:0; transform:translateY(10px);
+  transition:all 0.5s ease 0.1s;
+}
+.result-title.show { opacity:1; transform:translateY(0); }
+
+.result-msg {
+  font-size:0.85rem; color:#8B8580; line-height:1.6;
+  opacity:0; transform:translateY(10px);
+  transition:all 0.5s ease 0.25s;
+}
+.result-msg.show { opacity:0.8; transform:translateY(0); }
+
+/* Flavor texts */
+.flavor-sheng  { color:var(--red); }
+.flavor-xiao  { color:var(--gold); }
+.flavor-yin   { color:#8B8580; }
+
+/* === BUTTON === */
+.btn-wrap { position:relative; margin-top:24px; }
+.btn-throw {
+  padding:14px 50px;
+  background:var(--red);
+  color:white;
+  border:none;
+  border-radius:50px;
+  font-size:1.1rem;
+  font-family:'Noto Serif SC','Songti SC','STSong',serif;
+  font-weight:700;
+  letter-spacing:0.2em;
+  cursor:pointer;
+  box-shadow:0 6px 24px rgba(204,63,40,0.3);
+  transition:all 0.2s;
+  position:relative;
+  overflow:hidden;
+}
+.btn-throw:active {
+  transform:scale(0.93);
+  box-shadow:0 2px 8px rgba(204,63,40,0.2);
+}
+.btn-throw:disabled {
+  background:#D4C8B8;
+  color:#A89888;
+  box-shadow:none;
+}
+
+/* Button sparkle */
+.btn-sparkle {
+  position:absolute;
+  width:6px; height:6px;
+  background:white;
+  border-radius:50%;
+  opacity:0;
+  animation:sparkle 1s ease-out infinite;
+  pointer-events:none;
+}
+@keyframes sparkle {
+  0% { opacity:1; transform:translate(0,0) scale(1); }
+  100% { opacity:0; transform:translate(var(--sx), var(--sy)) scale(0); }
+}
+
+/* === COUNTER === */
+.counter {
+  margin-top:12px;
+  font-size:0.75rem; color:#B0A898;
+  letter-spacing:0.06em;
+}
+.counter .num { color:var(--red); font-weight:700; font-size:1.1em; }
+
+/* === HISTORY === */
+.history-wrap { margin-top:28px; }
+.history-dots { display:flex; gap:10px; justify-content:center; }
+.h-dot {
+  width:28px; height:28px;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:0.75rem; font-weight:700;
+  animation:pop-in 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+@keyframes pop-in {
+  0% { transform:scale(0); }
+  100% { transform:scale(1); }
+}
+.h-dot.sheng { background:var(--red); color:white; }
+.h-dot.xiao  { background:#FACC15; color:#8B6914; }
+.h-dot.yin   { background:#E8E0D4; color:#8B8580; }
+
+/* === COMBO TEXT === */
+.combo-text {
+  position:fixed;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  font-size:3rem;
+  font-weight:900;
+  pointer-events:none;
+  z-index:100;
+  transition:all 0.6s cubic-bezier(0.34,1.56,0.64,1);
+  text-shadow:0 0 30px rgba(250,204,21,0.6);
+}
+.combo-text.fire { transform:translate(-50%,-50%) scale(1); color:var(--red); }
+.combo-text.fire.hide { transform:translate(-50%,-50%) scale(0); opacity:0; }
+
+/* === SHAKE SCREEN === */
+.screen-shake {
+  animation:screen-shake 0.5s ease-out;
+}
+@keyframes screen-shake {
+  0%,100% { transform:translate(0); }
+  10% { transform:translate(-6px, 3px); }
+  20% { transform:translate(6px, -2px); }
+  30% { transform:translate(-4px, -4px); }
+  40% { transform:translate(4px, 2px); }
+  50% { transform:translate(-2px, -1px); }
+  60% { transform:translate(2px, 1px); }
+  70% { transform:translate(-1px, 0); }
+}
+
+/* Footer */
+.footer {
+  position:fixed; bottom:16px;
+  font-size:0.65rem; color:#B0A898; opacity:0.35;
+  letter-spacing:0.08em; text-align:center; width:100%;
+  pointer-events:none; z-index:0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width:380px) {
+  .mazu-stage { width:150px; height:170px; }
+  .mazu-chibi { width:115px; height:150px; }
+  .mz-face { width:48px; height:52px; top:10px; }
+  .mz-hair { width:52px; height:40px; top:6px; }
+  .mz-crown { top:-8px; }
+  .crown-body { width:56px; height:20px; }
+  .mz-robe { top:60px; }
+  .robe-top { width:66px; height:32px; }
+  .robe-body { width:88px; height:52px; }
+  .mz-hands { top:94px; }
+  .block-wrap { width:40px; height:54px; }
+  .blocks-stage { gap:24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-particles" id="bgParts"></div>
+<div class="combo-text" id="comboText"></div>
+
+<div class="container" id="screen">
+  <div class="title-area">
+    <div class="title-top">✦ 湄 洲 圣 杯 局 ✦</div>
+  </div>
+
+  <!-- Mazu -->
+  <div class="mazu-stage" id="mzStage">
+    <div class="glow-ring" id="glowRing"></div>
+    <div class="mazu-chibi" id="mzChibi" onclick="throwCups()">
+      <div class="mz-crown">
+        <div class="crown-body">
+          <div class="crown-spike"></div>
+          <div class="crown-gem"></div>
+        </div>
+        <div class="crown-beads">
+          <div class="crown-bead"></div>
+          <div class="crown-bead"></div>
+          <div class="crown-bead"></div>
+        </div>
+      </div>
+      <div class="mz-hair"></div>
+      <div class="mz-face">
+        <div class="mz-eyes">
+          <div class="mz-eye"></div>
+          <div class="mz-eye"></div>
+        </div>
+        <div class="mz-blush mz-blush-l"></div>
+        <div class="mz-blush mz-blush-r"></div>
+        <div class="mz-mouth"></div>
+      </div>
+      <div class="mz-robe">
+        <div class="robe-top"><div class="robe-collar"></div></div>
+        <div class="robe-body"><div class="robe-pattern"></div></div>
+      </div>
+      <div class="mz-hands">
+        <div class="mz-hand"></div>
+        <div class="mz-ruyi"><div class="ruyi-bar"></div><div class="ruyi-head"></div></div>
+        <div class="mz-hand"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blocks -->
+  <div class="blocks-stage">
+    <div class="block-wrap" id="b1">
+      <div class="block-face flat"></div>
+      <div class="block-face round"></div>
+    </div>
+    <div class="block-wrap" id="b2">
+      <div class="block-face flat"></div>
+      <div class="block-face round"></div>
+    </div>
+  </div>
+
+  <!-- Result -->
+  <div class="result-area">
+    <div class="result-emoji" id="rEmoji"></div>
+    <div class="result-title" id="rTitle"></div>
+    <div class="result-msg" id="rMsg"></div>
+  </div>
+
+  <!-- Button -->
+  <div class="btn-wrap">
+    <button class="btn-throw" id="btnT" onclick="throwCups()">掷 圣 杯</button>
+  </div>
+  <div class="counter" id="counter">心诚则灵 · <span class="num">3</span> 掷为限</div>
+
+  <div class="history-wrap">
+    <div class="history-dots" id="hDots"></div>
+  </div>
+</div>
+
+<div class="footer">妈祖AI国风短剧 × 妈祖文化协会 × 莆田文旅</div>
+
+<script>
+// === Background chaos ===
+const emojis = ['✨','🙏','🪷','🌊','🏮','🎋','⭐','💫','🔥','🍀','🕯️','🌸'];
+const bgParts = document.getElementById('bgParts');
+for (let i=0; i<18; i++) {
+  const p = document.createElement('span');
+  p.className = 'bg-particle';
+  p.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+  p.style.left = Math.random()*100 + '%';
+  p.style.animationDuration = (4+Math.random()*8) + 's';
+  p.style.animationDelay = Math.random()*8 + 's';
+  p.style.fontSize = (1 + Math.random()*2) + 'rem';
+  bgParts.appendChild(p);
+}
+
+// === Sparkles on button ===
+const btnWrap = document.querySelector('.btn-wrap');
+for (let i=0; i<8; i++) {
+  const s = document.createElement('span');
+  s.className = 'btn-sparkle';
+  s.style.left = (20 + Math.random()*60) + '%';
+  s.style.top = (10 + Math.random()*50) + '%';
+  s.style.setProperty('--sx', (Math.random()-0.5)*80 + 'px');
+  s.style.setProperty('--sy', (Math.random()-0.5)*80 + 'px');
+  s.style.animationDelay = Math.random()*1 + 's';
+  s.style.animationDuration = (0.8 + Math.random()*0.8) + 's';
+  btnWrap.appendChild(s);
+}
+
+// === State ===
+let busing = false, throws = 0;
+const MAX = 3, h = [];
+
+const results = {
+  sheng: {
+    e: '🙏', t: '圣 杯', m: '妈祖点头了。<br>一平一凸<br>她说：<b style="color:#CC3F28">放心去做吧。</b>',
+    a: 'nod', g: 'on'
+  },
+  xiao: {
+    e: '😊', t: '笑 杯', m: '妈祖笑了。<br>两面皆平<br><b style="color:#D4A24E">她在听，不急着答。</b>',
+    a: 'smile', g: ''
+  },
+  yin: {
+    e: '🤫', t: '阴 杯', m: '妈祖摇了摇头。<br>两面皆凸<br><b style="color:#8B8580">时候未到。静一静，再来。</b>',
+    a: 'shake', g: ''
+  },
+  // Super rare easter egg
+  super: {
+    e: '✨', t: '圣 圣 圣 杯', m: '三连圣杯。妈祖看着你呢。<br><b style="color:#FACC15;font-size:1.1em">你心里早就有答案了。</b>',
+    a: 'supernod', g: 'super'
+  }
+};
+
+function result() {
+  if (throws === 2 && h[0] === 'sheng' && h[1] === 'sheng') {
+    // Two sheng already, third has super chance
+    return Math.random() < 0.5 ? 'super' : 'sheng';
+  }
+  if (throws === 2) {
+    const r = Math.random();
+    if (r < 0.55) return 'sheng';
+    if (r < 0.8) return 'xiao';
+    return 'yin';
+  }
+  const r = Math.random();
+  if (r < 0.4) return 'sheng';
+  if (r < 0.7) return 'xiao';
+  return 'yin';
+}
+
+function throwCups() {
+  if (busing) return;
+  busing = true;
+  const type = result();
+  const res = results[type];
+  const btn = document.getElementById('btnT');
+  btn.disabled = true;
+  btn.textContent = ['妈祖在听…','妈祖在想着…','妈祖在看呢…'][Math.min(throws,2)];
+
+  const b1 = document.getElementById('b1'), b2 = document.getElementById('b2');
+  const stage = document.getElementById('mzStage');
+  const ring = document.getElementById('glowRing');
+
+  b1.classList.remove('throwing'); b2.classList.remove('throwing');
+  b1.style.transform = b2.style.transform = '';
+
+  const cfg = {
+    sheng: [[0,0],[180,0]],
+    xiao:  [[0,0],[0,0]],
+    yin:   [[180,0],[180,0]],
+    super: [[0,0],[180,0]]
+  };
+  const [e1,e2] = cfg[type];
+  const j = () => (Math.random()-0.5)*14;
+  b1.style.setProperty('--end-x', (e1[0]+j())+'deg');
+  b1.style.setProperty('--end-z', (e1[1]+j())+'deg');
+  b2.style.setProperty('--end-x', (e2[0]+j())+'deg');
+  b2.style.setProperty('--end-z', (e2[1]+j())+'deg');
+
+  const sp = [180,360,540,720,900,1080];
+  b1.style.setProperty('--spin-start', sp[Math.floor(Math.random()*6)]+'deg');
+  b2.style.setProperty('--spin-mid', sp[Math.floor(Math.random()*6)]+'deg');
+  b1.style.animationName = Math.random()>0.5 ? 'toss' : 'toss2';
+  b2.style.animationName = Math.random()>0.5 ? 'toss' : 'toss2';
+
+  requestAnimationFrame(() => {
+    b1.classList.add('throwing');
+    b2.classList.add('throwing');
+  });
+
+  setTimeout(() => {
+    stage.classList.remove('nod','shake','smile','supernod');
+    ring.classList.remove('on','super');
+    void stage.offsetWidth;
+    stage.classList.add(res.a);
+    if (res.g) ring.classList.add(res.g);
+
+    // Screen shake for yin
+    if (type === 'yin') {
+      document.getElementById('screen').classList.add('screen-shake');
+      setTimeout(() => document.getElementById('screen').classList.remove('screen-shake'), 500);
+    }
+    // Super combo
+    if (type === 'super') {
+      const combo = document.getElementById('comboText');
+      combo.textContent = '✨ 妈祖看着你呢 ✨';
+      combo.classList.add('fire');
+      setTimeout(() => combo.classList.add('hide'), 2000);
+      setTimeout(() => { combo.classList.remove('fire','hide'); combo.textContent=''; }, 2600);
+    }
+
+    const em = document.getElementById('rEmoji');
+    const ti = document.getElementById('rTitle');
+    const ms = document.getElementById('rMsg');
+    [em,ti,ms].forEach(el => el.classList.remove('show'));
+    em.textContent = res.e;
+    ti.textContent = res.t;
+    ms.innerHTML = res.m;
+    void em.offsetWidth;
+    em.classList.add('show');
+    setTimeout(() => ti.classList.add('show'), 120);
+    setTimeout(() => ms.classList.add('show'), 280);
+
+    throws++; h.push(type);
+    updateDots();
+
+    const c = document.getElementById('counter');
+    const rem = MAX - throws;
+    if (rem > 0) {
+      c.innerHTML = `还可以问 <span class="num">${rem}</span> 次`;
+      btn.textContent = '再问一次 ✨';
+      btn.disabled = false;
+    } else {
+      c.textContent = '三次已满 · 心诚则灵 🙏';
+      btn.textContent = '妈祖已作答';
+    }
+
+    setTimeout(() => { stage.classList.remove('nod','shake','supernod'); ring.classList.remove('on','super'); }, 2800);
+    busing = false;
+  }, 1000);
+}
+
+function updateDots() {
+  document.getElementById('hDots').innerHTML = h.map(t => {
+    const l = { sheng:'圣', xiao:'笑', yin:'阴', super:'圣' };
+    return `<div class="h-dot ${t==='super'?'sheng':t}">${l[t]}</div>`;
+  }).join('');
+}
+
+// Keyboard & tap mazu
+document.addEventListener('keydown', e => {
+  if (e.code === 'Space' && !busing && throws < MAX) {
+    e.preventDefault();
+    throwCups();
+  }
+});
+</script>
+</body>
+</html>
