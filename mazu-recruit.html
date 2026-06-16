@@ -40,8 +40,15 @@
 40|40|40|  h2{font-size:19px;font-weight:400;color:var(--accent);letter-spacing:.02em;margin-bottom:18px;padding-bottom:8px;border-bottom:1px solid var(--hair)}
 41|41|41|  p{font-size:15px;margin-bottom:12px;line-height:1.95}
 42|42|42|
-43|43|43|  .moment{padding:14px 18px;margin-bottom:5px;background:var(--card);border-left:3px solid var(--asoft);border-radius:0 6px 6px 0;transition:border-color .2s;opacity:0;transform:translateY(20px)}
-44|44|44|  .moment.revealed{opacity:1;transform:translateY(0);transition:all .6s cubic-bezier(.4,0,.2,1)}
+.moment{padding:14px 18px;margin-bottom:5px;background:var(--card);border-left:3px solid var(--asoft);border-radius:0 6px 6px 0;transition:border-color .2s;opacity:0;transform:translateY(12px);animation:momentIn .5s cubic-bezier(.4,0,.2,1) forwards}
+.moment:nth-child(1){animation-delay:.1s}
+.moment:nth-child(2){animation-delay:.2s}
+.moment:nth-child(3){animation-delay:.3s}
+.moment:nth-child(4){animation-delay:.4s}
+.moment:nth-child(5){animation-delay:.5s}
+.moment:nth-child(6){animation-delay:.6s}
+.moment:nth-child(7){animation-delay:.7s}
+@keyframes momentIn{to{opacity:1;transform:translateY(0)}}
 45|45|45|  .moment:hover{border-color:var(--accent)}
 46|46|46|  .moment .mn{font-weight:600;font-size:14px;display:inline;margin-right:6px}
 47|47|47|  .moment .md{font-size:14px;color:var(--soft);display:inline;line-height:1.7}
